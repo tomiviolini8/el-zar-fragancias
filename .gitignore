@@ -1,0 +1,10 @@
+# Catálogos PDF (pesados, no se despliegan)
+*.pdf
+# Excel de trabajo
+*.xlsx
+# Sistema
+Thumbs.db
+.DS_Store
+*.log
+node_modules/
+WhatsApp Image*.jpeg
