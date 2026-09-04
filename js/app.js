@@ -46,6 +46,19 @@ function waProducto(p){
 }
 
 /* ------------------------------------------------------------------
+   Analítica (Vercel Web Analytics) — visitas van solas; acá eventos.
+   ------------------------------------------------------------------ */
+function trackEvent(name, data){
+  try { window.va && window.va('event', Object.assign({ name }, data || {})); } catch(e){}
+}
+function wireAnalytics(){
+  document.addEventListener('click', e => {
+    const wa = e.target.closest('a[href*="wa.me"]');
+    if (wa) trackEvent('whatsapp_click', { desde: wa.id || wa.closest('[data-code]')?.dataset.code || 'general' });
+  });
+}
+
+/* ------------------------------------------------------------------
    Estado
    ------------------------------------------------------------------ */
 let PRODUCTOS = [];
@@ -184,6 +197,7 @@ function wireUI(){
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
 
   wireQty();   // delegación de Agregar / stepper +/−
+  wireAnalytics();
 
   // rails
   $$('.rail-nav button').forEach(b => b.addEventListener('click', () => {
@@ -317,6 +331,7 @@ function readURL(){
    ================================================================== */
 function openDetail(p){
   if (!p) return;
+  trackEvent('view_product', { codigo: p.codigo, nombre: p.nombre });
   $('#dtMedia').innerHTML = mediaHTML(p);
   $('#dtBadges').innerHTML = badgesArr(p).join('');
   $('#dtFam').textContent = p.familia_olfativa || p.linea || '';
@@ -528,9 +543,9 @@ function wireCardExport(root){
 function wireQty(){
   document.addEventListener('click', e => {
     const add = e.target.closest('[data-add]');
-    if (add){ cartAdd(add.dataset.add, 1); return; }
+    if (add){ cartAdd(add.dataset.add, 1); trackEvent('add_to_cart', { codigo: add.dataset.add }); return; }
     const inc = e.target.closest('[data-qinc]');
-    if (inc){ cartAdd(inc.dataset.qinc, 1); return; }
+    if (inc){ cartAdd(inc.dataset.qinc, 1); trackEvent('add_to_cart', { codigo: inc.dataset.qinc }); return; }
     const dec = e.target.closest('[data-qdec]');
     if (dec){ cartAdd(dec.dataset.qdec, -1); return; }
   });
@@ -614,6 +629,7 @@ function closeCart(){ $('#cartOverlay').classList.remove('open'); $('#cartDrawer
 function cartCheckout(){
   const entries = Object.entries(CART).filter(([c,q])=>q>0);
   if (!entries.length) return;
+  trackEvent('checkout', { items: entries.length, total: cartTotalPrice() });
   // pantalla de carga con resumen, luego redirige a WhatsApp
   const load = $('#cartLoading');
   load.classList.add('show');
@@ -1005,6 +1021,7 @@ function spaced(s, n){ return s.split('').join(' '.repeat(n>1?1:0)); }
 async function downloadCard(){
   const p = exportState.producto;
   if (!p) return;
+  trackEvent('download_placa', { codigo: p.codigo, fmt: exportState.fmt });
   await ensureFonts();
   if (!exportState._img) exportState._img = await loadProductImage(p);
   const { w, h } = FMT[exportState.fmt];
