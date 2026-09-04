@@ -601,3 +601,33 @@ input,select{font-family:inherit}
 .stock-txt.stock-sin{color:#ff9aa6}
 .stock-txt.stock-ped{color:var(--gold-soft)}
 .btn-add:disabled{opacity:.5;cursor:not-allowed;filter:grayscale(.35)}
+
+/* ===== Stepper de cantidad en la tarjeta ===== */
+.add-slot{flex:1;display:flex}
+.add-slot > *{width:100%}
+.qty-stepper{display:flex;align-items:center;justify-content:space-between;
+  border:1px solid var(--gold);border-radius:999px;background:rgba(212,175,55,.08);overflow:hidden;height:100%}
+.qs-btn{width:40px;min-height:36px;color:var(--gold-soft);font-size:1.25rem;font-weight:700;line-height:1;
+  display:flex;align-items:center;justify-content:center;transition:background .15s}
+.qs-btn:hover{background:rgba(212,175,55,.2)}
+.qs-n{font-weight:700;color:var(--cream);font-variant-numeric:tabular-nums;min-width:1.6em;text-align:center}
+
+/* ===== Showcase "El más elegido" ===== */
+.best-seller{max-width:340px;margin:0 auto;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,var(--card-2),var(--card));
+  border:1px solid var(--gold-line);border-radius:18px;box-shadow:var(--shadow)}
+.bs-tag{position:absolute;top:12px;left:12px;z-index:2;
+  background:linear-gradient(180deg,var(--gold-soft),var(--gold-2));color:#20160a;
+  font-size:.7rem;font-weight:800;letter-spacing:.04em;padding:5px 11px;border-radius:20px}
+.bs-media{height:300px;display:flex;align-items:center;justify-content:center;position:relative;
+  background:linear-gradient(160deg,#241708,#120b05)}
+.bs-media .ph{border:none;background:none}
+.bs-media img{max-height:280px;object-fit:contain}
+.bs-body{padding:20px 22px 24px;text-align:center}
+.bs-fam{color:var(--gold);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.bs-name{font-family:var(--serif);font-size:1.5rem;color:var(--cream);margin:.2em 0 .15em}
+.bs-insp{color:var(--cream-dim);font-size:.85rem;margin-bottom:.6em}
+.bs-insp b{color:var(--gold-soft)}
+.bs-price{display:flex;align-items:baseline;justify-content:center;gap:10px;margin-bottom:14px}
+.bs-price .now{font-family:var(--serif);font-size:1.5rem;color:var(--gold-soft);font-weight:700}
+.bs-off{background:var(--wine);color:#ffe9ec;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:20px}

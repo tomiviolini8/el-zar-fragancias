@@ -77,8 +77,9 @@ async function init(){
     buildMarcas();
     const mSel = $('#marca'); if (mSel) mSel.value = state.marca;
     renderRails();
+    renderBestSeller();
     applyFilters();
-    updateStats(data.meta);
+    updateStats();
     cartRender();   // re-render con productos ya cargados
     // abrir detalle si el link trae ?prod=CODIGO
     const prodCode = new URLSearchParams(location.search).get('prod');
@@ -109,13 +110,33 @@ function relRank(p, i){
   return s;
 }
 
-function updateStats(meta){
+function updateStats(){
   const total = PRODUCTOS.length;
-  const arabe = PRODUCTOS.filter(p => p.es_arabe).length;
-  const off = PRODUCTOS.filter(p => p.precio_regular).length;
-  $('#statTotal').textContent = total;
-  $('#statArabe').textContent = arabe;
-  $('#statOff').textContent = off;
+  // número no exacto y variable: redondea hacia abajo a la decena y antepone "+"
+  $('#statTotal') && ($('#statTotal').textContent = '+' + (Math.floor(total / 10) * 10));
+  const maxOff = PRODUCTOS.reduce((m, p) => Math.max(m, p.descuento_pct || 0), 0);
+  $('#statOff') && ($('#statOff').textContent = (Math.floor(maxOff / 5) * 5 || 30) + '%');
+  // #statArabe queda fijo ("Árabe") en el HTML
+}
+
+/* Showcase "El más elegido": destaca un best seller del catálogo (dinámico). */
+function renderBestSeller(){
+  const el = $('#bestSeller'); if (!el) return;
+  const bests = PRODUCTOS.filter(p => p.etiquetas?.includes('BEST'));
+  const best = (bests.length ? bests : PRODUCTOS).slice().sort((a, b) => b._rank - a._rank)[0];
+  if (!best){ el.hidden = true; return; }
+  const inspReal = best.inspirado_en && titleCase(best.inspirado_en).toLowerCase() !== (best.nombre || '').toLowerCase();
+  el.innerHTML = `
+    <div class="bs-tag">★ El más elegido</div>
+    <div class="bs-media">${mediaHTML(best)}</div>
+    <div class="bs-body">
+      ${best.familia_olfativa ? `<div class="bs-fam">${escapeHtml(best.familia_olfativa)}</div>` : ''}
+      <h3 class="bs-name">${escapeHtml(best.nombre)}</h3>
+      ${inspReal ? `<div class="bs-insp">Inspirado en <b>${escapeHtml(titleCase(best.inspirado_en))}</b></div>` : ''}
+      <div class="bs-price"><span class="now">${fmtPrice(best.precio)}</span>${best.descuento_pct ? `<span class="bs-off">-${best.descuento_pct}%</span>` : ''}</div>
+      <button class="btn btn-gold btn-sm" id="bsDetail">Ver este perfume</button>
+    </div>`;
+  $('#bsDetail')?.addEventListener('click', () => openDetail(best));
 }
 
 /* ------------------------------------------------------------------
@@ -161,6 +182,8 @@ function wireUI(){
   $('#detailClose')?.addEventListener('click', closeDetail);
   $('#detailBack')?.addEventListener('click', e => { if (e.target === $('#detailBack')) closeDetail(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
+
+  wireQty();   // delegación de Agregar / stepper +/−
 
   // rails
   $$('.rail-nav button').forEach(b => b.addEventListener('click', () => {
@@ -396,8 +419,29 @@ function stockBadge(p){
   return `<span class="stock-badge stock-${s.key}">${s.label}</span>`;
 }
 
+/* Control "Agregar" / stepper de cantidad según lo que haya en el carrito */
+function addControlHTML(p){
+  if (stockInfo(p).key === 'sin') return `<button class="btn btn-add" disabled title="Sin stock">Sin stock</button>`;
+  const q = CART[p.codigo] || 0;
+  if (q > 0) return `<div class="qty-stepper" role="group" aria-label="Cantidad de ${escapeHtml(p.nombre)}">
+      <button class="qs-btn" data-qdec="${p.codigo}" aria-label="Quitar uno">−</button>
+      <span class="qs-n">${q}</span>
+      <button class="qs-btn" data-qinc="${p.codigo}" aria-label="Agregar uno">+</button>
+    </div>`;
+  return `<button class="btn btn-add" data-add="${p.codigo}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"><path d="M12 5v14M5 12h14"/></svg>
+      Agregar
+    </button>`;
+}
+/* Refresca los controles de todas las tarjetas visibles tras cambiar el carrito */
+function refreshAddSlots(){
+  $$('.add-slot').forEach(slot => {
+    const p = PRODUCTOS.find(x => x.codigo === slot.dataset.slot);
+    if (p) slot.innerHTML = addControlHTML(p);
+  });
+}
+
 function cardHTML(p){
-  const sinStock = stockInfo(p).key === 'sin';
   const inspReal = p.inspirado_en && titleCase(p.inspirado_en).toLowerCase() !== (p.nombre || '').toLowerCase();
   const insp = `${inspReal ? `<div class="card-insp">Inspirado en <b>${escapeHtml(titleCase(p.inspirado_en))}</b>${p.marca ? ' · ' + escapeHtml(titleCase(p.marca)) : ''}</div>` : ''}${p.descripcion ? `<div class="card-desc">${escapeHtml(p.descripcion)}</div>` : ''}`;
   const price = `<div class="card-price">
@@ -421,12 +465,7 @@ function cardHTML(p){
       </div>
       ${price}
       <div class="card-actions">
-        ${sinStock
-          ? `<button class="btn btn-add" disabled title="Sin stock">Sin stock</button>`
-          : `<button class="btn btn-add" data-add="${p.codigo}">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"><path d="M12 5v14M5 12h14"/></svg>
-          Agregar
-        </button>`}
+        <span class="add-slot" data-slot="${p.codigo}">${addControlHTML(p)}</span>
         <a class="btn btn-wa icon-btn" href="${waProducto(p)}" target="_blank" rel="noopener" title="Consultar por WhatsApp">
           <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2z"/></svg>
         </a>
@@ -481,15 +520,20 @@ function wireCardExport(root){
     const p = PRODUCTOS.find(x => x.codigo === btn.dataset.ig);
     if (p) openModal(p);
   }));
-  $$('[data-add]', root).forEach(btn => btn.addEventListener('click', () => {
-    cartAdd(btn.dataset.add);
-    btn.classList.add('added');
-    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="15" height="15"><path d="M5 12l5 5 9-11"/></svg> Agregado';
-    setTimeout(() => {
-      btn.classList.remove('added');
-      btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"><path d="M12 5v14M5 12h14"/></svg> Agregar';
-    }, 1300);
-  }));
+  // Agregar / +/− se manejan por delegación (ver wireQty), para que el stepper
+  // se actualice aunque la tarjeta se re-renderice.
+}
+
+/* Delegación: botón Agregar y stepper +/− en cualquier tarjeta */
+function wireQty(){
+  document.addEventListener('click', e => {
+    const add = e.target.closest('[data-add]');
+    if (add){ cartAdd(add.dataset.add, 1); return; }
+    const inc = e.target.closest('[data-qinc]');
+    if (inc){ cartAdd(inc.dataset.qinc, 1); return; }
+    const dec = e.target.closest('[data-qdec]');
+    if (dec){ cartAdd(dec.dataset.qdec, -1); return; }
+  });
 }
 
 /* ==================================================================
@@ -525,6 +569,7 @@ function cartRender(){
   const n = cartCountTotal();
   const badge = $('#cartCount');
   if (badge){ badge.textContent = n; badge.classList.toggle('show', n>0); }
+  refreshAddSlots();   // actualiza los steppers de las tarjetas
   const wrap = $('#cartItems'), foot = $('#cartFoot');
   if (!wrap) return;
   const entries = Object.entries(CART).filter(([c,q])=>q>0);
