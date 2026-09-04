@@ -257,10 +257,18 @@ input,select{font-family:inherit}
 .card-media{
   position:relative;aspect-ratio:4/5;overflow:hidden;
   background:
-    radial-gradient(70% 55% at 50% 42%, rgba(212,175,55,.10), transparent 70%),
-    radial-gradient(120% 90% at 50% 0%, #2c1e10, #171007);
+    radial-gradient(62% 48% at 50% 40%, rgba(247,234,205,.16), transparent 72%),
+    radial-gradient(120% 95% at 50% 0%, #34260f, #14100a);
   display:flex;align-items:center;justify-content:center;
 }
+/* piso/sombra sutil para que el producto no flote en el vacío */
+.card-media::after{
+  content:"";position:absolute;left:50%;bottom:11%;transform:translateX(-50%);
+  width:58%;height:20px;border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(0,0,0,.5), transparent 70%);
+  filter:blur(2px);z-index:0;pointer-events:none;
+}
+.card-media img,.card-media .ph{position:relative;z-index:1}
 /* frascos sin fondo: completos, con aire y sombra para que floten elegante */
 .card-media img{
   width:100%;height:100%;object-fit:contain;padding:16px 16px 12px;

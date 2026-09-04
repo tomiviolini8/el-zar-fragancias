@@ -185,6 +185,9 @@ def cmd_pull(env):
                 url = atts[0].get("url")
                 fn = (atts[0].get("filename") or "").lower(); ty = atts[0].get("type", "")
                 ext = ".png" if (fn.endswith(".png") or ty.endswith("png")) else ".jpg"
+        # QA: si en Airtable Foto estado = "Revisar", NO se publica esa foto (queda placeholder)
+        if (fl.get("Foto estado") or "").strip() == "Revisar":
+            url = None
         if url:
             try:
                 tmp = IMG_DIR / f"{cod}__orig{ext}"
