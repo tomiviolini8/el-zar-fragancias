@@ -78,6 +78,10 @@ MANUAL = {
     "cdnuite blu": ("Club de Nuit Iconic", "Armaf"),
     "ltfa mahir femme": ("Maahir", "Lattafa"),
     "ltfa mahir homme": ("Maahir Legacy", "Lattafa"),
+    "mandarinsky": ("Odyssey Mandarinsky", "Armaf"),
+    "xx black femenino": ("Black XS for Her", "Paco Rabanne"),
+    "arabian king": ("King of Arabia", "Lattafa"),
+    "arabian queen": ("Queen of Arabia", "Lattafa"),
 }
 
 def main():
