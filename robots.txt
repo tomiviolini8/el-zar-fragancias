@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://el-zar-fragancias.vercel.app/sitemap.xml
