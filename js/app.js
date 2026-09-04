@@ -303,20 +303,29 @@ function openDetail(p){
   dtInsp.innerHTML = inspReal ? `Inspirado en <b>${escapeHtml(titleCase(p.inspirado_en))}</b>${p.marca ? ' · ' + escapeHtml(titleCase(p.marca)) : ''}` : '';
   dtInsp.hidden = !inspReal;
   $('#dtDesc').textContent = p.descripcion || '';
+  const st = stockInfo(p);
   const specs = [];
-  if (p.formato) specs.push(['Formato', p.formato]);
-  if (p.genero) specs.push(['Género', p.genero]);
-  if (p.linea) specs.push(['Línea', p.linea]);
-  if (p.ocasion) specs.push(['Ocasión', p.ocasion === 'Ecléctica' ? 'Versátil' : p.ocasion]);
-  specs.push(['Código', p.codigo]);
-  $('#dtSpecs').innerHTML = specs.map(([k,v]) => `<li><span>${k}</span> <b>${escapeHtml(String(v))}</b></li>`).join('');
+  if (p.formato) specs.push(['Formato', escapeHtml(p.formato)]);
+  if (p.genero) specs.push(['Género', escapeHtml(p.genero)]);
+  if (p.linea) specs.push(['Línea', escapeHtml(p.linea)]);
+  if (p.ocasion) specs.push(['Ocasión', escapeHtml(p.ocasion === 'Ecléctica' ? 'Versátil' : p.ocasion)]);
+  specs.push(['Disponibilidad', `<span class="stock-txt stock-${st.key}">${st.label}</span>`]);
+  specs.push(['Código', escapeHtml(p.codigo)]);
+  $('#dtSpecs').innerHTML = specs.map(([k,v]) => `<li><span>${k}</span> <b>${v}</b></li>`).join('');
   $('#dtPrice').innerHTML = `<span class="now">${fmtPrice(p.precio)}</span>${p.precio_regular ? `<span class="was">${fmtPrice(p.precio_regular)}</span>` : ''}${p.descuento_pct ? `<span class="pct">-${p.descuento_pct}%</span>` : ''}`;
   $('#dtWa').href = waProducto(p);
-  $('#dtAdd').onclick = () => {
-    cartAdd(p.codigo);
-    $('#dtAdd').textContent = '✓ Agregado';
-    setTimeout(() => { $('#dtAdd').textContent = 'Agregar al carrito'; }, 1200);
-  };
+  const dtAdd = $('#dtAdd');
+  const addLabel = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16"><path d="M12 5v14M5 12h14"/></svg> Agregar al carrito';
+  if (st.key === 'sin'){
+    dtAdd.disabled = true; dtAdd.innerHTML = 'Sin stock'; dtAdd.onclick = null;
+  } else {
+    dtAdd.disabled = false; dtAdd.innerHTML = addLabel;
+    dtAdd.onclick = () => {
+      cartAdd(p.codigo);
+      dtAdd.innerHTML = '✓ Agregado';
+      setTimeout(() => { dtAdd.innerHTML = addLabel; }, 1200);
+    };
+  }
   $('#dtIg').onclick = () => { closeDetail(); openModal(p); };
   $('#dtShare').onclick = () => {
     const url = location.origin + location.pathname + '?prod=' + encodeURIComponent(p.codigo);
@@ -375,7 +384,20 @@ function placeholderHTML(p){
   </div>`;
 }
 
+function stockInfo(p){
+  const s = p.stock || 'A pedido';
+  if (s === 'En stock') return { key: 'en', label: 'En stock' };
+  if (s === 'Sin stock') return { key: 'sin', label: 'Sin stock' };
+  return { key: 'ped', label: 'A pedido' };
+}
+function stockBadge(p){
+  const s = stockInfo(p);
+  if (s.key === 'ped') return '';   // default: no satura las tarjetas
+  return `<span class="stock-badge stock-${s.key}">${s.label}</span>`;
+}
+
 function cardHTML(p){
+  const sinStock = stockInfo(p).key === 'sin';
   const inspReal = p.inspirado_en && titleCase(p.inspirado_en).toLowerCase() !== (p.nombre || '').toLowerCase();
   const insp = `${inspReal ? `<div class="card-insp">Inspirado en <b>${escapeHtml(titleCase(p.inspirado_en))}</b>${p.marca ? ' · ' + escapeHtml(titleCase(p.marca)) : ''}</div>` : ''}${p.descripcion ? `<div class="card-desc">${escapeHtml(p.descripcion)}</div>` : ''}`;
   const price = `<div class="card-price">
@@ -386,6 +408,7 @@ function cardHTML(p){
   return `<article class="card" data-code="${p.codigo}">
     <div class="card-media">
       ${badgesHTML(p)}
+      ${stockBadge(p)}
       ${mediaHTML(p)}
     </div>
     <div class="card-body">
@@ -398,10 +421,12 @@ function cardHTML(p){
       </div>
       ${price}
       <div class="card-actions">
-        <button class="btn btn-add" data-add="${p.codigo}">
+        ${sinStock
+          ? `<button class="btn btn-add" disabled title="Sin stock">Sin stock</button>`
+          : `<button class="btn btn-add" data-add="${p.codigo}">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15"><path d="M12 5v14M5 12h14"/></svg>
           Agregar
-        </button>
+        </button>`}
         <a class="btn btn-wa icon-btn" href="${waProducto(p)}" target="_blank" rel="noopener" title="Consultar por WhatsApp">
           <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2z"/></svg>
         </a>

@@ -590,3 +590,14 @@ input,select{font-family:inherit}
   .dt-name{font-size:1.6rem}
   .dt-specs{grid-template-columns:1fr}
 }
+
+/* ===== Stock ===== */
+.stock-badge{position:absolute;top:10px;right:10px;z-index:2;font-size:.62rem;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;padding:4px 9px;border-radius:20px;backdrop-filter:blur(4px)}
+.stock-en{background:rgba(63,125,84,.92);color:#eafff0;border:1px solid #4e9c68}
+.stock-sin{background:rgba(123,30,43,.94);color:#ffe1e5;border:1px solid #9a2836}
+.stock-txt{font-weight:700}
+.stock-txt.stock-en{color:#7fe0a1}
+.stock-txt.stock-sin{color:#ff9aa6}
+.stock-txt.stock-ped{color:var(--gold-soft)}
+.btn-add:disabled{opacity:.5;cursor:not-allowed;filter:grayscale(.35)}

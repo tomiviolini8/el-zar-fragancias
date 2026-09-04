@@ -150,7 +150,8 @@ def cmd_pull(env):
             "genero": fl.get("Genero") or "", "linea": fl.get("Linea") or "",
             "es_arabe": bool(fl.get("Es arabe")), "ocasion": fl.get("Ocasion") or "",
             "categorias": fl.get("Categorias") or [], "etiquetas": fl.get("Etiquetas") or [],
-            "pagina": fl.get("Pagina"), "imagen": "", "imagen_placeholder": True,
+            "pagina": fl.get("Pagina"), "stock": fl.get("Stock") or "A pedido",
+            "imagen": "", "imagen_placeholder": True,
         }
         # foto: Foto URL tiene prioridad; si no, primer adjunto
         url, ext = None, ".jpg"
