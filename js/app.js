@@ -51,7 +51,8 @@ function waProducto(p){
 let PRODUCTOS = [];
 let filtered = [];
 let shown = 0;
-const state = { q: '', genero: '', categoria: 'Todos', orden: 'rel' };
+const state = { q: '', genero: '', categoria: 'Todos', orden: 'rel', ocasion: '', marca: '', precio: '' };
+const detailState = { code: null };
 
 const CATEGORIAS = [
   'Todos', 'Fragancias Premium', 'Línea Árabe', 'Best Sellers',
@@ -71,11 +72,17 @@ async function init(){
     PRODUCTOS = data.productos || [];
     // ranking de relevancia (destacados primero)
     PRODUCTOS.forEach((p, i) => p._rank = relRank(p, i));
+    readURL();                 // estado inicial desde la URL (filtros compartibles)
     buildChips();
+    buildMarcas();
+    const mSel = $('#marca'); if (mSel) mSel.value = state.marca;
     renderRails();
     applyFilters();
     updateStats(data.meta);
     cartRender();   // re-render con productos ya cargados
+    // abrir detalle si el link trae ?prod=CODIGO
+    const prodCode = new URLSearchParams(location.search).get('prod');
+    if (prodCode){ const pd = PRODUCTOS.find(x => x.codigo === prodCode); if (pd) openDetail(pd); }
   }catch(err){
     console.error('Error cargando el catálogo', err);
     $('#grid').innerHTML = `<div class="empty">No se pudo cargar el catálogo. Verificá que <b>data/productos.js</b> esté disponible.</div>`;
@@ -144,7 +151,16 @@ function wireUI(){
 
   $('#genero')?.addEventListener('change', e => { state.genero = e.target.value; applyFilters(); });
   $('#orden')?.addEventListener('change', e => { state.orden = e.target.value; applyFilters(); });
+  $('#ocasion')?.addEventListener('change', e => { state.ocasion = e.target.value; applyFilters(); });
+  $('#marca')?.addEventListener('change', e => { state.marca = e.target.value; applyFilters(); });
+  $('#precio')?.addEventListener('change', e => { state.precio = e.target.value; applyFilters(); });
+  $('#clearFilters')?.addEventListener('click', clearFilters);
   $('#loadMore')?.addEventListener('click', () => { shown += CONFIG.PAGE_SIZE; renderGrid(true); });
+
+  // modal de detalle
+  $('#detailClose')?.addEventListener('click', closeDetail);
+  $('#detailBack')?.addEventListener('click', e => { if (e.target === $('#detailBack')) closeDetail(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
 
   // rails
   $$('.rail-nav button').forEach(b => b.addEventListener('click', () => {
@@ -202,6 +218,13 @@ function applyFilters(){
   filtered = PRODUCTOS.filter(p => {
     if (state.genero && p.genero !== state.genero) return false;
     if (state.categoria !== 'Todos' && !p.categorias.includes(state.categoria)) return false;
+    if (state.ocasion && p.ocasion !== state.ocasion) return false;
+    if (state.marca && p.marca !== state.marca) return false;
+    if (state.precio){
+      const [mn, mx] = state.precio.split('-').map(Number);
+      const pr = p.precio || 0;
+      if (pr < mn || pr > mx) return false;
+    }
     if (q){
       const hay = (p.nombre + ' ' + p.codigo + ' ' + p.inspirado_en + ' ' + p.marca + ' ' + p.familia_olfativa).toLowerCase();
       if (!hay.includes(q)) return false;
@@ -218,18 +241,121 @@ function applyFilters(){
   }
   shown = CONFIG.PAGE_SIZE;
   renderGrid();
+  updateFilterUI();
+  writeURL();
+}
+
+/* ---- Filtros: marca dinámica, limpiar, UI, URL compartible ---- */
+function buildMarcas(){
+  const sel = $('#marca'); if (!sel) return;
+  const marcas = [...new Set(PRODUCTOS.map(p => p.marca).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
+  sel.insertAdjacentHTML('beforeend', marcas.map(m => `<option value="${escapeHtml(m)}">${escapeHtml(titleCase(m))}</option>`).join(''));
+}
+function anyFilter(){
+  return !!(state.q || state.genero || state.categoria !== 'Todos' || state.ocasion || state.marca || state.precio || state.orden !== 'rel');
+}
+function updateFilterUI(){ const b = $('#clearFilters'); if (b) b.hidden = !anyFilter(); }
+function clearFilters(){
+  Object.assign(state, { q:'', genero:'', categoria:'Todos', orden:'rel', ocasion:'', marca:'', precio:'' });
+  ['#searchMini','#searchBig','#genero','#ocasion','#marca','#precio'].forEach(s => { const el = $(s); if (el) el.value = ''; });
+  const o = $('#orden'); if (o) o.value = 'rel';
+  $$('#chips .chip').forEach(c => c.classList.toggle('active', c.dataset.cat === 'Todos'));
+  applyFilters();
+}
+function writeURL(){
+  const p = new URLSearchParams();
+  if (state.q) p.set('q', state.q);
+  if (state.genero) p.set('g', state.genero);
+  if (state.categoria !== 'Todos') p.set('cat', state.categoria);
+  if (state.ocasion) p.set('oc', state.ocasion);
+  if (state.marca) p.set('m', state.marca);
+  if (state.precio) p.set('p', state.precio);
+  if (state.orden !== 'rel') p.set('s', state.orden);
+  const qs = p.toString();
+  history.replaceState(null, '', (qs ? '?' + qs : location.pathname) + location.hash);
+}
+function readURL(){
+  const p = new URLSearchParams(location.search);
+  state.q = (p.get('q') || '').toLowerCase();
+  state.genero = p.get('g') || '';
+  state.categoria = p.get('cat') || 'Todos';
+  state.ocasion = p.get('oc') || '';
+  state.marca = p.get('m') || '';
+  state.precio = p.get('p') || '';
+  state.orden = p.get('s') || 'rel';
+  const set = (sel, val) => { const el = $(sel); if (el) el.value = val; };
+  set('#genero', state.genero); set('#orden', state.orden); set('#ocasion', state.ocasion); set('#precio', state.precio);
+  set('#searchMini', p.get('q') || ''); set('#searchBig', p.get('q') || '');
+  // #marca se setea tras poblar el select (en init)
+}
+
+/* ==================================================================
+   MODAL DETALLE DE PRODUCTO
+   ================================================================== */
+function openDetail(p){
+  if (!p) return;
+  $('#dtMedia').innerHTML = mediaHTML(p);
+  $('#dtBadges').innerHTML = badgesArr(p).join('');
+  $('#dtFam').textContent = p.familia_olfativa || p.linea || '';
+  $('#dtName').textContent = p.nombre;
+  const inspReal = p.inspirado_en && titleCase(p.inspirado_en).toLowerCase() !== (p.nombre || '').toLowerCase();
+  const dtInsp = $('#dtInsp');
+  dtInsp.innerHTML = inspReal ? `Inspirado en <b>${escapeHtml(titleCase(p.inspirado_en))}</b>${p.marca ? ' · ' + escapeHtml(titleCase(p.marca)) : ''}` : '';
+  dtInsp.hidden = !inspReal;
+  $('#dtDesc').textContent = p.descripcion || '';
+  const specs = [];
+  if (p.formato) specs.push(['Formato', p.formato]);
+  if (p.genero) specs.push(['Género', p.genero]);
+  if (p.linea) specs.push(['Línea', p.linea]);
+  if (p.ocasion) specs.push(['Ocasión', p.ocasion === 'Ecléctica' ? 'Versátil' : p.ocasion]);
+  specs.push(['Código', p.codigo]);
+  $('#dtSpecs').innerHTML = specs.map(([k,v]) => `<li><span>${k}</span> <b>${escapeHtml(String(v))}</b></li>`).join('');
+  $('#dtPrice').innerHTML = `<span class="now">${fmtPrice(p.precio)}</span>${p.precio_regular ? `<span class="was">${fmtPrice(p.precio_regular)}</span>` : ''}${p.descuento_pct ? `<span class="pct">-${p.descuento_pct}%</span>` : ''}`;
+  $('#dtWa').href = waProducto(p);
+  $('#dtAdd').onclick = () => {
+    cartAdd(p.codigo);
+    $('#dtAdd').textContent = '✓ Agregado';
+    setTimeout(() => { $('#dtAdd').textContent = 'Agregar al carrito'; }, 1200);
+  };
+  $('#dtIg').onclick = () => { closeDetail(); openModal(p); };
+  $('#dtShare').onclick = () => {
+    const url = location.origin + location.pathname + '?prod=' + encodeURIComponent(p.codigo);
+    (navigator.clipboard?.writeText(url) || Promise.reject()).then(() => {
+      $('#dtShare').textContent = '✓ Link copiado';
+      setTimeout(() => { $('#dtShare').textContent = '🔗 Copiar link de este perfume'; }, 1600);
+    }).catch(() => { prompt('Copiá el link:', url); });
+  };
+  detailState.code = p.codigo;
+  $('#detailBack').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const params = new URLSearchParams(location.search); params.set('prod', p.codigo);
+  history.replaceState(null, '', '?' + params.toString());
+}
+function closeDetail(){
+  const back = $('#detailBack');
+  if (!back || !back.classList.contains('open')) return;
+  back.classList.remove('open');
+  document.body.style.overflow = '';
+  detailState.code = null;
+  const params = new URLSearchParams(location.search); params.delete('prod');
+  const qs = params.toString();
+  history.replaceState(null, '', qs ? '?' + qs : location.pathname);
 }
 
 /* ------------------------------------------------------------------
    Render de tarjetas
    ------------------------------------------------------------------ */
-function badgesHTML(p){
+function badgesArr(p){
   const b = [];
   if (p.etiquetas?.includes('NUEVO')) b.push('<span class="badge badge-new">Nuevo</span>');
   if (p.descuento_pct) b.push(`<span class="badge badge-off">${p.descuento_pct}% OFF</span>`);
   else if (p.etiquetas?.includes('OFERTA')) b.push('<span class="badge badge-off">Oferta</span>');
-  if (p.etiquetas?.includes('BEST SELLER')) b.push('<span class="badge badge-best">★ Best</span>');
+  if (p.etiquetas?.includes('BEST') || p.etiquetas?.includes('BEST SELLER')) b.push('<span class="badge badge-best">★ Best</span>');
   if (p.es_arabe) b.push('<span class="badge badge-arabe">Árabe</span>');
+  return b;
+}
+function badgesHTML(p){
+  const b = badgesArr(p);
   return b.length ? `<div class="badges">${b.join('')}</div>` : '';
 }
 
@@ -320,6 +446,12 @@ function renderRails(){
 }
 
 function wireCardExport(root){
+  // click en la tarjeta -> detalle (salvo que sea sobre los botones de acción)
+  $$('.card', root).forEach(card => card.addEventListener('click', e => {
+    if (e.target.closest('.card-actions')) return;
+    const p = PRODUCTOS.find(x => x.codigo === card.dataset.code);
+    if (p) openDetail(p);
+  }));
   $$('[data-ig]', root).forEach(btn => btn.addEventListener('click', () => {
     const p = PRODUCTOS.find(x => x.codigo === btn.dataset.ig);
     if (p) openModal(p);

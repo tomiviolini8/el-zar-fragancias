@@ -34,7 +34,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css?v=3">
+<link rel="stylesheet" href="css/styles.css?v=4">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1">
 <link rel="apple-touch-icon" href="assets/favicon.svg?v=1">
 <link rel="mask-icon" href="assets/favicon.svg" color="#d4af37">
@@ -210,6 +210,27 @@
             </select>
           </div>
           <div class="select-wrap">
+            <select id="ocasion">
+              <option value="">Toda ocasión</option>
+              <option value="Día">Día ☀️</option>
+              <option value="Noche">Noche 🌙</option>
+              <option value="Citas">Citas 🏹</option>
+              <option value="Ecléctica">Versátil</option>
+            </select>
+          </div>
+          <div class="select-wrap">
+            <select id="marca"><option value="">Toda inspiración</option></select>
+          </div>
+          <div class="select-wrap">
+            <select id="precio">
+              <option value="">Cualquier precio</option>
+              <option value="0-30000">Hasta $30.000</option>
+              <option value="30000-45000">$30.000 – $45.000</option>
+              <option value="45000-60000">$45.000 – $60.000</option>
+              <option value="60000-9999999999">Más de $60.000</option>
+            </select>
+          </div>
+          <div class="select-wrap">
             <select id="orden">
               <option value="rel">Ordenar: destacados</option>
               <option value="precio-asc">Precio: menor a mayor</option>
@@ -218,6 +239,7 @@
               <option value="desc">Mayor descuento</option>
             </select>
           </div>
+          <button class="btn-clear" id="clearFilters" hidden>✕ Limpiar filtros</button>
           <span class="result-count" id="resultCount"></span>
         </div>
         <div class="chips" id="chips"></div>
@@ -385,6 +407,40 @@
   </div>
 </aside>
 
+<!-- ============ MODAL DETALLE DE PRODUCTO ============ -->
+<div class="detail-back" id="detailBack">
+  <div class="detail-card" role="dialog" aria-modal="true" aria-labelledby="dtName">
+    <button class="detail-close" id="detailClose" aria-label="Cerrar">✕</button>
+    <div class="detail-grid">
+      <div class="detail-media" id="dtMedia"></div>
+      <div class="detail-info">
+        <div class="badges" id="dtBadges"></div>
+        <div class="dt-fam" id="dtFam"></div>
+        <h3 class="dt-name" id="dtName"></h3>
+        <div class="dt-insp" id="dtInsp"></div>
+        <p class="dt-desc" id="dtDesc"></p>
+        <ul class="dt-specs" id="dtSpecs"></ul>
+        <div class="dt-price" id="dtPrice"></div>
+        <div class="dt-actions">
+          <button class="btn btn-add" id="dtAdd">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16"><path d="M12 5v14M5 12h14"/></svg>
+            Agregar al carrito
+          </button>
+          <a class="btn btn-wa" id="dtWa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2z"/></svg>
+            WhatsApp
+          </a>
+          <button class="btn btn-ghost" id="dtIg" title="Descargar placa para Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Placa IG
+          </button>
+        </div>
+        <button class="dt-share" id="dtShare">🔗 Copiar link de este perfume</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ============ MODAL EXPORT INSTAGRAM ============ -->
 <div class="modal-back" id="modalBack">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -417,6 +473,6 @@
 <!-- Catálogo embebido (funciona sin servidor). Si preferís editar el JSON, el sitio
      también intenta cargar data/productos.json cuando está hosteado. -->
 <script src="data/productos.js?v=4"></script>
-<script src="js/app.js?v=3"></script>
+<script src="js/app.js?v=4"></script>
 </body>
 </html>
