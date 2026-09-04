@@ -9,9 +9,11 @@ Comandos:
   python scripts/airtable_sync.py check                 # verifica token y cuenta registros
   python scripts/airtable_sync.py seed                  # sube data/productos.json (upsert por Codigo). Deja Foto vacía -> placeholder.
   python scripts/airtable_sync.py seed --fotos-actuales # además carga como Foto los recortes actuales del catálogo (assets/productos/<cod>.jpg vía SITE_URL)
-  python scripts/airtable_sync.py pull                  # Airtable -> web: regenera data/productos.js/.json + baja las fotos. (Sincronización)
+  python scripts/airtable_sync.py pull                  # Airtable -> web: regenera json/js + baja fotos y les QUITA EL FONDO (transparente)
+  python scripts/airtable_sync.py pull --no-bg          # igual pero sin quitar el fondo (usa la foto tal cual)
 
-Requiere scripts/.env con AIRTABLE_TOKEN (ver .env.example).  Solo stdlib.
+Requiere scripts/.env con AIRTABLE_TOKEN (ver .env.example). El pull usa rembg
+para dejar los frascos sin fondo; el resto es stdlib.
 """
 import json, os, sys, time, re, unicodedata, shutil, urllib.request, urllib.error, urllib.parse
 from pathlib import Path
@@ -23,6 +25,7 @@ DATA_JS   = ROOT / "data" / "productos.js"
 IMG_DIR   = ROOT / "assets" / "productos"
 INDEX     = ROOT / "index.html"
 API = "https://api.airtable.com/v0"
+NO_BG = "--no-bg" in sys.argv   # si se pasa, no quita el fondo de las fotos
 
 # Mapeo campo Airtable <-> clave del producto  (kind: text/num/bool/list)
 FIELDS = [
@@ -130,6 +133,24 @@ def download(url, dest):
     with urllib.request.urlopen(req) as r, open(dest, "wb") as fh:
         fh.write(r.read())
 
+# --- Quita-fondo (rembg) para dejar el frasco transparente sobre el diseño oscuro ---
+_rembg_session = None
+def quitar_fondo(src, dest):
+    """True si generó el PNG transparente en dest; False si falló (usar original)."""
+    global _rembg_session
+    try:
+        from rembg import remove, new_session
+        from PIL import Image
+        if _rembg_session is None:
+            _rembg_session = new_session("isnet-general-use")
+        img = Image.open(src).convert("RGBA")
+        res = remove(img, session=_rembg_session, post_process_mask=True)
+        res.save(dest)
+        return True
+    except Exception as e:
+        print(f"  ! quita-fondo falló ({getattr(src,'name',src)}): {e}")
+        return False
+
 def cmd_pull(env):
     recs = fetch_all(env)
     print(f"{len(recs)} registros en Airtable.")
@@ -166,10 +187,22 @@ def cmd_pull(env):
                 ext = ".png" if (fn.endswith(".png") or ty.endswith("png")) else ".jpg"
         if url:
             try:
-                download(url, IMG_DIR / f"{cod}{ext}")
-                other = IMG_DIR / f"{cod}{'.jpg' if ext=='.png' else '.png'}"
-                if other.exists(): other.unlink()
-                p["imagen"] = f"assets/productos/{cod}{ext}"; p["imagen_placeholder"] = False; n_img += 1
+                tmp = IMG_DIR / f"{cod}__orig{ext}"
+                download(url, tmp)
+                dest_png = IMG_DIR / f"{cod}.png"
+                if (not NO_BG) and quitar_fondo(tmp, dest_png):
+                    try: tmp.unlink()
+                    except OSError: pass
+                    jpg = IMG_DIR / f"{cod}.jpg"
+                    if jpg.exists(): jpg.unlink()
+                    p["imagen"] = f"assets/productos/{cod}.png"
+                else:
+                    final = IMG_DIR / f"{cod}{ext}"
+                    tmp.replace(final)
+                    other = IMG_DIR / f"{cod}{'.jpg' if ext=='.png' else '.png'}"
+                    if other.exists(): other.unlink()
+                    p["imagen"] = f"assets/productos/{cod}{ext}"
+                p["imagen_placeholder"] = False; n_img += 1
             except Exception as e:
                 print(f"  ! foto {cod}: {e}")
         productos.append(p)

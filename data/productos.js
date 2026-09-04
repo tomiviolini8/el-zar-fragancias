@@ -2992,7 +2992,7 @@ window.CATALOGO = {
    ],
    "pagina": 3,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF335.jpg",
+   "imagen": "assets/productos/BF335.png",
    "imagen_placeholder": false
   },
   {
