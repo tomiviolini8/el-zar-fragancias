@@ -1658,8 +1658,8 @@
    "etiquetas": [],
    "pagina": 6,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF213.png",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-white-bf214",
@@ -1889,8 +1889,8 @@
    ],
    "pagina": 8,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF231.png",
+   "imagen_placeholder": false
   },
   {
    "id": "escandalo-paris-bf235",
@@ -2383,8 +2383,8 @@
    "etiquetas": [],
    "pagina": 7,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF258.png",
+   "imagen_placeholder": false
   },
   {
    "id": "nani-floral-bf267",
@@ -2496,8 +2496,8 @@
    "etiquetas": [],
    "pagina": 9,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF273.png",
+   "imagen_placeholder": false
   },
   {
    "id": "electric-cherry-bf274",
@@ -2961,8 +2961,8 @@
    ],
    "pagina": 5,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF333.png",
+   "imagen_placeholder": false
   },
   {
    "id": "libre-berry-bf335",

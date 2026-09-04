@@ -135,8 +135,15 @@ function updateStats(){
 /* Showcase "El más elegido": destaca un best seller del catálogo (dinámico). */
 function renderBestSeller(){
   const el = $('#bestSeller'); if (!el) return;
+  const byRank = (a, b) => b._rank - a._rank;
+  const conFoto = PRODUCTOS.filter(p => !p.imagen_placeholder);
   const bests = PRODUCTOS.filter(p => p.etiquetas?.includes('BEST'));
-  const best = (bests.length ? bests : PRODUCTOS).slice().sort((a, b) => b._rank - a._rank)[0];
+  // preferir un best seller CON foto; si no hay, cualquiera con foto; luego best; luego top
+  const best =
+    bests.filter(p => !p.imagen_placeholder).sort(byRank)[0] ||
+    conFoto.slice().sort(byRank)[0] ||
+    bests.slice().sort(byRank)[0] ||
+    PRODUCTOS.slice().sort(byRank)[0];
   if (!best){ el.hidden = true; return; }
   const inspReal = best.inspirado_en && titleCase(best.inspirado_en).toLowerCase() !== (best.nombre || '').toLowerCase();
   el.innerHTML = `
