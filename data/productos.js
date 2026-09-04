@@ -1,9 +1,8 @@
-/* Catálogo embebido — generado desde el PDF Sep/Oct 2026. */
 window.CATALOGO = {
  "meta": {
   "marca": "El Zar de las Fragancias",
   "catalogo": "Catálogo Sep/Oct 2026",
-  "total": 262,
+  "total": 225,
   "moneda": "ARS"
  },
  "productos": [
@@ -18,7 +17,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en Libre Berry Crush de Yves Saint Laurent. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -34,8 +33,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 3,
-   "imagen": "assets/productos/BF335.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "la-vida-es-linda-elixir-bf333",
@@ -48,7 +47,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Evoca a La Vie Est Belle de Lancome con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -64,8 +63,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 5,
-   "imagen": "assets/productos/BF333.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-gold-bf213",
@@ -78,7 +77,7 @@ window.CATALOGO = {
    "precio": 44990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Evoca a Good Girl Gold Fantasy de Carolina Herrera con carácter oriental, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -89,8 +88,8 @@ window.CATALOGO = {
    ],
    "etiquetas": [],
    "pagina": 6,
-   "imagen": "assets/productos/BF213.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "protegeme-by-patricia-sosa-bf258",
@@ -103,7 +102,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral en una fragancia exclusiva, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -114,8 +113,8 @@ window.CATALOGO = {
    ],
    "etiquetas": [],
    "pagina": 7,
-   "imagen": "assets/productos/BF258.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "tadoro-bf231",
@@ -128,7 +127,7 @@ window.CATALOGO = {
    "precio": 33990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Evoca a J’Adore de Dior con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -141,8 +140,8 @@ window.CATALOGO = {
     "EDICIÓN LIMITADA"
    ],
    "pagina": 8,
-   "imagen": "assets/productos/BF231.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "black-orchid-bf273",
@@ -155,7 +154,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Evoca a Tom Ford Black Orchid de Tom Ford con un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -166,8 +165,8 @@ window.CATALOGO = {
    ],
    "etiquetas": [],
    "pagina": 9,
-   "imagen": "assets/productos/BF273.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "electric-cherry-bf274",
@@ -180,7 +179,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Tom Ford Electric Cherry de Tom Ford: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -191,8 +190,8 @@ window.CATALOGO = {
    ],
    "etiquetas": [],
    "pagina": 9,
-   "imagen": "assets/productos/BF274.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "divina-bf275",
@@ -205,7 +204,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 47990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Divine de Jean Paul Gaultier. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -221,8 +220,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 10,
-   "imagen": "assets/productos/BF275.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "divina-la-bella-bf311",
@@ -235,7 +234,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 47990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Matices gourmand y un corazón floral, inspirado en La Belle de Jean Paul Gaultier. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -251,8 +250,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 10,
-   "imagen": "assets/productos/BF311.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "the-bomb-bf325",
@@ -265,7 +264,7 @@ window.CATALOGO = {
    "precio": 45990,
    "precio_regular": 51990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en La Bomba de Carolina Herrera: calidez ambarina y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -281,8 +280,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 11,
-   "imagen": "assets/productos/BF325.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "escandalo-paris-bf235",
@@ -295,7 +294,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Scandal Paris de Jean Paul Gaultier: elegancia chipre y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -311,8 +310,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 12,
-   "imagen": "assets/productos/BF235.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "escandalo-bf102",
@@ -325,7 +324,7 @@ window.CATALOGO = {
    "precio": 47990,
    "precio_regular": 53990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a Scandal de Jean Paul Gaultier con elegancia chipre y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -341,8 +340,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 12,
-   "imagen": "assets/productos/BF102.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "noche-de-gala-acf285",
@@ -355,7 +354,7 @@ window.CATALOGO = {
    "precio": 50990,
    "precio_regular": 56990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a Ghala de Al Wataniah con calidez ambarina y fondo amaderado, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -373,8 +372,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 13,
-   "imagen": "assets/productos/ACF285.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "er-pura-acu283",
@@ -387,7 +386,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Erba Pura de Xerjoff: carácter oriental y destellos frutales. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -405,8 +404,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 13,
-   "imagen": "assets/productos/ACU283.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-marron-acm309",
@@ -419,7 +418,7 @@ window.CATALOGO = {
    "precio": 53990,
    "precio_regular": 59990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Asad Bourbon de Lattafa: especias envolventes y carácter oriental. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -437,8 +436,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 14,
-   "imagen": "assets/productos/ACM309.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-negro-acm296",
@@ -451,7 +450,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Evoca a Asad Negro de Lattafa con carácter oriental y hierbas aromáticas, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -469,8 +468,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 14,
-   "imagen": "assets/productos/ACM296.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-fucsia-acf308",
@@ -483,7 +482,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en Yara Candy de Lattafa Yara. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -501,8 +500,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 15,
-   "imagen": "assets/productos/ACF308.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-rosa-acf289",
@@ -515,7 +514,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Lattafa Yara Rosa de Lattafa Yara: carácter oriental y destellos frutales. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -533,8 +532,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 15,
-   "imagen": "assets/productos/ACF289.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-naranja-acf288",
@@ -547,7 +546,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Evoca a Lattafa Yara Naranja de Lattafa Yara con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -565,8 +564,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 15,
-   "imagen": "assets/productos/ACF288.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-hombre-hero-bm233",
@@ -579,7 +578,7 @@ window.CATALOGO = {
    "precio": 47990,
    "precio_regular": 53990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a 212 Men Heroes de Carolina Herrera con frescor fougère y destellos frutales, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -595,8 +594,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 16,
-   "imagen": "assets/productos/BM233.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-mujer-heroina-bf248",
@@ -609,7 +608,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en 212 Heroine de Carolina Herrera. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -625,8 +624,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 16,
-   "imagen": "assets/productos/BF248.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "robot-femme-diva-edition-bf307",
@@ -639,7 +638,7 @@ window.CATALOGO = {
    "precio": 54990,
    "precio_regular": 60990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Fame The Couture Ed. de Paco Rabanne: carácter oriental y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -655,8 +654,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 17,
-   "imagen": "assets/productos/BF307.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-vip-black-bm110",
@@ -669,7 +668,7 @@ window.CATALOGO = {
    "precio": 46990,
    "precio_regular": 52990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Carácter oriental en una fragancia exclusiva, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -685,8 +684,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 18,
-   "imagen": "assets/productos/BM110.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-parfum-bm299",
@@ -699,7 +698,7 @@ window.CATALOGO = {
    "precio": 48990,
    "precio_regular": 54990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a Invictus de Paco Rabanne con notas acuáticas y hierbas aromáticas, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -715,8 +714,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 18,
-   "imagen": "assets/productos/BM299.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-kamra-acu284",
@@ -729,7 +728,7 @@ window.CATALOGO = {
    "precio": 45990,
    "precio_regular": 51990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Especias envolventes y carácter oriental, inspirado en Khamrah de Lattafa. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -747,8 +746,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 19,
-   "imagen": "assets/productos/ACU284.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "naxus-acm323",
@@ -761,7 +760,7 @@ window.CATALOGO = {
    "precio": 51990,
    "precio_regular": 57990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Evoca a Naxosa de Xerjoff con calidez ambarina y frescura cítrica, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -779,8 +778,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 19,
-   "imagen": "assets/productos/ACM323.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-gold-acm292",
@@ -793,7 +792,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 46990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y notas acuáticas, inspirado en Club De Nuit Milestone de Armaf. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -809,8 +808,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 20,
-   "imagen": "assets/productos/ACM292.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-blue-acm293",
@@ -823,7 +822,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 46990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a Club De Nuit Iconic de Armaf con fondo amaderado y frescura cítrica, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -839,8 +838,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 20,
-   "imagen": "assets/productos/ACM293.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-black-acm291",
@@ -853,7 +852,7 @@ window.CATALOGO = {
    "precio": 46990,
    "precio_regular": 52990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Asad Negro de Lattafa: fondo amaderado y especias envolventes. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -869,8 +868,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 20,
-   "imagen": "assets/productos/ACM291.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-silver-acm294",
@@ -883,7 +882,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 46990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Club De Nuit Sillage de Armaf: fondo amaderado y un acorde de cuero noble. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -899,8 +898,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 21,
-   "imagen": "assets/productos/ACM294.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-white-acf286",
@@ -913,7 +912,7 @@ window.CATALOGO = {
    "precio": 46990,
    "precio_regular": 52990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Club De Nuit White Imperiale de Armaf: carácter oriental y destellos frutales. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -929,8 +928,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 21,
-   "imagen": "assets/productos/ACF286.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-white-bf214",
@@ -943,7 +942,7 @@ window.CATALOGO = {
    "precio": 44990,
    "precio_regular": 50990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Good Girl Legere de Carolina Herrera: fondo amaderado y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -957,8 +956,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 22,
-   "imagen": "assets/productos/BF214.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-violet-bf217",
@@ -971,7 +970,7 @@ window.CATALOGO = {
    "precio": 34990,
    "precio_regular": 50990,
    "descuento_pct": 31,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Very Glam Good Girl de Carolina Herrera: un corazón floral y un fondo dulce. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -985,8 +984,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 22,
-   "imagen": "assets/productos/BF217.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-blush-bf245",
@@ -999,7 +998,7 @@ window.CATALOGO = {
    "precio": 45990,
    "precio_regular": 50990,
    "descuento_pct": 10,
-   "descripcion": "",
+   "descripcion": "Vainilla cremosa y un corazón floral, inspirado en Good Girl Blush de Carolina Herrera. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1013,8 +1012,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 22,
-   "imagen": "assets/productos/BF245.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-red-bf215",
@@ -1027,7 +1026,7 @@ window.CATALOGO = {
    "precio": 44990,
    "precio_regular": 50990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Very Good Girl de Carolina Herrera. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1041,8 +1040,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 23,
-   "imagen": "assets/productos/BF215.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-bf210",
@@ -1055,7 +1054,7 @@ window.CATALOGO = {
    "precio": 44990,
    "precio_regular": 50990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Evoca a Good Girl de Carolina Herrera con calidez ambarina y un corazón floral, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1069,8 +1068,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 23,
-   "imagen": "assets/productos/BF210.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "yes-pasion-bf247",
@@ -1083,7 +1082,7 @@ window.CATALOGO = {
    "precio": 27990,
    "precio_regular": 33990,
    "descuento_pct": 18,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Si Pasion de Giorgio Armani: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1097,8 +1096,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 24,
-   "imagen": "assets/productos/BF247.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "euforica-bf249",
@@ -1111,7 +1110,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": 35990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Evoca a Euphoria de Calvin Klein con calidez ambarina y un corazón floral, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1125,8 +1124,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 24,
-   "imagen": "assets/productos/BF249.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "yes-bf107",
@@ -1139,7 +1138,7 @@ window.CATALOGO = {
    "precio": 27990,
    "precio_regular": 33990,
    "descuento_pct": 18,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y un corazón floral, inspirado en Si de Giorgio Armani. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1153,8 +1152,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 24,
-   "imagen": "assets/productos/BF107.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "a-mi-manera-bf252",
@@ -1167,7 +1166,7 @@ window.CATALOGO = {
    "precio": 40990,
    "precio_regular": 46990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Evoca a My Way de Giorgio Armani con vainilla cremosa y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1181,8 +1180,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 25,
-   "imagen": "assets/productos/BF252.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "noir-opium-bf312",
@@ -1195,7 +1194,7 @@ window.CATALOGO = {
    "precio": 39990,
    "precio_regular": 45990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Evoca a Black Opium de Yves Saint Laurent con vainilla cremosa y carácter oriental, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1209,8 +1208,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 25,
-   "imagen": "assets/productos/BF312.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "because-bf279",
@@ -1223,7 +1222,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Evoca a Because It’S You de Giorgio Armani con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1237,8 +1236,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 25,
-   "imagen": "assets/productos/BF279.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "hellowen-bf224",
@@ -1251,7 +1250,7 @@ window.CATALOGO = {
    "precio": 34990,
    "precio_regular": 40990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Hallowen de Jesus Del Pozo. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1265,8 +1264,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 26,
-   "imagen": "assets/productos/BF224.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "hipnosis-bf104",
@@ -1279,7 +1278,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Hypnose de Lancome. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1293,8 +1292,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 26,
-   "imagen": "assets/productos/BF104.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "hellowen-blossed-bf269",
@@ -1307,7 +1306,7 @@ window.CATALOGO = {
    "precio": 34990,
    "precio_regular": 40990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en Hallowen Blossom de Jesus Del Pozo. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1321,8 +1320,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 26,
-   "imagen": "assets/productos/BF269.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "linter-bf239",
@@ -1335,7 +1334,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y un corazón floral, inspirado en L’Interdit de Givenchy. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1349,8 +1348,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 27,
-   "imagen": "assets/productos/BF239.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "linter-rouge-bf326",
@@ -1363,7 +1362,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 47990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y un corazón floral, inspirado en L’Interdit Rouge de Givenchy. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1377,8 +1376,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 27,
-   "imagen": "assets/productos/BF326.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "la-vida-es-linda-rose-bf218",
@@ -1391,7 +1390,7 @@ window.CATALOGO = {
    "precio": 39990,
    "precio_regular": 45990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en La Vie Est Belle Rosé de Lancome. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1405,8 +1404,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 28,
-   "imagen": "assets/productos/BF218.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "miss-beauty-bf332",
@@ -1419,7 +1418,7 @@ window.CATALOGO = {
    "precio": 28990,
    "precio_regular": 34990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en Miss Dior de Christian Dior. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1433,8 +1432,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 28,
-   "imagen": "assets/productos/BF332.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "la-vida-es-linda-bf108",
@@ -1447,7 +1446,7 @@ window.CATALOGO = {
    "precio": 39990,
    "precio_regular": 45990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Evoca a La Vie Est Belle de Lancome con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1461,8 +1460,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 28,
-   "imagen": "assets/productos/BF108.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ang-ella-nova-bf305",
@@ -1475,7 +1474,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Angel Nova de Mugler. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1489,8 +1488,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 29,
-   "imagen": "assets/productos/BF305.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "angela-y-demonio-bf256",
@@ -1503,7 +1502,7 @@ window.CATALOGO = {
    "precio": 28990,
    "precio_regular": 34990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Angel Of Death de Givenchy: calidez ambarina y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1517,8 +1516,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 29,
-   "imagen": "assets/productos/BF256.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ang-ella-bf250",
@@ -1531,7 +1530,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Angel de Mugler: vainilla cremosa y calidez ambarina. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1545,8 +1544,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 29,
-   "imagen": "assets/productos/BF250.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cristal-negro-bf253",
@@ -1559,7 +1558,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Crystal Noir de Versace: especias envolventes y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1573,8 +1572,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 30,
-   "imagen": "assets/productos/BF253.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "omnea-bf221",
@@ -1587,7 +1586,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y notas acuáticas, inspirado en Omnia de Bvlgari. Perfecto para el día a día.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1601,8 +1600,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 30,
-   "imagen": "assets/productos/BF221.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "rouge-door-bf329",
@@ -1615,7 +1614,7 @@ window.CATALOGO = {
    "precio": 21990,
    "precio_regular": 31990,
    "descuento_pct": 31,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Red Door de Elizabeth Arden. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1629,8 +1628,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 30,
-   "imagen": "assets/productos/BF329.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mishaki-femenino-floral-bf268",
@@ -1643,7 +1642,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": 35990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en L’Eau D’Issey Florale de Issey Miyake: frescura cítrica y un corazón floral. Perfecto para el día a día.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1657,8 +1656,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 31,
-   "imagen": "assets/productos/BF268.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "flores-bf115",
@@ -1671,7 +1670,7 @@ window.CATALOGO = {
    "precio": 26990,
    "precio_regular": 32990,
    "descuento_pct": 18,
-   "descripcion": "",
+   "descripcion": "Un corazón floral en una fragancia exclusiva, de una femineidad luminosa. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1685,8 +1684,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 31,
-   "imagen": "assets/productos/BF115.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mishaki-femenino-bf241",
@@ -1699,7 +1698,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": 35990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en L’Eau D’Issey de Issey Miyake: notas acuáticas y un corazón floral. Perfecto para el día a día.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1713,8 +1712,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 31,
-   "imagen": "assets/productos/BF241.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "nani-floral-bf267",
@@ -1727,7 +1726,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Evoca a Nina Floral de Nina Ricci con frescura cítrica y un corazón floral, para la mujer que marca presencia. Perfecto para el día a día.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1741,8 +1740,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 32,
-   "imagen": "assets/productos/BF267.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "nani-bf103",
@@ -1755,7 +1754,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Nina de Nina Ricci: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1769,8 +1768,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 32,
-   "imagen": "assets/productos/BF103.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ricky-ricky-bf105",
@@ -1783,7 +1782,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Evoca a Ricci Ricci de Nina Ricci con elegancia chipre, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1797,8 +1796,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 32,
-   "imagen": "assets/productos/BF105.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "nani-belle-bf222",
@@ -1811,7 +1810,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Evoca a Nina Belle de Nina Ricci con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1825,8 +1824,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 32,
-   "imagen": "assets/productos/BF222.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "olimpica-bf209",
@@ -1839,7 +1838,7 @@ window.CATALOGO = {
    "precio": 36990,
    "precio_regular": 42990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Carácter oriental, inspirado en Olympea de Paco Rabanne. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1853,8 +1852,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 33,
-   "imagen": "assets/productos/BF209.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "olimpica-floral-bf257",
@@ -1867,7 +1866,7 @@ window.CATALOGO = {
    "precio": 27990,
    "precio_regular": 41990,
    "descuento_pct": 33,
-   "descripcion": "",
+   "descripcion": "Un corazón floral, inspirado en Olympea Floral de Paco Rabanne. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1881,8 +1880,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 33,
-   "imagen": "assets/productos/BF257.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "olimpica-intense-bf207",
@@ -1895,7 +1894,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Evoca a Olympea Intense de Paco Rabanne con carácter oriental y un corazón floral, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1909,8 +1908,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 33,
-   "imagen": "assets/productos/BF207.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-rosa-extra-bf101",
@@ -1923,7 +1922,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en 212 Rosé Extra de Carolina Herrera. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1937,8 +1936,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 34,
-   "imagen": "assets/productos/BF101.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-sexy-bf208",
@@ -1951,7 +1950,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Fragancia de carácter oriental y un corazón floral, de una femineidad luminosa. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1965,8 +1964,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 34,
-   "imagen": "assets/productos/BF208.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-vip-gold-bf212",
@@ -1974,12 +1973,12 @@ window.CATALOGO = {
    "nombre": "212 Vip Gold",
    "formato": "Perfume Premium 80ml",
    "familia_olfativa": "Oriental",
-   "inspirado_en": "212 VIP Gold",
+   "inspirado_en": "212 VIP",
    "marca": "Carolina Herrera",
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Carácter oriental, inspirado en 212 Vip de Carolina Herrera. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -1993,8 +1992,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 35,
-   "imagen": "assets/productos/BF212.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-femenino-bf211",
@@ -2007,7 +2006,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en 212 New York de Carolina Herrera: calidez ambarina y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2021,8 +2020,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 35,
-   "imagen": "assets/productos/BF211.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-rosa-bf100",
@@ -2035,7 +2034,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en 212 Vip Rosé de Carolina Herrera: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2049,8 +2048,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 35,
-   "imagen": "assets/productos/BF100.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "xx-pure-femenino-bf106",
@@ -2063,7 +2062,7 @@ window.CATALOGO = {
    "precio": 34990,
    "precio_regular": 40990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Pure Xs de Paco Rabanne: calidez ambarina y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2077,8 +2076,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 36,
-   "imagen": "assets/productos/BF106.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "muy-irresistible-bf120",
@@ -2091,7 +2090,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Evoca a Very Irresistible de Givenchy con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2105,8 +2104,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 36,
-   "imagen": "assets/productos/BF120.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ok-b-dos-bm238",
@@ -2119,7 +2118,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 37990,
    "descuento_pct": 16,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado, inspirado en Ck B de Calvin Klein. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2133,8 +2132,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 37,
-   "imagen": "assets/productos/BM238.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "blu-d-g-bf244",
@@ -2147,7 +2146,7 @@ window.CATALOGO = {
    "precio": 36990,
    "precio_regular": 42990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Light Blu de Dolce & Gabbana: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2161,8 +2160,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 37,
-   "imagen": "assets/productos/BF244.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ok-uno-bm207",
@@ -2175,7 +2174,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 37990,
    "descuento_pct": 16,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Ck One de Calvin Klein: frescura cítrica. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2189,8 +2188,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 37,
-   "imagen": "assets/productos/BM207.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "tomy-woman-bf238",
@@ -2203,7 +2202,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 37990,
    "descuento_pct": 16,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Tommy Girl de Tommy Hilfiger: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2217,8 +2216,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 38,
-   "imagen": "assets/productos/BF238.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "tomy-men-bm241",
@@ -2231,7 +2230,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 37990,
    "descuento_pct": 16,
-   "descripcion": "",
+   "descripcion": "Frescura cítrica y notas acuáticas, inspirado en Tommy Men de Tommy Hilfiger. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2245,8 +2244,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 38,
-   "imagen": "assets/productos/BM241.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "oso-ii-bf254",
@@ -2259,7 +2258,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en Toy Ii de Moschino. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2273,8 +2272,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 40,
-   "imagen": "assets/productos/BF254.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "oso-black-bm276",
@@ -2287,7 +2286,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": 35990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Toy Boy de Moschino: fondo amaderado y especias envolventes. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2301,8 +2300,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 40,
-   "imagen": "assets/productos/BM276.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "arabian-king-acm297",
@@ -2315,7 +2314,7 @@ window.CATALOGO = {
    "precio": 36990,
    "precio_regular": 42990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y carácter oriental en una fragancia árabe exclusiva, de carácter masculino. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2331,8 +2330,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 41,
-   "imagen": "assets/productos/ACM297.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "arabian-queen-acf280",
@@ -2345,7 +2344,7 @@ window.CATALOGO = {
    "precio": 36990,
    "precio_regular": 42990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Fragancia árabe de matices gourmand y carácter oriental, de una femineidad luminosa. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2361,8 +2360,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 41,
-   "imagen": "assets/productos/ACF280.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-mahir-femme-acf287",
@@ -2375,7 +2374,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y un corazón floral, inspirado en Maahir de Lattafa. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2391,8 +2390,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 42,
-   "imagen": "assets/productos/ACF287.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-mahir-homme-acm295",
@@ -2405,7 +2404,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Especias envolventes y carácter oriental, inspirado en Maahir Black de Lattafa. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2421,8 +2420,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 42,
-   "imagen": "assets/productos/ACM295.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "robot-bm243",
@@ -2435,7 +2434,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Phantom de Paco Rabanne: fondo amaderado y frescura cítrica. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2449,8 +2448,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 43,
-   "imagen": "assets/productos/BM243.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "robot-femme-bf255",
@@ -2463,7 +2462,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Evoca a Fame de Paco Rabanne con calidez ambarina y un corazón floral, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Premium",
    "es_arabe": false,
@@ -2477,8 +2476,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 43,
-   "imagen": "assets/productos/BF255.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "robot-legion-bm266",
@@ -2491,7 +2490,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Evoca a Phantom Legion de Paco Rabanne con carácter oriental, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2505,8 +2504,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 43,
-   "imagen": "assets/productos/BM266.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "valentin-bm227",
@@ -2519,7 +2518,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Evoca a Valentino Uomo de Valentino con carácter oriental, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2533,8 +2532,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 44,
-   "imagen": "assets/productos/BM227.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "stronger-bm280",
@@ -2547,7 +2546,7 @@ window.CATALOGO = {
    "precio": 41990,
    "precio_regular": 47990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Vainilla cremosa y hierbas aromáticas, inspirado en Stronger With You de Giorgio Armani. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2561,8 +2560,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 44,
-   "imagen": "assets/productos/BM280.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "al-khali-acu322",
@@ -2575,7 +2574,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en All Beauty de All Beauty: fondo amaderado y un corazón floral. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2591,8 +2590,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 45,
-   "imagen": "assets/productos/ACU322.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "sahara-acf320",
@@ -2605,7 +2604,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y un corazón floral, inspirado en Eclaire de Lattafa. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2621,8 +2620,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 45,
-   "imagen": "assets/productos/ACF320.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "an-nafud-acm321",
@@ -2635,7 +2634,7 @@ window.CATALOGO = {
    "precio": 38990,
    "precio_regular": 44990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Million Gold de Paco Rabanne: fondo amaderado y hierbas aromáticas. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Arabian Collection",
    "es_arabe": true,
@@ -2651,8 +2650,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 45,
-   "imagen": "assets/productos/ACM321.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "aqua-de-gio-profondo-bm309",
@@ -2665,7 +2664,7 @@ window.CATALOGO = {
    "precio": 40990,
    "precio_regular": 46990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Acqua Di Gio Profondo de Armani: frescor fougère y hierbas aromáticas. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2679,8 +2678,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 46,
-   "imagen": "assets/productos/BM309.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mishaki-masculino-bm215",
@@ -2693,7 +2692,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Evoca a Pour Homme de Issey Miyake con fondo amaderado y notas acuáticas, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2707,8 +2706,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 46,
-   "imagen": "assets/productos/BM215.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "aqua-de-gio-bm222",
@@ -2721,7 +2720,7 @@ window.CATALOGO = {
    "precio": 36990,
    "precio_regular": 42990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Acqua Di Gio de Armani: notas acuáticas y hierbas aromáticas. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2735,8 +2734,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 46,
-   "imagen": "assets/productos/BM222.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "apolo-negro-bm237",
@@ -2749,7 +2748,7 @@ window.CATALOGO = {
    "precio": 32300,
    "precio_regular": 38300,
    "descuento_pct": 16,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Polo Black de Ralph Lauren: fondo amaderado. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2763,8 +2762,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 47,
-   "imagen": "assets/productos/BM237.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "apolo-azul-bm213",
@@ -2777,7 +2776,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Polo Blue de Ralph Lauren: frescor fougère. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2791,8 +2790,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 47,
-   "imagen": "assets/productos/BM213.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "apolo-rojo-bm212",
@@ -2805,7 +2804,7 @@ window.CATALOGO = {
    "precio": 37990,
    "precio_regular": 43990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Evoca a Polo Red de Ralph Lauren con fondo amaderado y especias envolventes, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2819,8 +2818,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 47,
-   "imagen": "assets/productos/BM212.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "apolo-green-bm328",
@@ -2833,7 +2832,7 @@ window.CATALOGO = {
    "precio": 28990,
    "precio_regular": 34990,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y elegancia chipre, inspirado en Polo Green de Ralph Lauren. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2847,8 +2846,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 47,
-   "imagen": "assets/productos/BM328.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-hombre-sexy-bm232",
@@ -2861,7 +2860,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": 37990,
    "descuento_pct": 21,
-   "descripcion": "",
+   "descripcion": "Frescor fougère y carácter oriental, inspirado en 212 Sexy Men de Carolina Herrera. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2875,8 +2874,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 48,
-   "imagen": "assets/productos/BM232.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-hombre-bm206",
@@ -2889,7 +2888,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Evoca a 212 New York de Carolina Herrera con fondo amaderado y un corazón floral, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2903,8 +2902,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 48,
-   "imagen": "assets/productos/BM206.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-vip-bm236",
@@ -2917,7 +2916,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Evoca a 212 Vip Men de Carolina Herrera con calidez ambarina y fondo amaderado, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2931,8 +2930,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 48,
-   "imagen": "assets/productos/BM236.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "escandalo-homme-bm248",
@@ -2945,7 +2944,7 @@ window.CATALOGO = {
    "precio": 46990,
    "precio_regular": 52990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a Scandal Homme de Jean Paul Gaultier con calidez ambarina y especias envolventes, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2959,8 +2958,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 49,
-   "imagen": "assets/productos/BM248.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "oh-men-prive-bm226",
@@ -2973,7 +2972,7 @@ window.CATALOGO = {
    "precio": 35990,
    "precio_regular": 41990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y un acorde de cuero noble, inspirado en Ch Men Prive de Carolina Herrera. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -2987,8 +2986,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 49,
-   "imagen": "assets/productos/BM226.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "fahrenheite-bm220",
@@ -3001,7 +3000,7 @@ window.CATALOGO = {
    "precio": 24990,
    "precio_regular": 30990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Frescor fougère, inspirado en Fahrenheit de Christian Dior. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3015,8 +3014,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 49,
-   "imagen": "assets/productos/BM220.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "oh-men-bm208",
@@ -3029,7 +3028,7 @@ window.CATALOGO = {
    "precio": 34990,
    "precio_regular": 40990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y hierbas aromáticas, inspirado en Ch Men de Carolina Herrera. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3043,8 +3042,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 49,
-   "imagen": "assets/productos/BM208.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "xx-pure-masculino-bm202",
@@ -3057,7 +3056,7 @@ window.CATALOGO = {
    "precio": 45990,
    "precio_regular": 51990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Especias envolventes y carácter oriental, inspirado en Xs Pure de Paco Rabanne. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3071,8 +3070,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 50,
-   "imagen": "assets/productos/BM202.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ego-bosse-bm211",
@@ -3085,7 +3084,7 @@ window.CATALOGO = {
    "precio": 36990,
    "precio_regular": 42990,
    "descuento_pct": 14,
-   "descripcion": "",
+   "descripcion": "Frescura cítrica y hierbas aromáticas, inspirado en Hugo Boss de Hugo Boss. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3099,8 +3098,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 50,
-   "imagen": "assets/productos/BM211.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ang-el-bm244",
@@ -3113,7 +3112,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 39990,
    "descuento_pct": 20,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y fondo amaderado, inspirado en Angel de Mugler. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3127,8 +3126,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 50,
-   "imagen": "assets/productos/BM244.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "tabaco-vainilla-bm271",
@@ -3141,7 +3140,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 35990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y especias envolventes, inspirado en Tobacco Vanille de Tom Ford. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3155,8 +3154,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 51,
-   "imagen": "assets/productos/BM271.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "fabuloso-bm246",
@@ -3169,7 +3168,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 35990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Tom Ford Fabulous de Tom Ford: calidez ambarina y fondo amaderado. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3183,8 +3182,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 51,
-   "imagen": "assets/productos/BM246.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "tuscan-leather-bm272",
@@ -3197,7 +3196,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 35990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Evoca a Tom Ford Tuscan Leather de Tom Ford con fondo amaderado y un acorde de cuero noble, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3211,8 +3210,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 51,
-   "imagen": "assets/productos/BM272.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ombre-leather-bm270",
@@ -3225,7 +3224,7 @@ window.CATALOGO = {
    "precio": 31990,
    "precio_regular": 35990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Tom Ford Ombre Leather de Tom Ford: un acorde de cuero noble. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3239,8 +3238,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 51,
-   "imagen": "assets/productos/BM270.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "blu-forever-bm245",
@@ -3253,7 +3252,7 @@ window.CATALOGO = {
    "precio": 27990,
    "precio_regular": 33990,
    "descuento_pct": 18,
-   "descripcion": "",
+   "descripcion": "Evoca a Light Blu Forever de Dolce & Gabbana con fondo amaderado y notas acuáticas, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3267,8 +3266,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 52,
-   "imagen": "assets/productos/BM245.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "kzo-homme-bm221",
@@ -3281,7 +3280,7 @@ window.CATALOGO = {
    "precio": 32990,
    "precio_regular": 38990,
    "descuento_pct": 15,
-   "descripcion": "",
+   "descripcion": "Evoca a Kenzo Homme de Kenzo con carácter oriental y hierbas aromáticas, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3295,8 +3294,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 52,
-   "imagen": "assets/productos/BM221.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "crid-aventura-bm300",
@@ -3309,7 +3308,7 @@ window.CATALOGO = {
    "precio": 30990,
    "precio_regular": 36990,
    "descuento_pct": 16,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Creed Aventus de Creed: elegancia chipre y destellos frutales. Pensado para citas y momentos especiales.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3323,8 +3322,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 53,
-   "imagen": "assets/productos/BM300.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "crid-gold-bm308",
@@ -3337,7 +3336,7 @@ window.CATALOGO = {
    "precio": 30990,
    "precio_regular": 39990,
    "descuento_pct": 23,
-   "descripcion": "",
+   "descripcion": "Evoca a Gold de Creed con fondo amaderado y un corazón floral, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3351,8 +3350,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 53,
-   "imagen": "assets/productos/BM308.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mad-boy-bm223",
@@ -3365,7 +3364,7 @@ window.CATALOGO = {
    "precio": 47990,
    "precio_regular": 53990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Especias envolventes y carácter oriental, inspirado en Bad Boy de Carolina Herrera. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3379,8 +3378,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 54,
-   "imagen": "assets/productos/BM223.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mad-boy-cobalto-bm249",
@@ -3393,7 +3392,7 @@ window.CATALOGO = {
    "precio": 46990,
    "precio_regular": 52990,
    "descuento_pct": 11,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Bad Boy Cobalt de Carolina Herrera: elegancia chipre y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3407,8 +3406,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 54,
-   "imagen": "assets/productos/BM249.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "salvaje-bm216",
@@ -3421,7 +3420,7 @@ window.CATALOGO = {
    "precio": 40990,
    "precio_regular": 46990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Sauvage de Dior: frescor fougère. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3435,8 +3434,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 55,
-   "imagen": "assets/productos/BM216.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "salvaje-elixir-bm254",
@@ -3449,7 +3448,7 @@ window.CATALOGO = {
    "precio": 40990,
    "precio_regular": 46990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Evoca a Sauvage de Dior con especias envolventes y destellos frutales, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3463,8 +3462,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 55,
-   "imagen": "assets/productos/BM254.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "1-dollar-intense-bm203",
@@ -3477,7 +3476,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Evoca a 1 Million Intense de Paco Rabanne con fondo amaderado y especias envolventes, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3491,8 +3490,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 56,
-   "imagen": "assets/productos/BM203.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "1-dollar-bm205",
@@ -3505,7 +3504,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y especias envolventes, inspirado en 1 Million de Paco Rabanne. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3519,8 +3518,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 56,
-   "imagen": "assets/productos/BM205.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "1-dollar-suerte-bm209",
@@ -3533,7 +3532,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Evoca a 1 Million Lucky de Paco Rabanne con fondo amaderado, para el hombre que deja huella. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3547,8 +3546,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 56,
-   "imagen": "assets/productos/BM209.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "1-dollar-prive-bm210",
@@ -3561,7 +3560,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en 1 Million Privé de Paco Rabanne: calidez ambarina y fondo amaderado. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3575,8 +3574,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 56,
-   "imagen": "assets/productos/BM210.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-victoria-bm234",
@@ -3589,7 +3588,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Invictus Victory de Paco Rabanne: calidez ambarina y carácter oriental. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3603,8 +3602,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 57,
-   "imagen": "assets/productos/BM234.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-intense-bm219",
@@ -3617,7 +3616,7 @@ window.CATALOGO = {
    "precio": 40990,
    "precio_regular": 46990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Invictus Intense de Paco Rabanne: fondo amaderado y carácter oriental. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3631,8 +3630,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 57,
-   "imagen": "assets/productos/BM219.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-victoria-elixir-bm250",
@@ -3645,7 +3644,7 @@ window.CATALOGO = {
    "precio": 42990,
    "precio_regular": 48990,
    "descuento_pct": 12,
-   "descripcion": "",
+   "descripcion": "Vainilla cremosa y calidez ambarina, inspirado en Invictus Victory de Paco Rabanne. Ideal para la noche.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3659,8 +3658,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 57,
-   "imagen": "assets/productos/BM250.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-bm218",
@@ -3673,7 +3672,7 @@ window.CATALOGO = {
    "precio": 40990,
    "precio_regular": 46990,
    "descuento_pct": 13,
-   "descripcion": "",
+   "descripcion": "Evoca a Invictus de Paco Rabanne con calidez ambarina y notas acuáticas, para el hombre que deja huella. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Premium",
    "es_arabe": false,
@@ -3687,8 +3686,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 57,
-   "imagen": "assets/productos/BM218.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mimo-kids-col265",
@@ -3701,7 +3700,7 @@ window.CATALOGO = {
    "precio": 23990,
    "precio_regular": 29990,
    "descuento_pct": 20,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, para quien elige su propia firma. Versátil: te acompaña de día y de noche.",
    "genero": "Unisex",
    "linea": "Infantil",
    "es_arabe": false,
@@ -3715,8 +3714,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 38,
-   "imagen": "assets/productos/COL265.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mon-enfant-col256",
@@ -3729,7 +3728,7 @@ window.CATALOGO = {
    "precio": 23990,
    "precio_regular": 29990,
    "descuento_pct": 20,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, para quien elige su propia firma. Versátil: te acompaña de día y de noche.",
    "genero": "Unisex",
    "linea": "Infantil",
    "es_arabe": false,
@@ -3743,8 +3742,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 38,
-   "imagen": "assets/productos/COL256.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-blush-elixir-pocket-bf278",
@@ -3757,7 +3756,7 @@ window.CATALOGO = {
    "precio": 29900,
    "precio_regular": 35900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Elegancia chipre y un corazón floral, inspirado en Good Girl Blush de Carolina Herrera. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3771,8 +3770,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 39,
-   "imagen": "assets/productos/BF278.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-rosa-extra-pocket-bf281",
@@ -3785,7 +3784,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en 212 Rose Extra de Carolina Herrera. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3796,8 +3795,8 @@ window.CATALOGO = {
    ],
    "etiquetas": [],
    "pagina": 39,
-   "imagen": "assets/productos/BF281.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-femenino-pocket-bf282",
@@ -3810,7 +3809,7 @@ window.CATALOGO = {
    "precio": 29990,
    "precio_regular": null,
    "descuento_pct": 0,
-   "descripcion": "",
+   "descripcion": "Evoca a 212 New York de Carolina Herrera con calidez ambarina y un corazón floral, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3821,8 +3820,8 @@ window.CATALOGO = {
    ],
    "etiquetas": [],
    "pagina": 39,
-   "imagen": "assets/productos/BF282.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-pocket-bf277",
@@ -3835,7 +3834,7 @@ window.CATALOGO = {
    "precio": 29900,
    "precio_regular": 35900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Good Girl de Carolina Herrera: calidez ambarina y un corazón floral. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3849,8 +3848,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 39,
-   "imagen": "assets/productos/BF277.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "the-bomb-pocket-pf325",
@@ -3863,7 +3862,7 @@ window.CATALOGO = {
    "precio": 9900,
    "precio_regular": 11900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Evoca a La Bomba de Carolina Herrera con calidez ambarina y un corazón floral, para la mujer que marca presencia. Ideal para la noche.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3877,8 +3876,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 74,
-   "imagen": "assets/productos/PF325.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-parfum-pocket-pm299",
@@ -3891,7 +3890,7 @@ window.CATALOGO = {
    "precio": 9900,
    "precio_regular": 11900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Notas acuáticas y hierbas aromáticas, inspirado en Invictus de Paco Rabanne. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3905,8 +3904,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 74,
-   "imagen": "assets/productos/PM299.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "le-man-elixir-pocket-pm301",
@@ -3919,7 +3918,7 @@ window.CATALOGO = {
    "precio": 9900,
    "precio_regular": 11900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Le Male de Jean Paul Gaultier: calidez ambarina y frescor fougère. Perfecto para el día a día.",
    "genero": "Hombre",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3933,8 +3932,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 74,
-   "imagen": "assets/productos/PM301.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "the-bomb-intense-pocket-pf334",
@@ -3947,7 +3946,7 @@ window.CATALOGO = {
    "precio": 9900,
    "precio_regular": 11900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Evoca a La Bomba Intensa de Carolina Herrera con destellos frutales y un corazón floral, para la mujer que marca presencia. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3963,8 +3962,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 75,
-   "imagen": "assets/productos/PF334.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "libre-berry-pocket-pf335",
@@ -3977,7 +3976,7 @@ window.CATALOGO = {
    "precio": 9900,
    "precio_regular": 11900,
    "descuento_pct": 17,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Libre Berry Crush de Yves Saint Laurent: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Mujer",
    "linea": "Pocket",
    "es_arabe": false,
@@ -3993,8 +3992,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 75,
-   "imagen": "assets/productos/PF335.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n00-boutique00",
@@ -4007,7 +4006,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Evoca a Santal 33 de Le Labo con fondo amaderado y hierbas aromáticas, para quien elige su propia firma. Perfecto para el día a día.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4024,8 +4023,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE00.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n0-boutique0",
@@ -4038,7 +4037,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Evoca a Ilham Arabe con carácter oriental, para quien elige su propia firma. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4055,8 +4054,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE0.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n1-boutique1",
@@ -4069,7 +4068,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Creed Aventus de Creed: elegancia chipre y destellos frutales. Pensado para citas y momentos especiales.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4086,8 +4085,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE1.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n2-boutique2",
@@ -4100,7 +4099,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Un acorde de cuero noble y destellos frutales, inspirado en White Santal. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4117,8 +4116,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE2.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n3-boutique3",
@@ -4131,7 +4130,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Evoca a Desert Falcon de Arabian Oud con calidez ambarina y fondo amaderado, para quien elige su propia firma. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4148,8 +4147,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE3.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n4-boutique4",
@@ -4162,7 +4161,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Flora By Gucci de Gucci: destellos frutales y un corazón floral. Pensado para citas y momentos especiales.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4179,8 +4178,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE4.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n5-boutique5",
@@ -4193,7 +4192,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y fondo amaderado, inspirado en Jazz Club de Maison Martin Margiela. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4210,8 +4209,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE5.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n6-boutique6",
@@ -4224,7 +4223,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Evoca a Delina de Parfums De Marly con un corazón floral, para quien elige su propia firma. Pensado para citas y momentos especiales.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4241,8 +4240,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE6.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "boutique-n7-boutique7",
@@ -4255,7 +4254,7 @@ window.CATALOGO = {
    "precio": 20990,
    "precio_regular": 25990,
    "descuento_pct": 19,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Loewe Vintage Edition de Loewe: fondo amaderado. Ideal para la noche.",
    "genero": "Unisex",
    "linea": "Boutique Nicho",
    "es_arabe": true,
@@ -4272,21 +4271,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 67,
-   "imagen": "assets/productos/BOUTIQUE7.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-white-agf286",
    "codigo": "AGF286",
    "nombre": "CDNuite White",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "CDNuite White",
-   "marca": "",
+   "familia_olfativa": "Oriental Frutal",
+   "inspirado_en": "Club de Nuit White Imperiale",
+   "marca": "Armaf",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y destellos frutales, inspirado en Club De Nuit White Imperiale de Armaf. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4302,21 +4301,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGF286.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-mahir-femme-agf287",
    "codigo": "AGF287",
    "nombre": "LTFA Mahir Femme",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "LTFA Mahir Femme",
-   "marca": "",
+   "familia_olfativa": "Oriental Floral",
+   "inspirado_en": "Maahir",
+   "marca": "Lattafa",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Evoca a Maahir de Lattafa con carácter oriental y un corazón floral, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4332,21 +4331,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGF287.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-naranja-agf288",
    "codigo": "AGF288",
    "nombre": "LTFA Naranja",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "LTFA Naranja",
-   "marca": "",
+   "familia_olfativa": "Floral Frutal",
+   "inspirado_en": "Lattafa Yara Naranja",
+   "marca": "Lattafa Yara",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Lattafa Yara Naranja de Lattafa Yara: destellos frutales y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4362,21 +4361,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGF288.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-rosa-agf289",
    "codigo": "AGF289",
    "nombre": "LTFA Rosa",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "LTFA Rosa",
-   "marca": "",
+   "familia_olfativa": "Oriental Frutal",
+   "inspirado_en": "Lattafa Yara Rosa",
+   "marca": "Lattafa Yara",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Carácter oriental y destellos frutales, inspirado en Lattafa Yara Rosa de Lattafa Yara. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4392,8 +4391,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGF289.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "arabian-queen-agf280",
@@ -4406,7 +4405,7 @@ window.CATALOGO = {
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Fragancia árabe de autor, de feminidad envolvente. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4422,21 +4421,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGF280.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "noche-de-gala-agf285",
    "codigo": "AGF285",
    "nombre": "Noche de Gala",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Noche de Gala",
-   "marca": "",
+   "familia_olfativa": "Ámbar Amaderado",
+   "inspirado_en": "Ghala",
+   "marca": "Al Wataniah",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Ghala de Al Wataniah: calidez ambarina y fondo amaderado. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4452,21 +4451,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGF285.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-black-agm291",
    "codigo": "AGM291",
    "nombre": "CDNuite Black",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "CDNuite Black",
-   "marca": "",
+   "familia_olfativa": "Amaderado Especiado",
+   "inspirado_en": "Asad Negro",
+   "marca": "Lattafa",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y especias envolventes, inspirado en Asad Negro de Lattafa. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4482,21 +4481,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM291.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-gold-agm292",
    "codigo": "AGM292",
    "nombre": "CDNuite Gold",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "CDNuite Gold",
-   "marca": "",
+   "familia_olfativa": "Acuático Amaderado",
+   "inspirado_en": "Club de Nuit Milestone",
+   "marca": "Armaf",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Evoca a Club De Nuit Milestone de Armaf con fondo amaderado y notas acuáticas, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4512,8 +4511,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM292.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-blu-agm293",
@@ -4521,12 +4520,12 @@ window.CATALOGO = {
    "nombre": "CDNuite Blu",
    "formato": "Perfume Árabe Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "CDNuite Blu",
-   "marca": "",
+   "inspirado_en": "Club de Nuit Iconic",
+   "marca": "Armaf",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Fragancia de carácter masculino que evoca a Club De Nuit Iconic de Armaf. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4542,21 +4541,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM293.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "cdnuite-silver-agm294",
    "codigo": "AGM294",
    "nombre": "CDNuite Silver",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "CDNuite Silver",
-   "marca": "",
+   "familia_olfativa": "Cuero Cítrico Amaderado",
+   "inspirado_en": "Club de Nuit Sillage",
+   "marca": "Armaf",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y un acorde de cuero noble, inspirado en Club De Nuit Sillage de Armaf. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4572,21 +4571,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM294.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-mahir-homme-agm295",
    "codigo": "AGM295",
    "nombre": "LTFA Mahir Homme",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "LTFA Mahir Homme",
-   "marca": "",
+   "familia_olfativa": "Oriental Especiado",
+   "inspirado_en": "Maahir Black",
+   "marca": "Lattafa",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Evoca a Maahir Black de Lattafa con especias envolventes y carácter oriental, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4602,21 +4601,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM295.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-negro-agm296",
    "codigo": "AGM296",
    "nombre": "LTFA Negro",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "LTFA Negro",
-   "marca": "",
+   "familia_olfativa": "Oriental Aromática",
+   "inspirado_en": "Asad Negro",
+   "marca": "Lattafa",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Asad Negro de Lattafa: carácter oriental y hierbas aromáticas. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4632,8 +4631,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM296.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "arabian-king-agm297",
@@ -4646,7 +4645,7 @@ window.CATALOGO = {
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Una firma árabe distinta, de presencia masculina. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4662,8 +4661,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM297.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mandarinsky-agm327",
@@ -4676,7 +4675,7 @@ window.CATALOGO = {
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Una firma árabe distinta, de presencia masculina. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4692,21 +4691,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGM327.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ltfa-kamra-agu284",
    "codigo": "AGU284",
    "nombre": "LTFA Kamra",
    "formato": "Perfume Árabe Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "LTFA Kamra",
-   "marca": "",
+   "familia_olfativa": "Oriental Especiada",
+   "inspirado_en": "Khamrah",
+   "marca": "Lattafa",
    "precio": 18990,
    "precio_regular": 24990,
    "descuento_pct": 24,
-   "descripcion": "",
+   "descripcion": "Evoca a Khamrah de Lattafa con especias envolventes y carácter oriental, para quien elige su propia firma. Versátil: te acompaña de día y de noche.",
    "genero": "Unisex",
    "linea": "Arabian Gold",
    "es_arabe": true,
@@ -4722,8 +4721,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 70,
-   "imagen": "assets/productos/AGU284.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "men-in-black-edition-gm315",
@@ -4736,7 +4735,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4751,8 +4750,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM315.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ton-for-tuscan-leather-gm272",
@@ -4760,12 +4759,12 @@ window.CATALOGO = {
    "nombre": "Ton For Tuscan Leather",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Ton For Tuscan Leather",
-   "marca": "",
+   "inspirado_en": "Tuscan Leather",
+   "marca": "Tom Ford",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de presencia masculina que evoca a Tuscan Leather de Tom Ford. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4780,8 +4779,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM272.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "etiqueta-black-gm121",
@@ -4794,7 +4793,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, de carácter masculino. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4809,8 +4808,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM121.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-vip-black-gm110",
@@ -4818,12 +4817,12 @@ window.CATALOGO = {
    "nombre": "212 Vip Black",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "212 Vip Black",
-   "marca": "",
+   "inspirado_en": "212 VIP Black",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, de presencia masculina. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4838,8 +4837,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM110.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "one-dollar-gm205",
@@ -4847,12 +4846,12 @@ window.CATALOGO = {
    "nombre": "One Dollar",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "One Dollar",
-   "marca": "",
+   "inspirado_en": "One Million",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de carácter masculino que evoca a One Million de Paco Rabanne. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4867,21 +4866,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM205.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-hombre-gm206",
    "codigo": "GM206",
    "nombre": "212 Hombre",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Hombre",
-   "marca": "",
+   "familia_olfativa": "Amaderada y Floral",
+   "inspirado_en": "212 New York",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fondo amaderado y un corazón floral, inspirado en 212 New York de Carolina Herrera. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4896,8 +4895,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM206.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "ok-one-gm207",
@@ -4905,12 +4904,12 @@ window.CATALOGO = {
    "nombre": "OK One",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "OK One",
-   "marca": "",
+   "inspirado_en": "CK One",
+   "marca": "Calvin Klein",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia para el hombre que deja huella que evoca a Ck One de Calvin Klein. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4925,21 +4924,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM207.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-gm218",
    "codigo": "GM218",
    "nombre": "Invicto",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Invicto",
-   "marca": "",
+   "familia_olfativa": "Ámbar Acuática",
+   "inspirado_en": "Invictus",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y notas acuáticas, inspirado en Invictus de Paco Rabanne. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4954,8 +4953,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM218.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "escandalo-parfum-gm316",
@@ -4963,12 +4962,12 @@ window.CATALOGO = {
    "nombre": "Escandalo Parfum",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Escandalo Parfum",
-   "marca": "",
+   "inspirado_en": "Scandal Le Parfum",
+   "marca": "Jean Paul Gaultier",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Scandal Le de Jean Paul Gaultier, de carácter masculino. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -4983,21 +4982,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM316.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "fahrenheite-gm220",
    "codigo": "GM220",
    "nombre": "Fahrenheite",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Fahrenheite",
-   "marca": "",
+   "familia_olfativa": "Fougere",
+   "inspirado_en": "Fahrenheit",
+   "marca": "Christian Dior",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Fahrenheit de Christian Dior: frescor fougère. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5012,8 +5011,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM220.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "agua-de-gio-gm222",
@@ -5021,12 +5020,12 @@ window.CATALOGO = {
    "nombre": "Agua de Gio",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Agua de Gio",
-   "marca": "",
+   "inspirado_en": "Acqua di Giò",
+   "marca": "Giorgio Armani",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Acqua Di Giò de Giorgio Armani, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5041,21 +5040,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM222.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mad-boy-gm223",
    "codigo": "GM223",
    "nombre": "Mad Boy",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Mad Boy",
-   "marca": "",
+   "familia_olfativa": "Oriental y Especiada",
+   "inspirado_en": "Bad Boy",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Bad Boy de Carolina Herrera: especias envolventes y carácter oriental. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5070,8 +5069,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM223.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "dolch-gaban-one-gm231",
@@ -5079,12 +5078,12 @@ window.CATALOGO = {
    "nombre": "Dolch & Gaban One",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Dolch & Gaban One",
-   "marca": "",
+   "inspirado_en": "The One",
+   "marca": "Dolce & Gabbana",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en The One de Dolce & Gabbana, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5099,21 +5098,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM231.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-hombre-hero-gm233",
    "codigo": "GM233",
    "nombre": "212 Hombre Hero",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Hombre Hero",
-   "marca": "",
+   "familia_olfativa": "Fougere & Frutal",
+   "inspirado_en": "212 Men Heroes",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Frescor fougère y destellos frutales, inspirado en 212 Men Heroes de Carolina Herrera. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5128,21 +5127,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM233.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "salvaje-gm216",
    "codigo": "GM216",
    "nombre": "Salvaje",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Salvaje",
-   "marca": "",
+   "familia_olfativa": "Fougere",
+   "inspirado_en": "Sauvage",
+   "marca": "Dior",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a Sauvage de Dior con frescor fougère, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5157,8 +5156,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM216.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "stronger-intense-gm318",
@@ -5166,12 +5165,12 @@ window.CATALOGO = {
    "nombre": "Stronger Intense",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Stronger Intense",
-   "marca": "",
+   "inspirado_en": "Stronger With You Intensely",
+   "marca": "Emporio Armani",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Stronger With You Intensely de Emporio Armani, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5186,21 +5185,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM318.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-victoria-gm234",
    "codigo": "GM234",
    "nombre": "Invicto Victoria",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Invicto Victoria",
-   "marca": "",
+   "familia_olfativa": "Ámbar Oriental",
+   "inspirado_en": "Invictus Victory",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a Invictus Victory de Paco Rabanne con calidez ambarina y carácter oriental, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5215,21 +5214,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM234.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-vip-gm236",
    "codigo": "GM236",
    "nombre": "212 Vip",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Vip",
-   "marca": "",
+   "familia_olfativa": "Amaderada & Ámbar",
+   "inspirado_en": "212 VIP Men",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y fondo amaderado, inspirado en 212 Vip Men de Carolina Herrera. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5244,8 +5243,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM236.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "i-homme-gm252",
@@ -5258,7 +5257,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, para el hombre que deja huella. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5273,8 +5272,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM252.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "robot-pr-gm243",
@@ -5282,12 +5281,12 @@ window.CATALOGO = {
    "nombre": "Robot PR",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Robot PR",
-   "marca": "",
+   "inspirado_en": "Phantom",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia para el hombre que deja huella que evoca a Phantom de Paco Rabanne. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5302,21 +5301,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM243.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "escandalo-homme-gm248",
    "codigo": "GM248",
    "nombre": "Escandalo Homme",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Escandalo Homme",
-   "marca": "",
+   "familia_olfativa": "Ámbar y Especiado",
+   "inspirado_en": "Scandal Homme",
+   "marca": "Jean Paul Gaultier",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y especias envolventes, inspirado en Scandal Homme de Jean Paul Gaultier. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5331,21 +5330,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM248.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "invicto-victoria-elixir-gm250",
    "codigo": "GM250",
    "nombre": "Invicto Victoria Elixir",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Invicto Victoria Elixir",
-   "marca": "",
+   "familia_olfativa": "Ámbar Avainillado",
+   "inspirado_en": "Invictus Victory Elixir",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Invictus Victory de Paco Rabanne: vainilla cremosa y calidez ambarina. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5360,8 +5359,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM250.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "rey-d-g-gm247",
@@ -5369,12 +5368,12 @@ window.CATALOGO = {
    "nombre": "Rey D+G",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Rey D+G",
-   "marca": "",
+   "inspirado_en": "K by Dolce & Gabbana",
+   "marca": "Dolce & Gabbana",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de carácter masculino que evoca a K By Dolce & Gabbana de Dolce & Gabbana. Versátil: te acompaña de día y de noche.",
    "genero": "Hombre",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5389,21 +5388,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 71,
-   "imagen": "assets/productos/GM247.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "robot-femme-gf255",
    "codigo": "GF255",
    "nombre": "Robot Femme",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Robot Femme",
-   "marca": "",
+   "familia_olfativa": "Floral y Ámbar",
+   "inspirado_en": "Fame",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y un corazón floral, inspirado en Fame de Paco Rabanne. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5418,21 +5417,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF255.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-rosa-gf100",
    "codigo": "GF100",
    "nombre": "212 Rosa",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Rosa",
-   "marca": "",
+   "familia_olfativa": "Floral Frutal",
+   "inspirado_en": "212 VIP Rosé",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a 212 Vip Rosé de Carolina Herrera con destellos frutales y un corazón floral, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5447,21 +5446,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF100.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-rosa-extra-gf101",
    "codigo": "GF101",
    "nombre": "212 Rosa Extra",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Rosa Extra",
-   "marca": "",
+   "familia_olfativa": "Floral y Frutal",
+   "inspirado_en": "212 Rosé Extra",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en 212 Rosé Extra de Carolina Herrera: destellos frutales y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5476,21 +5475,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF101.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "escandalo-gf102",
    "codigo": "GF102",
    "nombre": "Escandalo",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Escandalo",
-   "marca": "",
+   "familia_olfativa": "Floral y Chipre",
+   "inspirado_en": "Scandal",
+   "marca": "Jean Paul Gaultier",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Elegancia chipre y un corazón floral, inspirado en Scandal de Jean Paul Gaultier. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5505,21 +5504,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF102.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "nani-gf103",
    "codigo": "GF103",
    "nombre": "Nani",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Nani",
-   "marca": "",
+   "familia_olfativa": "Floral y Frutal",
+   "inspirado_en": "Nina",
+   "marca": "Nina Ricci",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a Nina de Nina Ricci con destellos frutales y un corazón floral, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5534,21 +5533,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF103.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "la-vida-es-linda-gf108",
    "codigo": "GF108",
    "nombre": "La Vida es Linda",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "La Vida es Linda",
-   "marca": "",
+   "familia_olfativa": "Floral & Frutal",
+   "inspirado_en": "La Vie Est Belle",
+   "marca": "Lancome",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Destellos frutales y un corazón floral, inspirado en La Vie Est Belle de Lancome. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5563,8 +5562,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF108.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "xx-black-femenino-gf112",
@@ -5577,7 +5576,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5592,8 +5591,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF112.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "gabotin-gf113",
@@ -5606,7 +5605,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, de una femineidad luminosa. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5621,21 +5620,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF113.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-femenino-gf211",
    "codigo": "GF211",
    "nombre": "212 Femenino",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Femenino",
-   "marca": "",
+   "familia_olfativa": "Ámbar & Floral",
+   "inspirado_en": "212 New York",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a 212 New York de Carolina Herrera con calidez ambarina y un corazón floral, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5650,21 +5649,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF211.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-gold-gf213",
    "codigo": "GF213",
    "nombre": "Love Girl Gold",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Love Girl Gold",
-   "marca": "",
+   "familia_olfativa": "Oriental",
+   "inspirado_en": "Good Girl Gold Fantasy",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Carácter oriental, inspirado en Good Girl Gold Fantasy de Carolina Herrera. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5679,8 +5678,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF213.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "flores-gf115",
@@ -5693,7 +5692,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5708,8 +5707,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF115.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "nro-5-gf119",
@@ -5717,12 +5716,12 @@ window.CATALOGO = {
    "nombre": "Nro 5",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Nro 5",
-   "marca": "",
+   "inspirado_en": "N.º 5",
+   "marca": "Chanel",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en N.º 5 de Chanel, de una femineidad luminosa. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5737,8 +5736,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF119.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "paula-gf205",
@@ -5751,7 +5750,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5766,21 +5765,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF205.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "olimpica-gf209",
    "codigo": "GF209",
    "nombre": "Olimpica",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Olimpica",
-   "marca": "",
+   "familia_olfativa": "Oriental",
+   "inspirado_en": "Olympea",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Olympea de Paco Rabanne: carácter oriental. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5795,21 +5794,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF209.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-gf210",
    "codigo": "GF210",
    "nombre": "Love Girl",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Love Girl",
-   "marca": "",
+   "familia_olfativa": "Ámbar y Floral",
+   "inspirado_en": "Good Girl",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Calidez ambarina y un corazón floral, inspirado en Good Girl de Carolina Herrera. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5824,8 +5823,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF210.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "mishaki-leau-divey-gf241",
@@ -5833,12 +5832,12 @@ window.CATALOGO = {
    "nombre": "Mishaki L’Eau D’Ivey",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Mishaki L’Eau D’Ivey",
-   "marca": "",
+   "inspirado_en": "L'Eau d'Issey",
+   "marca": "Issey Miyake",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en L'eau D'issey de Issey Miyake, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5853,21 +5852,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF241.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "blu-d-g-gf244",
    "codigo": "GF244",
    "nombre": "Blu D+G",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Blu D+G",
-   "marca": "",
+   "familia_olfativa": "Floral & Frutal",
+   "inspirado_en": "Light Blu",
+   "marca": "Dolce & Gabbana",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a Light Blu de Dolce & Gabbana con destellos frutales y un corazón floral, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5882,21 +5881,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF244.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "212-mujer-heroina-gf248",
    "codigo": "GF248",
    "nombre": "212 Mujer Heroina",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "212 Mujer Heroina",
-   "marca": "",
+   "familia_olfativa": "Floral & Frutal",
+   "inspirado_en": "212 Heroine",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en 212 Heroine de Carolina Herrera: destellos frutales y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5911,8 +5910,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF248.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "yo-te-amo-gf251",
@@ -5925,7 +5924,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, de una femineidad luminosa. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5940,21 +5939,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF251.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "a-mi-manera-gf252",
    "codigo": "GF252",
    "nombre": "A mi manera",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "A mi manera",
-   "marca": "",
+   "familia_olfativa": "Floral & Vainilla",
+   "inspirado_en": "My Way",
+   "marca": "Giorgio Armani",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Vainilla cremosa y un corazón floral, inspirado en My Way de Giorgio Armani. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5969,21 +5968,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF252.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "oso-ii-gf254",
    "codigo": "GF254",
    "nombre": "Oso II",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Oso II",
-   "marca": "",
+   "familia_olfativa": "Floral & Frutal",
+   "inspirado_en": "Toy II",
+   "marca": "Moschino",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Toy Ii de Moschino: destellos frutales y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -5998,8 +5997,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF254.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "protegeme-de-patricia-sosa-gf258",
@@ -6012,7 +6011,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, de feminidad envolvente. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6027,8 +6026,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF258.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "lali-one-gf259",
@@ -6041,7 +6040,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Una firma distinta, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6056,8 +6055,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF259.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "bonshel-gf261",
@@ -6065,12 +6064,12 @@ window.CATALOGO = {
    "nombre": "Bonshel",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Bonshel",
-   "marca": "",
+   "inspirado_en": "Bombshell",
+   "marca": "Victoria's Secret",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Bombshell de Victoria's Secret, de feminidad envolvente. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6085,8 +6084,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF261.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "tini-bacaratt-gf264",
@@ -6094,12 +6093,12 @@ window.CATALOGO = {
    "nombre": "Tini Bacaratt",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Tini Bacaratt",
-   "marca": "",
+   "inspirado_en": "Baccarat Rouge 540",
+   "marca": "Maison Francis Kurkdjian",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de feminidad envolvente que evoca a Baccarat Rouge 540 de Maison Francis Kurkdjian. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6114,21 +6113,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF264.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "divina-gf275",
    "codigo": "GF275",
    "nombre": "Divina",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Divina",
-   "marca": "",
+   "familia_olfativa": "Oriental Floral",
+   "inspirado_en": "Divine",
+   "marca": "Jean Paul Gaultier",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Divine de Jean Paul Gaultier: carácter oriental y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6143,8 +6142,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF275.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "moschi-fany-gf310",
@@ -6152,12 +6151,12 @@ window.CATALOGO = {
    "nombre": "Moschi Fany",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Moschi Fany",
-   "marca": "",
+   "inspirado_en": "Moschino Funny!",
+   "marca": "Moschino",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia para la mujer que marca presencia que evoca a Moschino Funny! de Moschino. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6172,21 +6171,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF310.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "electric-cherry-gf274",
    "codigo": "GF274",
    "nombre": "Electric Cherry",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Electric Cherry",
-   "marca": "",
+   "familia_olfativa": "Floral & Frutal",
+   "inspirado_en": "Tom Ford Electric Cherry",
+   "marca": "Tom Ford",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Evoca a Tom Ford Electric Cherry de Tom Ford con destellos frutales y un corazón floral, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6201,21 +6200,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF274.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "love-girl-red-gf215",
    "codigo": "GF215",
    "nombre": "Love Girl Red",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Love Girl Red",
-   "marca": "",
+   "familia_olfativa": "Oriental y Floral",
+   "inspirado_en": "Very Good Girl",
+   "marca": "Carolina Herrera",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Very Good Girl de Carolina Herrera: carácter oriental y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6230,8 +6229,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF215.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "olimpica-parfum-gf317",
@@ -6239,12 +6238,12 @@ window.CATALOGO = {
    "nombre": "Olímpica Parfum",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Olímpica Parfum",
-   "marca": "",
+   "inspirado_en": "Olympéa",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Olympéa de Paco Rabanne, de una femineidad luminosa. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6259,8 +6258,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF317.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "lady-dollar-gf111",
@@ -6268,12 +6267,12 @@ window.CATALOGO = {
    "nombre": "Lady Dollar",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Lady Dollar",
-   "marca": "",
+   "inspirado_en": "Lady Million",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Lady Million de Paco Rabanne, de feminidad envolvente. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6288,8 +6287,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF111.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "lady-dollar-fabuloso-gf260",
@@ -6297,12 +6296,12 @@ window.CATALOGO = {
    "nombre": "Lady Dollar Fabuloso",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Lady Dollar Fabuloso",
-   "marca": "",
+   "inspirado_en": "Lady Million Fabulous",
+   "marca": "Paco Rabanne",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de una femineidad luminosa que evoca a Lady Million Fabulous de Paco Rabanne. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6317,8 +6316,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF260.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "goddess-gf319",
@@ -6327,11 +6326,11 @@ window.CATALOGO = {
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
    "inspirado_en": "Goddess",
-   "marca": "",
+   "marca": "Burberry",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6346,21 +6345,21 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF319.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "hellowen-gf224",
    "codigo": "GF224",
    "nombre": "Hellowen",
    "formato": "Perfume Gold 55ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Hellowen",
-   "marca": "",
+   "familia_olfativa": "Oriental y Floral",
+   "inspirado_en": "Hallowen",
+   "marca": "Jesus del Pozo",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Recreación de alto perfil inspirada en Hallowen de Jesus Del Pozo: carácter oriental y un corazón floral. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6375,8 +6374,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF224.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "oh-women-gf229",
@@ -6389,7 +6388,7 @@ window.CATALOGO = {
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6404,8 +6403,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF229.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "quinta-avenida-gf230",
@@ -6413,12 +6412,12 @@ window.CATALOGO = {
    "nombre": "Quinta Avenida",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Quinta Avenida",
-   "marca": "",
+   "inspirado_en": "5th Avenue",
+   "marca": "Elizabeth Arden",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en 5th Avenue de Elizabeth Arden, de una femineidad luminosa. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6433,8 +6432,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF230.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "aqua-di-gioia-gf232",
@@ -6442,12 +6441,12 @@ window.CATALOGO = {
    "nombre": "Aqua di Gioia",
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
-   "inspirado_en": "Aqua di Gioia",
-   "marca": "",
+   "inspirado_en": "Acqua di Gioia",
+   "marca": "Giorgio Armani",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Inspirado en Acqua Di Gioia de Giorgio Armani, para la mujer que marca presencia. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6462,8 +6461,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF232.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "libre-gf234",
@@ -6472,11 +6471,11 @@ window.CATALOGO = {
    "formato": "Perfume Gold 55ml",
    "familia_olfativa": "",
    "inspirado_en": "Libre",
-   "marca": "",
+   "marca": "Yves Saint Laurent",
    "precio": 16990,
    "precio_regular": 22990,
    "descuento_pct": 26,
-   "descripcion": "",
+   "descripcion": "Fragancia de autor, de feminidad envolvente. Versátil: te acompaña de día y de noche.",
    "genero": "Mujer",
    "linea": "Línea Gold",
    "es_arabe": false,
@@ -6491,1007 +6490,8 @@ window.CATALOGO = {
     "OFERTA"
    ],
    "pagina": 72,
-   "imagen": "assets/productos/GF234.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-vainilla-ec001",
-   "codigo": "EC001",
-   "nombre": "Emulsión Corporal Vainilla",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Vainilla",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC001.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-escandalo-ec102",
-   "codigo": "EC102",
-   "nombre": "Emulsión Corporal Escándalo",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Escándalo",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC102.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-la-vida-es-linda-ec108",
-   "codigo": "EC108",
-   "nombre": "Emulsión Corporal La Vida es Linda",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "La Vida es Linda",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC108.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-love-girl-ec210",
-   "codigo": "EC210",
-   "nombre": "Emulsión Corporal Love Girl",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Love Girl",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC210.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-protegeme-ec258",
-   "codigo": "EC258",
-   "nombre": "Emulsión Corporal Protégeme",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Protégeme",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC258.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-salvaje-ec216",
-   "codigo": "EC216",
-   "nombre": "Emulsión Corporal Salvaje",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Salvaje",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC216.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-invicto-ec218",
-   "codigo": "EC218",
-   "nombre": "Emulsión Corporal Invicto",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Invicto",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC218.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-blu-d-g-ec244",
-   "codigo": "EC244",
-   "nombre": "Emulsión Corporal Blu D+G",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Blu D+G",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC244.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-heroina-ec248",
-   "codigo": "EC248",
-   "nombre": "Emulsión Corporal Heroína",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Heroína",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC248.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-divina-ec275",
-   "codigo": "EC275",
-   "nombre": "Emulsión Corporal Divina",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Divina",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC275.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-er-pura-ec283",
-   "codigo": "EC283",
-   "nombre": "Emulsión Corporal Er Pura",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Er Pura",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC283.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "emulsion-corporal-yara-rosa-ec289",
-   "codigo": "EC289",
-   "nombre": "Emulsión Corporal Yara Rosa",
-   "formato": "Emulsión Corporal 200ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Yara Rosa",
-   "marca": "",
-   "precio": 8990,
-   "precio_regular": 13500,
-   "descuento_pct": 33,
-   "descripcion": "",
-   "genero": "Mujer",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 58,
-   "imagen": "assets/productos/EC289.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-heroina-esp248",
-   "codigo": "ESP248",
-   "nombre": "Espuma de Baño Heroína",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Heroína",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP248.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-protegeme-esp258",
-   "codigo": "ESP258",
-   "nombre": "Espuma de Baño Protégeme",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Protégeme",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP258.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-escandalo-esp102",
-   "codigo": "ESP102",
-   "nombre": "Espuma de Baño Escandalo",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Escandalo",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP102.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-invicto-esp218",
-   "codigo": "ESP218",
-   "nombre": "Espuma de Baño Invicto",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Invicto",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP218.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-salvaje-esp216",
-   "codigo": "ESP216",
-   "nombre": "Espuma de Baño Salvaje",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Salvaje",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP216.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-blu-esp244",
-   "codigo": "ESP244",
-   "nombre": "Espuma de Baño Blu",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Blu",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP244.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-love-girl-esp210",
-   "codigo": "ESP210",
-   "nombre": "Espuma de Baño Love Girl",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Love Girl",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP210.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-flores-esp115",
-   "codigo": "ESP115",
-   "nombre": "Espuma de Baño Flores",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "Flores",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP115.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-de-bano-la-vida-es-linda-esp108",
-   "codigo": "ESP108",
-   "nombre": "Espuma de Baño La Vida es Linda",
-   "formato": "Espuma de Baño 150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "La Vida es Linda",
-   "marca": "",
-   "precio": 11990,
-   "precio_regular": 15990,
-   "descuento_pct": 25,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 62,
-   "imagen": "assets/productos/ESP108.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "crema-de-ordene-c-ac-hialuronico-cdo01",
-   "codigo": "CDO01",
-   "nombre": "Crema de Ordeñe c/ ác. hialurónico",
-   "formato": "300g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 24990,
-   "precio_regular": 30990,
-   "descuento_pct": 19,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/CDO01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "crema-de-ordene-ultra-concentrada-cdo02",
-   "codigo": "CDO02",
-   "nombre": "Crema de Ordeñe Ultra Concentrada",
-   "formato": "200g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 20990,
-   "precio_regular": 26990,
-   "descuento_pct": 22,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/CDO02.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "serum-acido-hialuronico-sah01",
-   "codigo": "SAH01",
-   "nombre": "Serum Ácido Hialurónico",
-   "formato": "30ml",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 20990,
-   "precio_regular": 26990,
-   "descuento_pct": 22,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/SAH01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "serum-vitamina-c-svc01",
-   "codigo": "SVC01",
-   "nombre": "Serum Vitamina C",
-   "formato": "30ml",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 17500,
-   "precio_regular": 20990,
-   "descuento_pct": 17,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/SVC01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "pro-niacinamide-mat-minimizador-de-poros-snia01",
-   "codigo": "SNIA01",
-   "nombre": "Pro Niacinamide Mat (minimizador de poros)",
-   "formato": "30g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 22990,
-   "precio_regular": 28990,
-   "descuento_pct": 21,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/SNIA01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "protector-solar-facial-50fps-psf1",
-   "codigo": "PSF1",
-   "nombre": "Protector Solar Facial 50FPS",
-   "formato": "50g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 27990,
-   "precio_regular": 33990,
-   "descuento_pct": 18,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/PSF1.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "bruma-pro-balance-extracto-de-rosas-btr1",
-   "codigo": "BTR1",
-   "nombre": "Bruma Pro Balance (extracto de rosas)",
-   "formato": "150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 18990,
-   "precio_regular": 24990,
-   "descuento_pct": 24,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/BTR1.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "espuma-facial-vainilla-espf001",
-   "codigo": "ESPF001",
-   "nombre": "Espuma Facial Vainilla",
-   "formato": "150ml",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 12990,
-   "precio_regular": 16990,
-   "descuento_pct": 24,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/ESPF001.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "crema-facial-hidratante-base-de-oro-cfh01",
-   "codigo": "CFH01",
-   "nombre": "Crema Facial Hidratante (base de oro)",
-   "formato": "50g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 20990,
-   "precio_regular": 26990,
-   "descuento_pct": 22,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/CFH01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "crema-facial-nutritiva-base-de-caviar-cfn01",
-   "codigo": "CFN01",
-   "nombre": "Crema Facial Nutritiva (base de caviar)",
-   "formato": "50g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 20990,
-   "precio_regular": 26990,
-   "descuento_pct": 22,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/CFN01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "oleo-30-1-pomade-unguento-pae01",
-   "codigo": "PAE01",
-   "nombre": "Óleo 30+1 Pomade / Ungüento",
-   "formato": "10g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 14990,
-   "precio_regular": 20990,
-   "descuento_pct": 29,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/PAE01.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "kaloe-gel-crema-reparadora-c-aloe-vera-kcg1",
-   "codigo": "KCG1",
-   "nombre": "Kaloe Gel Crema Reparadora c/ Aloe Vera",
-   "formato": "50g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 11900,
-   "precio_regular": 17900,
-   "descuento_pct": 34,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/KCG1.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "kaloe-gel-de-limpieza-c-aloe-vera-kgl1",
-   "codigo": "KGL1",
-   "nombre": "Kaloe Gel de Limpieza c/ Aloe Vera",
-   "formato": "50g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 8900,
-   "precio_regular": 14900,
-   "descuento_pct": 40,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/KGL1.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "kaloe-body-mousse-corporal-c-aloe-vera-kmc1",
-   "codigo": "KMC1",
-   "nombre": "Kaloe Body Mousse Corporal c/ Aloe Vera",
-   "formato": "100g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 10900,
-   "precio_regular": 16900,
-   "descuento_pct": 36,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/KMC1.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "beauty-collagen-mv-multivitaminico-colag03",
-   "codigo": "COLAG03",
-   "nombre": "Beauty Collagen MV (multivitamínico)",
-   "formato": "150g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 36990,
-   "precio_regular": 42990,
-   "descuento_pct": 14,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/COLAG03.jpg",
-   "imagen_placeholder": false
-  },
-  {
-   "id": "beauty-collagen-a-articulaciones-colag04",
-   "codigo": "COLAG04",
-   "nombre": "Beauty Collagen A (articulaciones)",
-   "formato": "150g",
-   "familia_olfativa": "",
-   "inspirado_en": "",
-   "marca": "",
-   "precio": 36990,
-   "precio_regular": 42990,
-   "descuento_pct": 14,
-   "descripcion": "",
-   "genero": "Unisex",
-   "linea": "Cosmética",
-   "es_arabe": false,
-   "ocasion": "Ecléctica",
-   "categorias": [
-    "Cosmética",
-    "Ofertas"
-   ],
-   "etiquetas": [
-    "OFERTA"
-   ],
-   "pagina": 0,
-   "imagen": "assets/productos/COLAG04.jpg",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   }
  ]
 };

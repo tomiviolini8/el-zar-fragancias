@@ -2,9 +2,16 @@
 *.pdf
 # Excel de trabajo
 *.xlsx
+# Secretos (token de Airtable, etc.)
+.env
+scripts/.env
 # Sistema
 Thumbs.db
 .DS_Store
 *.log
 node_modules/
 WhatsApp Image*.jpeg
+
+# Python / Claude Code local
+__pycache__/
+.claude/

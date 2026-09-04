@@ -250,9 +250,8 @@ function placeholderHTML(p){
 }
 
 function cardHTML(p){
-  const insp = p.inspirado_en
-    ? `<div class="card-insp">Inspirado en <b>${escapeHtml(titleCase(p.inspirado_en))}</b>${p.marca ? ' · ' + escapeHtml(titleCase(p.marca)) : ''}</div>`
-    : (p.descripcion ? `<div class="card-insp">${escapeHtml(p.descripcion)}</div>` : '<div class="card-insp"> </div>');
+  const inspReal = p.inspirado_en && titleCase(p.inspirado_en).toLowerCase() !== (p.nombre || '').toLowerCase();
+  const insp = `${inspReal ? `<div class="card-insp">Inspirado en <b>${escapeHtml(titleCase(p.inspirado_en))}</b>${p.marca ? ' · ' + escapeHtml(titleCase(p.marca)) : ''}</div>` : ''}${p.descripcion ? `<div class="card-desc">${escapeHtml(p.descripcion)}</div>` : ''}`;
   const price = `<div class="card-price">
       <span class="now">${fmtPrice(p.precio)}</span>
       ${p.precio_regular ? `<span class="was">${fmtPrice(p.precio_regular)}</span>` : ''}
@@ -510,144 +509,198 @@ function renderPreview(){
 
 /* Paleta para canvas */
 const C = {
-  bg1:'#160e07', bg2:'#241708', bg3:'#0f0a05',
-  gold:'#d4af37', goldSoft:'#ecd48a', goldDeep:'#b8912f',
+  bg0:'#0c0805', bg1:'#160e07', bg2:'#241708', bg3:'#0a0704',
+  gold:'#d4af37', goldSoft:'#ecd48a', goldDeep:'#b8912f', goldLine:'#caa338',
   cream:'#f5ede1', dim:'#c9b998', muted:'#8c7c63', wine:'#7b1e2b',
+  panel1:'#fbf6ec', panel2:'#eaddc6', ink:'#20160b', inkSoft:'#5c4a33',
+};
+/* Datos de contacto para el pie de la placa */
+const PLACA = {
+  ubicacion: 'LA PLATA',
+  whatsapp: '221 618 1900',
+  envios: 'ENVÍOS A TODO EL PAÍS',
 };
 
 function drawCard(ctx, p, W, H){
   const story = H > W;
   ctx.clearRect(0,0,W,H);
 
-  // fondo cálido
-  let g = ctx.createLinearGradient(0,0,W,H);
-  g.addColorStop(0, C.bg2); g.addColorStop(.5, C.bg1); g.addColorStop(1, C.bg3);
+  // ---- Fondo oscuro + textura ----
+  let g = ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0, C.bg0); g.addColorStop(.5, C.bg1); g.addColorStop(1, C.bg3);
   ctx.fillStyle = g; ctx.fillRect(0,0,W,H);
-  // glow dorado
-  const rg = ctx.createRadialGradient(W*0.8,H*0.12,0, W*0.8,H*0.12, W*0.9);
-  rg.addColorStop(0,'rgba(212,175,55,0.16)'); rg.addColorStop(1,'rgba(212,175,55,0)');
+  const rg = ctx.createRadialGradient(W*0.5,0,0, W*0.5,0, W*0.95);
+  rg.addColorStop(0,'rgba(212,175,55,0.10)'); rg.addColorStop(1,'rgba(212,175,55,0)');
   ctx.fillStyle = rg; ctx.fillRect(0,0,W,H);
-  const rw = ctx.createRadialGradient(W*0.1,H*0.9,0, W*0.1,H*0.9, W*0.8);
-  rw.addColorStop(0,'rgba(123,30,43,0.20)'); rw.addColorStop(1,'rgba(123,30,43,0)');
-  ctx.fillStyle = rw; ctx.fillRect(0,0,W,H);
+  drawDotTexture(ctx, W, H);
+  drawDiagonalAccents(ctx, W, H);
 
-  // marco ornamental
-  const m = Math.round(W*0.05);
-  ctx.strokeStyle = 'rgba(212,175,55,0.55)'; ctx.lineWidth = 2;
-  strokeRoundRect(ctx, m, m, W-2*m, H-2*m, 18);
-  ctx.strokeStyle = 'rgba(212,175,55,0.22)'; ctx.lineWidth = 1;
-  strokeRoundRect(ctx, m+10, m+10, W-2*m-20, H-2*m-20, 12);
+  // ---- Marco dorado ----
+  const m = Math.round(W*0.035);
+  ctx.strokeStyle = 'rgba(212,175,55,0.75)'; ctx.lineWidth = Math.max(2, W*0.0022);
+  strokeRoundRect(ctx, m, m, W-2*m, H-2*m, 14);
+  ctx.strokeStyle = 'rgba(212,175,55,0.28)'; ctx.lineWidth = 1;
+  strokeRoundRect(ctx, m+8, m+8, W-2*m-16, H-2*m-16, 10);
   drawCorners(ctx, m, W, H);
 
   const cx = W/2;
-  const pad = m + Math.round(W*0.055);
-  // unidad vertical basada en la ALTURA para que ambos formatos respiren
+  const pad = m + Math.round(W*0.045);
   const u = H;
 
-  // ---- Encabezado: corona + wordmark ----
-  let y = u*0.085;
-  drawCrown(ctx, cx, y, W*0.05, C.gold);
-  y += W*0.05 + u*0.028;
+  // ---- Encabezado: corona + wordmark + regla ----
+  let y = u*(story?0.060:0.078);
+  drawCrown(ctx, cx, y, W*0.044, C.gold);
+  y += W*0.044 + u*(story?0.022:0.028);
   ctx.textAlign = 'center';
   ctx.fillStyle = C.goldSoft;
-  ctx.font = `700 ${Math.round(W*0.034)}px "Playfair Display", Georgia, serif`;
+  ctx.font = `700 ${Math.round(W*0.036)}px "Playfair Display", Georgia, serif`;
   ctx.fillText('EL ZAR DE LAS FRAGANCIAS', cx, y);
-  y += u*0.022;
+  y += u*(story?0.017:0.021);
+  drawRule(ctx, cx, y, W*0.32);
+  y += u*(story?0.016:0.019);
   ctx.fillStyle = C.muted;
-  ctx.font = `500 ${Math.round(W*0.0165)}px "Montserrat", sans-serif`;
-  ctx.fillText('P E R F U M E R Í A   D E   A U T O R', cx, y);
+  ctx.font = `600 ${Math.round(W*0.0145)}px "Montserrat", sans-serif`;
+  ctx.fillText('P E R F U M E S   O R I G I N A L E S   Y   S E L L A D O S', cx, y);
 
-  // ---- Zona visual del producto ----
-  const boxY = u*0.19;
-  const boxH = story ? u*0.30 : u*0.26;
-  const boxW = W - 2*pad;
-  drawProductVisual(ctx, p, pad, boxY, boxW, boxH);
+  // ---- Panel de foto (claro) ----
+  const panelY = u*(story?0.150:0.205);
+  const panelH = story ? u*0.30 : u*0.275;
+  const panelW = W - 2*pad;
+  drawPhotoPanel(ctx, p, pad, panelY, panelW, panelH);
 
-  // ---- Bloque de texto (posiciones ancladas a fracciones de H) ----
-  let ty = boxY + boxH + u*0.055;
+  // ---- Bloque de texto ----
+  let ty = panelY + panelH + u*(story?0.045:0.052);
 
-  // familia olfativa (eyebrow)
+  const nlen = (p.nombre||'').length;
+  const nameSize = Math.round(W * (nlen > 22 ? 0.050 : (nlen > 13 ? 0.060 : 0.070)));
+
   if (p.familia_olfativa){
     ctx.fillStyle = C.gold;
-    ctx.font = `600 ${Math.round(W*0.021)}px "Montserrat", sans-serif`;
+    ctx.font = `700 ${Math.round(W*0.020)}px "Montserrat", sans-serif`;
     ctx.fillText(spaced(p.familia_olfativa.toUpperCase(), 2), cx, ty);
-    ty += u*0.048;
+    ty += nameSize*0.90;          // deja lugar para que el nombre no pise el eyebrow
+  } else {
+    ty += nameSize*0.55;
   }
 
-  // nombre (serif grande, con wrap)
   ctx.fillStyle = C.cream;
-  const nameSize = Math.round(W * (p.nombre.length > 20 ? 0.056 : (p.nombre.length > 12 ? 0.068 : 0.08)));
   ctx.font = `700 ${nameSize}px "Playfair Display", Georgia, serif`;
-  ty = wrapText(ctx, p.nombre, cx, ty, W - 2*pad, nameSize*1.02, 2);
-  ty += u*0.028;
+  ty = wrapText(ctx, p.nombre, cx, ty, W - 2*pad, nameSize*1.04, 2);
+  ty += u*(story?0.026:0.030);
 
-  // inspirado en
-  if (p.inspirado_en){
+  if (p.formato || p.linea){
     ctx.fillStyle = C.dim;
-    ctx.font = `400 ${Math.round(W*0.024)}px "Montserrat", sans-serif`;
-    ctx.fillText('— inspirado en —', cx, ty);
-    ty += u*0.04;
-    ctx.fillStyle = C.goldSoft;
-    ctx.font = `italic 600 ${Math.round(W*0.034)}px "Playfair Display", Georgia, serif`;
-    const insp = titleCase(p.inspirado_en) + (p.marca ? '  ·  ' + titleCase(p.marca) : '');
-    ty = wrapText(ctx, insp, cx, ty, W - 2*pad, Math.round(W*0.04), 2);
-    ty += u*0.03;
+    ctx.font = `600 ${Math.round(W*0.0185)}px "Montserrat", sans-serif`;
+    ctx.fillText((p.formato||p.linea).toUpperCase(), cx, ty);
+    ty += u*(story?0.030:0.034);
   }
 
-  // formato + código
-  ctx.fillStyle = C.muted;
-  ctx.font = `500 ${Math.round(W*0.019)}px "Montserrat", sans-serif`;
-  ctx.fillText(`${(p.formato||p.linea||'').toUpperCase()}   ·   ${p.codigo}`, cx, ty);
+  if (p.inspirado_en && titleCase(p.inspirado_en).toLowerCase() !== (p.nombre||'').toLowerCase()){
+    ctx.fillStyle = C.goldSoft;
+    ctx.font = `italic 600 ${Math.round(W*0.026)}px "Playfair Display", Georgia, serif`;
+    const insp = 'Inspirado en ' + titleCase(p.inspirado_en) + (p.marca ? '  ·  ' + titleCase(p.marca) : '');
+    ty = wrapText(ctx, insp, cx, ty, W - 2*pad, Math.round(W*0.032), 2);
+    ty += u*(story?0.022:0.026);
+  }
 
-  // ---- Precio (anclado cerca del pie) ----
-  const priceY = H - m - u*(story ? 0.12 : 0.155);
+  if (p.descripcion){
+    ctx.fillStyle = C.muted;
+    ctx.font = `400 ${Math.round(W*0.0185)}px "Montserrat", sans-serif`;
+    ty = wrapText(ctx, p.descripcion, cx, ty, W - 2*pad*0.96, Math.round(W*0.028), story ? 3 : 2);
+  }
+
+  // ---- Precio (fluye debajo del texto, sin pisar el pie) ----
+  const priceMax = H - m - u*(story ? 0.140 : 0.150);
+  const priceY = Math.min(ty + u*0.085, priceMax);
   drawPrice(ctx, p, cx, priceY, W);
 
-  // ---- Pie: handle / contacto ----
-  const footY = H - m - u*0.045;
-  ctx.strokeStyle = 'rgba(212,175,55,0.3)'; ctx.lineWidth = 1;
-  ctx.beginPath(); ctx.moveTo(pad, footY - u*0.038); ctx.lineTo(W-pad, footY - u*0.038); ctx.stroke();
-  const handle = ($('#handleInput')?.value || ('@' + CONFIG.INSTAGRAM_USER)).trim();
-  ctx.textAlign = 'center';
-  ctx.fillStyle = C.goldSoft;
-  ctx.font = `600 ${Math.round(W*0.025)}px "Montserrat", sans-serif`;
-  ctx.fillText(handle, cx, footY);
-  ctx.fillStyle = C.muted;
-  ctx.font = `500 ${Math.round(W*0.0155)}px "Montserrat", sans-serif`;
-  ctx.fillText('Consultá disponibilidad por WhatsApp  ·  Industria Argentina', cx, footY + u*0.026);
+  // ---- Pie ----
+  drawFooter(ctx, W, H, m, pad, u, story);
 }
 
-function drawProductVisual(ctx, p, x, y, w, h){
-  // si hay imagen real cargada, se dibuja; si no, emblema de marca
+/* ---- Fondo: textura de puntos en dos esquinas ---- */
+function drawDotTexture(ctx, W, H){
+  ctx.save();
+  ctx.fillStyle = 'rgba(212,175,55,0.07)';
+  const step = W*0.030, r = Math.max(1, W*0.0016), span = W*0.30;
+  for (let dx=0; dx<span; dx+=step) for (let dy=0; dy<span; dy+=step){
+    ctx.beginPath(); ctx.arc(dx + W*0.045, dy + W*0.045, r, 0, 7); ctx.fill();
+    ctx.beginPath(); ctx.arc(W - dx - W*0.045, H - dy - W*0.045, r, 0, 7); ctx.fill();
+  }
+  ctx.restore();
+}
+
+/* ---- Fondo: rayas doradas diagonales en esquinas ---- */
+function drawDiagonalAccents(ctx, W, H){
+  ctx.save();
+  ctx.lineCap = 'round';
+  const stroke = (a, x1,y1,x2,y2, lw) => { ctx.strokeStyle=`rgba(212,175,55,${a})`; ctx.lineWidth=lw; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); };
+  const lw = Math.max(2, W*0.003);
+  stroke(0.55, -W*0.02, H*0.09, W*0.15, -H*0.02, lw);
+  stroke(0.25, -W*0.02, H*0.135, W*0.21, -H*0.02, lw*0.8);
+  stroke(0.55, W*1.02, H*0.91, W*0.85, H*1.02, lw);
+  stroke(0.25, W*1.02, H*0.865, W*0.79, H*1.02, lw*0.8);
+  ctx.restore();
+}
+
+/* ---- Regla dorada con rombo central ---- */
+function drawRule(ctx, cx, y, w){
+  ctx.save();
+  ctx.strokeStyle = 'rgba(212,175,55,0.6)'; ctx.lineWidth = 1.5;
+  const gap = w*0.045;
+  ctx.beginPath(); ctx.moveTo(cx - w/2, y); ctx.lineTo(cx - gap, y); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx + gap, y); ctx.lineTo(cx + w/2, y); ctx.stroke();
+  ctx.fillStyle = C.gold;
+  ctx.translate(cx, y); ctx.rotate(Math.PI/4);
+  const s = Math.max(4, w*0.018); ctx.fillRect(-s/2, -s/2, s, s);
+  ctx.restore();
+}
+
+/* ---- Panel claro con la foto del frasco ---- */
+function drawPhotoPanel(ctx, p, x, y, w, h){
+  const g = ctx.createLinearGradient(x, y, x, y+h);
+  g.addColorStop(0, C.panel1); g.addColorStop(1, C.panel2);
+  ctx.fillStyle = g; fillRoundRect(ctx, x, y, w, h, 16);
+  ctx.strokeStyle = 'rgba(212,175,55,0.9)'; ctx.lineWidth = Math.max(2, w*0.006);
+  strokeRoundRect(ctx, x, y, w, h, 16);
+  ctx.strokeStyle = 'rgba(32,22,11,0.10)'; ctx.lineWidth = 1;
+  strokeRoundRect(ctx, x+6, y+6, w-12, h-12, 12);
+
   const img = exportState._img;
   if (img && img.complete && img.naturalWidth){
-    // fondo oscuro de la caja + frasco "contain" (se ve completo)
-    const g2 = ctx.createLinearGradient(x,y,x,y+h);
-    g2.addColorStop(0,'#2a1c0e'); g2.addColorStop(1,'#180f07');
-    ctx.fillStyle=g2; fillRoundRect(ctx,x,y,w,h,14);
     ctx.save();
-    clipRoundRect(ctx, x, y, w, h, 14); ctx.clip();
-    const scale = Math.min(w/img.naturalWidth, h/img.naturalHeight) * 0.98;
+    pathRoundRect(ctx, x+6, y+6, w-12, h-12, 12); ctx.clip();
+    const pw = w - w*0.10, ph = h - h*0.07;
+    const scale = Math.min(pw/img.naturalWidth, ph/img.naturalHeight);
     const dw = img.naturalWidth*scale, dh = img.naturalHeight*scale;
     ctx.drawImage(img, x+(w-dw)/2, y+(h-dh)/2, dw, dh);
     ctx.restore();
-    ctx.strokeStyle='rgba(212,175,55,0.4)'; ctx.lineWidth=1.5; strokeRoundRect(ctx,x,y,w,h,14);
-    return;
+  } else {
+    const px = x+w/2, py = y+h/2;
+    drawCrown(ctx, px, py - h*0.14, w*0.10, C.goldDeep);
+    ctx.fillStyle = C.ink; ctx.textAlign = 'center';
+    ctx.font = `italic 700 ${Math.round(w*0.07)}px "Playfair Display", Georgia, serif`;
+    wrapText(ctx, p.nombre, px, py + h*0.08, w*0.8, w*0.075, 2);
+    ctx.fillStyle = C.inkSoft;
+    ctx.font = `600 ${Math.round(w*0.03)}px "Montserrat", sans-serif`;
+    ctx.fillText(p.codigo, px, py + h*0.30);
   }
-  // emblema
-  const g = ctx.createLinearGradient(x,y,x,y+h);
-  g.addColorStop(0,'#2a1c0e'); g.addColorStop(1,'#180f07');
-  ctx.fillStyle=g; fillRoundRect(ctx,x,y,w,h,14);
-  ctx.strokeStyle='rgba(212,175,55,0.35)'; ctx.lineWidth=1.5; strokeRoundRect(ctx,x+8,y+8,w-16,h-16,10);
-  const cx = x+w/2, cy = y+h/2;
-  drawCrown(ctx, cx, cy - h*0.16, w*0.11, C.gold);
-  ctx.textAlign='center';
-  ctx.fillStyle=C.goldSoft;
-  ctx.font=`italic 600 ${Math.round(w*0.075)}px "Playfair Display", Georgia, serif`;
-  wrapText(ctx, p.nombre, cx, cy + h*0.10, w*0.8, w*0.08, 2);
-  ctx.fillStyle=C.muted;
-  ctx.font=`500 ${Math.round(w*0.026)}px "Montserrat", sans-serif`;
-  ctx.fillText(spaced(p.codigo,3), cx, cy + h*0.34);
+}
+
+/* ---- Pie: contacto + handle ---- */
+function drawFooter(ctx, W, H, m, pad, u, story){
+  const y = H - m - u*(story ? 0.052 : 0.066);
+  ctx.strokeStyle = 'rgba(212,175,55,0.35)'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(pad, y - u*0.030); ctx.lineTo(W-pad, y - u*0.030); ctx.stroke();
+  ctx.textAlign = 'center';
+  ctx.fillStyle = C.dim;
+  ctx.font = `600 ${Math.round(W*0.0165)}px "Montserrat", sans-serif`;
+  const sep = '     ·     ';
+  ctx.fillText(`${PLACA.ubicacion}${sep}WhatsApp ${PLACA.whatsapp}${sep}${PLACA.envios}`, W/2, y);
+  const handle = ($('#handleInput')?.value || ('@' + CONFIG.INSTAGRAM_USER)).trim();
+  ctx.fillStyle = C.goldSoft;
+  ctx.font = `700 ${Math.round(W*0.020)}px "Montserrat", sans-serif`;
+  ctx.fillText(handle, W/2, y + u*0.030);
 }
 
 function drawPrice(ctx, p, cx, y, W){
