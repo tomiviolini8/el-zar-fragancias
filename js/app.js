@@ -340,6 +340,11 @@ function openDetail(p){
   if (!p) return;
   trackEvent('view_product', { codigo: p.codigo, nombre: p.nombre });
   $('#dtMedia').innerHTML = mediaHTML(p);
+  // fondo desenfocado del modal: URL absoluta (una var CSS resuelve las relativas
+  // contra el .css, no contra la página) para que no dé 404
+  $('#dtMedia').style.setProperty('--dt-bg',
+    (p.imagen && p.imagen_placeholder === false)
+      ? `url("${new URL(p.imagen, location.href).href}")` : 'none');
   $('#dtBadges').innerHTML = badgesArr(p).join('');
   $('#dtFam').textContent = p.familia_olfativa || p.linea || '';
   $('#dtName').textContent = p.nombre;

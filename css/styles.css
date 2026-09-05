@@ -575,10 +575,16 @@ input,select{font-family:inherit}
 .detail-grid{display:grid;grid-template-columns:minmax(0,42%) 1fr;gap:0}
 .detail-media{position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;overflow:hidden;
   background:linear-gradient(160deg,#241708,#120b05);border-right:1px solid var(--gold-line);border-radius:18px 0 0 18px}
-.detail-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;padding:0}
-.detail-media .ph{border:none;background:none}
+/* fondo inmersivo: la misma foto desenfocada llena el marco (sin barras feas) */
+.detail-media::before{content:"";position:absolute;inset:0;z-index:0;
+  background:var(--dt-bg,none) center/cover no-repeat;
+  filter:blur(34px) brightness(.5) saturate(1.15);transform:scale(1.25)}
+/* la foto se ve ENTERA y nítida (contain), sin zoom */
+.detail-media img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:contain;padding:16px}
+.detail-media .ph{position:relative;z-index:1;border:none;background:none}
 .detail-info{padding:34px}
-.detail-info .badges{position:static;margin-bottom:12px;display:flex;gap:6px;flex-wrap:wrap}
+.detail-info .badges{position:static;margin-bottom:12px;display:flex;flex-direction:row;align-items:flex-start;gap:6px;flex-wrap:wrap;padding-right:44px}
+.detail-info .badge{flex:0 0 auto;width:auto}
 .dt-fam{color:var(--gold);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 .dt-name{font-family:'Playfair Display',Georgia,serif;font-size:2rem;line-height:1.1;color:var(--cream);margin:.25em 0 .1em}
 .dt-insp{color:var(--cream-dim);font-size:.95rem;margin-bottom:.7em}
