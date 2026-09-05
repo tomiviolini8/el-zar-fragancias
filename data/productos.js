@@ -447,8 +447,8 @@ window.CATALOGO = {
    ],
    "pagina": 14,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACM296.png",
-   "imagen_placeholder": false
+   "imagen": "",
+   "imagen_placeholder": true
   },
   {
    "id": "arabian-king-acm297",
@@ -1284,8 +1284,8 @@ window.CATALOGO = {
    ],
    "pagina": 26,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF104.png",
+   "imagen_placeholder": false
   },
   {
    "id": "ricky-ricky-bf105",
@@ -1371,8 +1371,8 @@ window.CATALOGO = {
    ],
    "pagina": 24,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF107.png",
+   "imagen_placeholder": false
   },
   {
    "id": "la-vida-es-linda-bf108",
@@ -1400,8 +1400,8 @@ window.CATALOGO = {
    ],
    "pagina": 28,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF108.png",
+   "imagen_placeholder": false
   },
   {
    "id": "flores-bf115",
@@ -1574,8 +1574,8 @@ window.CATALOGO = {
    ],
    "pagina": 23,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF210.png",
+   "imagen_placeholder": false
   },
   {
    "id": "212-femenino-bf211",
@@ -1687,8 +1687,8 @@ window.CATALOGO = {
    ],
    "pagina": 22,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF214.png",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-red-bf215",
@@ -1716,8 +1716,8 @@ window.CATALOGO = {
    ],
    "pagina": 23,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF215.png",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-violet-bf217",
@@ -1745,8 +1745,8 @@ window.CATALOGO = {
    ],
    "pagina": 22,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF217.png",
+   "imagen_placeholder": false
   },
   {
    "id": "la-vida-es-linda-rose-bf218",
@@ -1774,8 +1774,8 @@ window.CATALOGO = {
    ],
    "pagina": 28,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF218.png",
+   "imagen_placeholder": false
   },
   {
    "id": "omnea-bf221",
@@ -1861,8 +1861,8 @@ window.CATALOGO = {
    ],
    "pagina": 26,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF224.png",
+   "imagen_placeholder": false
   },
   {
    "id": "tadoro-bf231",
@@ -1978,8 +1978,8 @@ window.CATALOGO = {
    ],
    "pagina": 27,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF239.png",
+   "imagen_placeholder": false
   },
   {
    "id": "mishaki-femenino-bf241",
@@ -2065,8 +2065,8 @@ window.CATALOGO = {
    ],
    "pagina": 22,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF245.png",
+   "imagen_placeholder": false
   },
   {
    "id": "yes-pasion-bf247",
@@ -2094,8 +2094,8 @@ window.CATALOGO = {
    ],
    "pagina": 24,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF247.png",
+   "imagen_placeholder": false
   },
   {
    "id": "212-mujer-heroina-bf248",
@@ -2154,8 +2154,8 @@ window.CATALOGO = {
    ],
    "pagina": 24,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF249.png",
+   "imagen_placeholder": false
   },
   {
    "id": "ang-ella-bf250",
@@ -2212,8 +2212,8 @@ window.CATALOGO = {
    ],
    "pagina": 25,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF252.png",
+   "imagen_placeholder": false
   },
   {
    "id": "cristal-negro-bf253",
@@ -2470,8 +2470,8 @@ window.CATALOGO = {
    ],
    "pagina": 26,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF269.png",
+   "imagen_placeholder": false
   },
   {
    "id": "black-orchid-bf273",
@@ -2640,8 +2640,8 @@ window.CATALOGO = {
    ],
    "pagina": 25,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF279.png",
+   "imagen_placeholder": false
   },
   {
    "id": "212-rosa-extra-pocket-bf281",
@@ -2812,8 +2812,8 @@ window.CATALOGO = {
    ],
    "pagina": 25,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF312.png",
+   "imagen_placeholder": false
   },
   {
    "id": "the-bomb-bf325",
@@ -2872,8 +2872,8 @@ window.CATALOGO = {
    ],
    "pagina": 27,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF326.png",
+   "imagen_placeholder": false
   },
   {
    "id": "rouge-door-bf329",
@@ -2930,8 +2930,8 @@ window.CATALOGO = {
    ],
    "pagina": 28,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF332.png",
+   "imagen_placeholder": false
   },
   {
    "id": "la-vida-es-linda-elixir-bf333",
