@@ -67,8 +67,8 @@ window.CATALOGO = {
    ],
    "pagina": 13,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACF285.png",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-white-acf286",
@@ -162,8 +162,8 @@ window.CATALOGO = {
    ],
    "pagina": 15,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACF288.png",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-rosa-acf289",
@@ -195,8 +195,8 @@ window.CATALOGO = {
    ],
    "pagina": 15,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACF289.png",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-fucsia-acf308",
@@ -228,8 +228,8 @@ window.CATALOGO = {
    ],
    "pagina": 15,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACF308.png",
+   "imagen_placeholder": false
   },
   {
    "id": "sahara-acf320",
@@ -447,8 +447,8 @@ window.CATALOGO = {
    ],
    "pagina": 14,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM296.png",
+   "imagen_placeholder": false
   },
   {
    "id": "arabian-king-acm297",
@@ -511,8 +511,8 @@ window.CATALOGO = {
    ],
    "pagina": 14,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM309.png",
+   "imagen_placeholder": false
   },
   {
    "id": "an-nafud-acm321",
@@ -608,8 +608,8 @@ window.CATALOGO = {
    ],
    "pagina": 13,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACU283.png",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-kamra-acu284",
@@ -1226,8 +1226,8 @@ window.CATALOGO = {
    ],
    "pagina": 12,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF102.png",
+   "imagen_placeholder": false
   },
   {
    "id": "nani-bf103",
@@ -1920,8 +1920,8 @@ window.CATALOGO = {
    ],
    "pagina": 12,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF235.png",
+   "imagen_placeholder": false
   },
   {
    "id": "tomy-woman-bf238",
@@ -2125,8 +2125,8 @@ window.CATALOGO = {
    ],
    "pagina": 16,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF248.png",
+   "imagen_placeholder": false
   },
   {
    "id": "euforica-bf249",
@@ -2522,8 +2522,8 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 9,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF274.png",
+   "imagen_placeholder": false
   },
   {
    "id": "divina-bf275",
@@ -2553,8 +2553,8 @@ window.CATALOGO = {
    ],
    "pagina": 10,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF275.png",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-pocket-bf277",
@@ -2783,8 +2783,8 @@ window.CATALOGO = {
    ],
    "pagina": 10,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF311.png",
+   "imagen_placeholder": false
   },
   {
    "id": "noir-opium-bf312",
@@ -2843,8 +2843,8 @@ window.CATALOGO = {
    ],
    "pagina": 11,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF325.png",
+   "imagen_placeholder": false
   },
   {
    "id": "linter-rouge-bf326",
@@ -3692,8 +3692,8 @@ window.CATALOGO = {
    ],
    "pagina": 16,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM233.png",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-victoria-bm234",
