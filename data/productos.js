@@ -290,8 +290,8 @@ window.CATALOGO = {
    ],
    "pagina": 20,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM291.png",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-gold-acm292",
@@ -321,8 +321,8 @@ window.CATALOGO = {
    ],
    "pagina": 20,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM292.png",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-blue-acm293",
@@ -352,8 +352,8 @@ window.CATALOGO = {
    ],
    "pagina": 20,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM293.png",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-silver-acm294",
@@ -575,8 +575,8 @@ window.CATALOGO = {
    ],
    "pagina": 19,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM323.png",
+   "imagen_placeholder": false
   },
   {
    "id": "er-pura-acu283",
@@ -641,8 +641,8 @@ window.CATALOGO = {
    ],
    "pagina": 19,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACU284.png",
+   "imagen_placeholder": false
   },
   {
    "id": "al-khali-acu322",
@@ -2752,8 +2752,8 @@ window.CATALOGO = {
    ],
    "pagina": 17,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF307.png",
+   "imagen_placeholder": false
   },
   {
    "id": "divina-la-bella-bf311",
@@ -3023,8 +3023,8 @@ window.CATALOGO = {
    ],
    "pagina": 18,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM110.png",
+   "imagen_placeholder": false
   },
   {
    "id": "xx-pure-masculino-bm202",
