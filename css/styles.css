@@ -644,3 +644,16 @@ input,select{font-family:inherit}
 .bs-price{display:flex;align-items:baseline;justify-content:center;gap:10px;margin-bottom:14px}
 .bs-price .now{font-family:var(--serif);font-size:1.5rem;color:var(--gold-soft);font-weight:700}
 .bs-off{background:var(--wine);color:#ffe9ec;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:20px}
+
+/* ===== Tarjetas CON foto: panel claro (frasco+caja nítidos y parejos) ===== */
+.card-media.has-photo{
+  background:linear-gradient(165deg,#fbf7f0 0%, #efe6d6 100%);
+  border-bottom:1px solid var(--gold-line);
+}
+.card-media.has-photo::after{  /* piso suave sobre fondo claro */
+  background:radial-gradient(ellipse at center, rgba(60,40,15,.18), transparent 70%);
+}
+.card-media.has-photo img{
+  object-fit:contain;padding:14px 16px 18px;
+  filter:drop-shadow(0 9px 13px rgba(45,28,10,.30));
+}

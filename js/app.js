@@ -471,7 +471,7 @@ function cardHTML(p){
       ${p.descuento_pct ? `<span class="pct">-${p.descuento_pct}%</span>` : ''}
     </div>`;
   return `<article class="card" data-code="${p.codigo}">
-    <div class="card-media">
+    <div class="card-media${p.imagen_placeholder ? '' : ' has-photo'}">
       ${badgesHTML(p)}
       ${stockBadge(p)}
       ${mediaHTML(p)}

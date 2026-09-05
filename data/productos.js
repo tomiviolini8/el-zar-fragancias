@@ -2383,8 +2383,8 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 7,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF258.png",
+   "imagen_placeholder": false
   },
   {
    "id": "nani-floral-bf267",
@@ -2496,8 +2496,8 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 9,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF273.png",
+   "imagen_placeholder": false
   },
   {
    "id": "electric-cherry-bf274",
@@ -2961,8 +2961,8 @@ window.CATALOGO = {
    ],
    "pagina": 5,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF333.png",
+   "imagen_placeholder": false
   },
   {
    "id": "libre-berry-bf335",
@@ -2992,8 +2992,8 @@ window.CATALOGO = {
    ],
    "pagina": 3,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BF335.png",
+   "imagen_placeholder": false
   },
   {
    "id": "212-vip-black-bm110",
