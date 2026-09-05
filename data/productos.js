@@ -67,7 +67,7 @@ window.CATALOGO = {
    ],
    "pagina": 13,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACF285.png",
+   "imagen": "assets/productos/ACF285.jpg",
    "imagen_placeholder": false
   },
   {
@@ -98,8 +98,8 @@ window.CATALOGO = {
    ],
    "pagina": 21,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACF286.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-mahir-femme-acf287",
@@ -162,7 +162,7 @@ window.CATALOGO = {
    ],
    "pagina": 15,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACF288.png",
+   "imagen": "assets/productos/ACF288.jpg",
    "imagen_placeholder": false
   },
   {
@@ -195,7 +195,7 @@ window.CATALOGO = {
    ],
    "pagina": 15,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACF289.png",
+   "imagen": "assets/productos/ACF289.jpg",
    "imagen_placeholder": false
   },
   {
@@ -228,7 +228,7 @@ window.CATALOGO = {
    ],
    "pagina": 15,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACF308.png",
+   "imagen": "assets/productos/ACF308.jpg",
    "imagen_placeholder": false
   },
   {
@@ -290,7 +290,7 @@ window.CATALOGO = {
    ],
    "pagina": 20,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACM291.png",
+   "imagen": "assets/productos/ACM291.jpg",
    "imagen_placeholder": false
   },
   {
@@ -321,7 +321,7 @@ window.CATALOGO = {
    ],
    "pagina": 20,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACM292.png",
+   "imagen": "assets/productos/ACM292.jpg",
    "imagen_placeholder": false
   },
   {
@@ -352,7 +352,7 @@ window.CATALOGO = {
    ],
    "pagina": 20,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACM293.png",
+   "imagen": "assets/productos/ACM293.jpg",
    "imagen_placeholder": false
   },
   {
@@ -383,8 +383,8 @@ window.CATALOGO = {
    ],
    "pagina": 21,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM294.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-mahir-homme-acm295",
@@ -447,8 +447,8 @@ window.CATALOGO = {
    ],
    "pagina": 14,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/ACM296.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "arabian-king-acm297",
@@ -511,7 +511,7 @@ window.CATALOGO = {
    ],
    "pagina": 14,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACM309.png",
+   "imagen": "assets/productos/ACM309.jpg",
    "imagen_placeholder": false
   },
   {
@@ -575,7 +575,7 @@ window.CATALOGO = {
    ],
    "pagina": 19,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACM323.png",
+   "imagen": "assets/productos/ACM323.jpg",
    "imagen_placeholder": false
   },
   {
@@ -608,7 +608,7 @@ window.CATALOGO = {
    ],
    "pagina": 13,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACU283.png",
+   "imagen": "assets/productos/ACU283.jpg",
    "imagen_placeholder": false
   },
   {
@@ -641,7 +641,7 @@ window.CATALOGO = {
    ],
    "pagina": 19,
    "stock": "A pedido",
-   "imagen": "assets/productos/ACU284.png",
+   "imagen": "assets/productos/ACU284.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1226,7 +1226,7 @@ window.CATALOGO = {
    ],
    "pagina": 12,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF102.png",
+   "imagen": "assets/productos/BF102.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1284,7 +1284,7 @@ window.CATALOGO = {
    ],
    "pagina": 26,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF104.png",
+   "imagen": "assets/productos/BF104.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1371,7 +1371,7 @@ window.CATALOGO = {
    ],
    "pagina": 24,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF107.png",
+   "imagen": "assets/productos/BF107.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1400,7 +1400,7 @@ window.CATALOGO = {
    ],
    "pagina": 28,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF108.png",
+   "imagen": "assets/productos/BF108.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1574,7 +1574,7 @@ window.CATALOGO = {
    ],
    "pagina": 23,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF210.png",
+   "imagen": "assets/productos/BF210.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1658,7 +1658,7 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 6,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF213.png",
+   "imagen": "assets/productos/BF213.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1687,7 +1687,7 @@ window.CATALOGO = {
    ],
    "pagina": 22,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF214.png",
+   "imagen": "assets/productos/BF214.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1716,7 +1716,7 @@ window.CATALOGO = {
    ],
    "pagina": 23,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF215.png",
+   "imagen": "assets/productos/BF215.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1745,7 +1745,7 @@ window.CATALOGO = {
    ],
    "pagina": 22,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF217.png",
+   "imagen": "assets/productos/BF217.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1774,7 +1774,7 @@ window.CATALOGO = {
    ],
    "pagina": 28,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF218.png",
+   "imagen": "assets/productos/BF218.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1861,7 +1861,7 @@ window.CATALOGO = {
    ],
    "pagina": 26,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF224.png",
+   "imagen": "assets/productos/BF224.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1889,7 +1889,7 @@ window.CATALOGO = {
    ],
    "pagina": 8,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF231.png",
+   "imagen": "assets/productos/BF231.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1920,7 +1920,7 @@ window.CATALOGO = {
    ],
    "pagina": 12,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF235.png",
+   "imagen": "assets/productos/BF235.jpg",
    "imagen_placeholder": false
   },
   {
@@ -1978,7 +1978,7 @@ window.CATALOGO = {
    ],
    "pagina": 27,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF239.png",
+   "imagen": "assets/productos/BF239.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2065,7 +2065,7 @@ window.CATALOGO = {
    ],
    "pagina": 22,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF245.png",
+   "imagen": "assets/productos/BF245.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2094,7 +2094,7 @@ window.CATALOGO = {
    ],
    "pagina": 24,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF247.png",
+   "imagen": "assets/productos/BF247.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2125,7 +2125,7 @@ window.CATALOGO = {
    ],
    "pagina": 16,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF248.png",
+   "imagen": "assets/productos/BF248.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2154,7 +2154,7 @@ window.CATALOGO = {
    ],
    "pagina": 24,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF249.png",
+   "imagen": "assets/productos/BF249.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2212,7 +2212,7 @@ window.CATALOGO = {
    ],
    "pagina": 25,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF252.png",
+   "imagen": "assets/productos/BF252.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2383,7 +2383,7 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 7,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF258.png",
+   "imagen": "assets/productos/BF258.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2470,7 +2470,7 @@ window.CATALOGO = {
    ],
    "pagina": 26,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF269.png",
+   "imagen": "assets/productos/BF269.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2496,7 +2496,7 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 9,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF273.png",
+   "imagen": "assets/productos/BF273.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2522,7 +2522,7 @@ window.CATALOGO = {
    "etiquetas": [],
    "pagina": 9,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF274.png",
+   "imagen": "assets/productos/BF274.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2553,7 +2553,7 @@ window.CATALOGO = {
    ],
    "pagina": 10,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF275.png",
+   "imagen": "assets/productos/BF275.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2640,7 +2640,7 @@ window.CATALOGO = {
    ],
    "pagina": 25,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF279.png",
+   "imagen": "assets/productos/BF279.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2752,7 +2752,7 @@ window.CATALOGO = {
    ],
    "pagina": 17,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF307.png",
+   "imagen": "assets/productos/BF307.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2783,7 +2783,7 @@ window.CATALOGO = {
    ],
    "pagina": 10,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF311.png",
+   "imagen": "assets/productos/BF311.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2812,7 +2812,7 @@ window.CATALOGO = {
    ],
    "pagina": 25,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF312.png",
+   "imagen": "assets/productos/BF312.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2843,7 +2843,7 @@ window.CATALOGO = {
    ],
    "pagina": 11,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF325.png",
+   "imagen": "assets/productos/BF325.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2872,7 +2872,7 @@ window.CATALOGO = {
    ],
    "pagina": 27,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF326.png",
+   "imagen": "assets/productos/BF326.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2930,7 +2930,7 @@ window.CATALOGO = {
    ],
    "pagina": 28,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF332.png",
+   "imagen": "assets/productos/BF332.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2961,7 +2961,7 @@ window.CATALOGO = {
    ],
    "pagina": 5,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF333.png",
+   "imagen": "assets/productos/BF333.jpg",
    "imagen_placeholder": false
   },
   {
@@ -2992,7 +2992,7 @@ window.CATALOGO = {
    ],
    "pagina": 3,
    "stock": "A pedido",
-   "imagen": "assets/productos/BF335.png",
+   "imagen": "assets/productos/BF335.jpg",
    "imagen_placeholder": false
   },
   {
@@ -3023,7 +3023,7 @@ window.CATALOGO = {
    ],
    "pagina": 18,
    "stock": "A pedido",
-   "imagen": "assets/productos/BM110.png",
+   "imagen": "assets/productos/BM110.jpg",
    "imagen_placeholder": false
   },
   {
@@ -3692,7 +3692,7 @@ window.CATALOGO = {
    ],
    "pagina": 16,
    "stock": "A pedido",
-   "imagen": "assets/productos/BM233.png",
+   "imagen": "assets/productos/BM233.jpg",
    "imagen_placeholder": false
   },
   {
@@ -4274,8 +4274,8 @@ window.CATALOGO = {
    ],
    "pagina": 18,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM299.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "crid-aventura-bm300",

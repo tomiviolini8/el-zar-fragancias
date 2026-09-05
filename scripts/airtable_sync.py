@@ -151,6 +151,49 @@ def quitar_fondo(src, dest):
         print(f"  ! quita-fondo falló ({getattr(src,'name',src)}): {e}")
         return False
 
+def normalizar(src, dest, W=900, H=1125, margin=0.05):
+    """Deja la foto TAL CUAL (con su fondo) pero en un encuadre uniforme 4:5,
+    con el producto siempre del mismo tamaño y centrado:
+      - Fondo UNIFORME (blanco/estudio): recorta el borde de fondo, deja el
+        producto con un margen fijo y rellena con el mismo color -> sin costura.
+      - Fondo de ESCENA (bokeh, mármol, gradiente): recorte tipo 'cover' a 4:5
+        para llenar el cuadro sin barras."""
+    from PIL import Image
+    import numpy as np
+    im = Image.open(src).convert("RGB")
+    w, h = im.size
+    a = np.asarray(im).astype(int)
+    k = max(4, min(w, h) // 18)
+    corners = np.concatenate([a[:k, :k].reshape(-1, 3), a[:k, -k:].reshape(-1, 3),
+                              a[-k:, :k].reshape(-1, 3), a[-k:, -k:].reshape(-1, 3)])
+    bg = np.median(corners, axis=0)
+    # ¿el borde es fondo uniforme? -> bounding box del producto
+    diff = np.abs(a - bg).sum(axis=2)
+    mask = diff > 40
+    ys, xs = np.where(mask)
+    uniform = False
+    if len(xs) > 50:
+        x0, x1, y0, y1 = xs.min(), xs.max(), ys.min(), ys.max()
+        area_frac = ((x1 - x0 + 1) * (y1 - y0 + 1)) / float(w * h)
+        uniform = area_frac < 0.93        # se recortó borde de fondo apreciable
+    bgc = tuple(int(x) for x in bg)
+    if uniform:
+        pad = int(0.02 * max(x1 - x0, y1 - y0))
+        prod = im.crop((max(0, x0 - pad), max(0, y0 - pad),
+                        min(w, x1 + 1 + pad), min(h, y1 + 1 + pad)))
+        inner = (int(W * (1 - 2 * margin)), int(H * (1 - 2 * margin)))
+        prod.thumbnail(inner, Image.LANCZOS)
+        canvas = Image.new("RGB", (W, H), bgc)
+        canvas.paste(prod, ((W - prod.width) // 2, (H - prod.height) // 2))
+    else:
+        # cover: escala para llenar 4:5 y recorta el excedente (sin barras)
+        scale = max(W / w, H / h)
+        im2 = im.resize((max(W, int(w * scale)), max(H, int(h * scale))), Image.LANCZOS)
+        left = (im2.width - W) // 2; top = (im2.height - H) // 2
+        canvas = im2.crop((left, top, left + W, top + H))
+    canvas.save(dest, quality=90)
+    return True
+
 def cmd_pull(env):
     recs = fetch_all(env)
     print(f"{len(recs)} registros en Airtable.")
@@ -192,19 +235,13 @@ def cmd_pull(env):
             try:
                 tmp = IMG_DIR / f"{cod}__orig{ext}"
                 download(url, tmp)
-                dest_png = IMG_DIR / f"{cod}.png"
-                if (not NO_BG) and quitar_fondo(tmp, dest_png):
-                    try: tmp.unlink()
-                    except OSError: pass
-                    jpg = IMG_DIR / f"{cod}.jpg"
-                    if jpg.exists(): jpg.unlink()
-                    p["imagen"] = f"assets/productos/{cod}.png"
-                else:
-                    final = IMG_DIR / f"{cod}{ext}"
-                    tmp.replace(final)
-                    other = IMG_DIR / f"{cod}{'.jpg' if ext=='.png' else '.png'}"
-                    if other.exists(): other.unlink()
-                    p["imagen"] = f"assets/productos/{cod}{ext}"
+                dest = IMG_DIR / f"{cod}.jpg"
+                normalizar(tmp, dest)            # foto tal cual, encuadre uniforme 4:5
+                try: tmp.unlink()
+                except OSError: pass
+                oldpng = IMG_DIR / f"{cod}.png"  # limpiar recortes de etapas previas
+                if oldpng.exists(): oldpng.unlink()
+                p["imagen"] = f"assets/productos/{cod}.jpg"
                 p["imagen_placeholder"] = False; n_img += 1
             except Exception as e:
                 print(f"  ! foto {cod}: {e}")

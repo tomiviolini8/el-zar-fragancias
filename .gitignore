@@ -22,3 +22,4 @@ __pycache__/
 
 # Carpeta de fotos de trabajo del owner (van a Airtable, no al repo)
 fotos fragancias/
+.claude/launch.json

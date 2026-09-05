@@ -414,7 +414,7 @@ function badgesHTML(p){
 
 function mediaHTML(p){
   if (p.imagen && p.imagen_placeholder === false){
-    return `<img loading="lazy" src="${p.imagen}" alt="${escapeHtml(p.nombre)}" onerror="this.replaceWith(phEl(${JSON.stringify(JSON.stringify(p))}))">`;
+    return `<img loading="lazy" src="${p.imagen}" alt="${escapeHtml(p.nombre)}" onerror="this.replaceWith(phEl(${JSON.stringify(JSON.stringify(p))}))"><span class="wm" aria-hidden="true"></span>`;
   }
   return placeholderHTML(p);
 }
