@@ -151,13 +151,33 @@ def quitar_fondo(src, dest):
         print(f"  ! quita-fondo falló ({getattr(src,'name',src)}): {e}")
         return False
 
-def normalizar(src, dest, W=900, H=1125, margin=0.05):
-    """Deja la foto TAL CUAL (con su fondo) pero en un encuadre uniforme 4:5,
-    con el producto siempre del mismo tamaño y centrado:
-      - Fondo UNIFORME (blanco/estudio): recorta el borde de fondo, deja el
-        producto con un margen fijo y rellena con el mismo color -> sin costura.
-      - Fondo de ESCENA (bokeh, mármol, gradiente): recorte tipo 'cover' a 4:5
-        para llenar el cuadro sin barras."""
+def _bbox_producto(a, bg, w, h):
+    """Bounding box ROBUSTO del producto sobre fondo uniforme: detecta lo que
+    difiere del fondo, limpia motas/sombras sueltas y se queda con los bloques
+    grandes. Devuelve (x0,y0,x1,y1) o None si no hay borde de fondo claro."""
+    import numpy as np
+    from scipy import ndimage
+    diff = np.abs(a - bg).sum(axis=2)
+    mask = diff > 32
+    # limpia motas (sombras suaves, specks, watermarks) para no inflar la caja
+    mask = ndimage.binary_opening(mask, structure=np.ones((3, 3)), iterations=2)
+    lbl, n = ndimage.label(mask)
+    if n == 0:
+        return None
+    sizes = ndimage.sum(np.ones_like(lbl), lbl, index=range(1, n + 1))
+    keep = [i + 1 for i, s in enumerate(sizes) if s >= 0.0015 * w * h]
+    if not keep:
+        return None
+    m2 = np.isin(lbl, keep)
+    ys, xs = np.where(m2)
+    return int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max())
+
+def normalizar(src, dest, W=900, H=1125, fill=0.90):
+    """Foto CON su fondo, encuadre 4:5 y el producto SIEMPRE del mismo tamaño:
+      - Fondo uniforme (blanco/estudio): detecta el producto, lo recorta justo
+        y lo escala para que ocupe `fill` del cuadro -> todos iguales, centrados,
+        rellenando con el color del fondo (sin costura).
+      - Fondo de escena (bokeh, mármol, gradiente): recorte 'cover' a 4:5."""
     from PIL import Image
     import numpy as np
     im = Image.open(src).convert("RGB")
@@ -167,26 +187,24 @@ def normalizar(src, dest, W=900, H=1125, margin=0.05):
     corners = np.concatenate([a[:k, :k].reshape(-1, 3), a[:k, -k:].reshape(-1, 3),
                               a[-k:, :k].reshape(-1, 3), a[-k:, -k:].reshape(-1, 3)])
     bg = np.median(corners, axis=0)
-    # ¿el borde es fondo uniforme? -> bounding box del producto
-    diff = np.abs(a - bg).sum(axis=2)
-    mask = diff > 40
-    ys, xs = np.where(mask)
-    uniform = False
-    if len(xs) > 50:
-        x0, x1, y0, y1 = xs.min(), xs.max(), ys.min(), ys.max()
-        area_frac = ((x1 - x0 + 1) * (y1 - y0 + 1)) / float(w * h)
-        uniform = area_frac < 0.93        # se recortó borde de fondo apreciable
     bgc = tuple(int(x) for x in bg)
+    bb = _bbox_producto(a, bg, w, h)
+    uniform = False
+    if bb:
+        x0, y0, x1, y1 = bb
+        frac = ((x1 - x0 + 1) * (y1 - y0 + 1)) / float(w * h)
+        uniform = frac < 0.94        # hay borde de fondo real para recortar
     if uniform:
-        pad = int(0.02 * max(x1 - x0, y1 - y0))
+        pad = int(0.015 * max(x1 - x0, y1 - y0))
         prod = im.crop((max(0, x0 - pad), max(0, y0 - pad),
                         min(w, x1 + 1 + pad), min(h, y1 + 1 + pad)))
-        inner = (int(W * (1 - 2 * margin)), int(H * (1 - 2 * margin)))
-        prod.thumbnail(inner, Image.LANCZOS)
+        # escala para que el producto ocupe `fill` del cuadro (tamaño estándar)
+        tw, th = int(W * fill), int(H * fill)
+        s = min(tw / prod.width, th / prod.height)
+        prod = prod.resize((max(1, round(prod.width * s)), max(1, round(prod.height * s))), Image.LANCZOS)
         canvas = Image.new("RGB", (W, H), bgc)
         canvas.paste(prod, ((W - prod.width) // 2, (H - prod.height) // 2))
     else:
-        # cover: escala para llenar 4:5 y recorta el excedente (sin barras)
         scale = max(W / w, H / h)
         im2 = im.resize((max(W, int(w * scale)), max(H, int(h * scale))), Image.LANCZOS)
         left = (im2.width - W) // 2; top = (im2.height - H) // 2
