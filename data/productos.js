@@ -3052,8 +3052,8 @@ window.CATALOGO = {
    ],
    "pagina": 50,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM202.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "1-dollar-intense-bm203",
@@ -3081,8 +3081,8 @@ window.CATALOGO = {
    ],
    "pagina": 56,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM203.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "1-dollar-bm205",
@@ -3110,8 +3110,8 @@ window.CATALOGO = {
    ],
    "pagina": 56,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM205.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-hombre-bm206",
@@ -3139,8 +3139,8 @@ window.CATALOGO = {
    ],
    "pagina": 48,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM206.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ok-uno-bm207",
@@ -3197,8 +3197,8 @@ window.CATALOGO = {
    ],
    "pagina": 49,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM208.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "1-dollar-suerte-bm209",
@@ -3226,8 +3226,8 @@ window.CATALOGO = {
    ],
    "pagina": 56,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM209.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "1-dollar-prive-bm210",
@@ -3255,8 +3255,8 @@ window.CATALOGO = {
    ],
    "pagina": 56,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM210.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ego-bosse-bm211",
@@ -3284,8 +3284,8 @@ window.CATALOGO = {
    ],
    "pagina": 50,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM211.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "apolo-rojo-bm212",
@@ -3313,8 +3313,8 @@ window.CATALOGO = {
    ],
    "pagina": 47,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM212.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "apolo-azul-bm213",
@@ -3342,8 +3342,8 @@ window.CATALOGO = {
    ],
    "pagina": 47,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM213.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mishaki-masculino-bm215",
@@ -3371,8 +3371,8 @@ window.CATALOGO = {
    ],
    "pagina": 46,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM215.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "salvaje-bm216",
@@ -3400,8 +3400,8 @@ window.CATALOGO = {
    ],
    "pagina": 55,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM216.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-bm218",
@@ -3429,8 +3429,8 @@ window.CATALOGO = {
    ],
    "pagina": 57,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM218.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-intense-bm219",
@@ -3458,8 +3458,8 @@ window.CATALOGO = {
    ],
    "pagina": 57,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM219.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "fahrenheite-bm220",
@@ -3487,8 +3487,8 @@ window.CATALOGO = {
    ],
    "pagina": 49,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM220.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "kzo-homme-bm221",
@@ -3516,8 +3516,8 @@ window.CATALOGO = {
    ],
    "pagina": 52,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM221.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "aqua-de-gio-bm222",
@@ -3545,8 +3545,8 @@ window.CATALOGO = {
    ],
    "pagina": 46,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM222.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mad-boy-bm223",
@@ -3574,8 +3574,8 @@ window.CATALOGO = {
    ],
    "pagina": 54,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM223.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "oh-men-prive-bm226",
@@ -3603,8 +3603,8 @@ window.CATALOGO = {
    ],
    "pagina": 49,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM226.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "valentin-bm227",
@@ -3661,8 +3661,8 @@ window.CATALOGO = {
    ],
    "pagina": 48,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM232.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-hombre-hero-bm233",
@@ -3721,8 +3721,8 @@ window.CATALOGO = {
    ],
    "pagina": 57,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM234.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-vip-bm236",
@@ -3750,8 +3750,8 @@ window.CATALOGO = {
    ],
    "pagina": 48,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM236.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "apolo-negro-bm237",
@@ -3779,8 +3779,8 @@ window.CATALOGO = {
    ],
    "pagina": 47,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM237.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ok-b-dos-bm238",
@@ -3895,8 +3895,8 @@ window.CATALOGO = {
    ],
    "pagina": 50,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM244.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "blu-forever-bm245",
@@ -3924,8 +3924,8 @@ window.CATALOGO = {
    ],
    "pagina": 52,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM245.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "fabuloso-bm246",
@@ -3953,8 +3953,8 @@ window.CATALOGO = {
    ],
    "pagina": 51,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM246.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "escandalo-homme-bm248",
@@ -3982,8 +3982,8 @@ window.CATALOGO = {
    ],
    "pagina": 49,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM248.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mad-boy-cobalto-bm249",
@@ -4011,8 +4011,8 @@ window.CATALOGO = {
    ],
    "pagina": 54,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM249.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-victoria-elixir-bm250",
@@ -4040,8 +4040,8 @@ window.CATALOGO = {
    ],
    "pagina": 57,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM250.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "salvaje-elixir-bm254",
@@ -4069,8 +4069,8 @@ window.CATALOGO = {
    ],
    "pagina": 55,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM254.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "robot-legion-bm266",
@@ -4127,8 +4127,8 @@ window.CATALOGO = {
    ],
    "pagina": 51,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM270.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "tabaco-vainilla-bm271",
@@ -4156,8 +4156,8 @@ window.CATALOGO = {
    ],
    "pagina": 51,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM271.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "tuscan-leather-bm272",
@@ -4185,8 +4185,8 @@ window.CATALOGO = {
    ],
    "pagina": 51,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM272.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "oso-black-bm276",
@@ -4303,8 +4303,8 @@ window.CATALOGO = {
    ],
    "pagina": 53,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM300.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "crid-gold-bm308",
@@ -4332,8 +4332,8 @@ window.CATALOGO = {
    ],
    "pagina": 53,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM308.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "aqua-de-gio-profondo-bm309",
@@ -4361,8 +4361,8 @@ window.CATALOGO = {
    ],
    "pagina": 46,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM309.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "apolo-green-bm328",
@@ -4390,8 +4390,8 @@ window.CATALOGO = {
    ],
    "pagina": 47,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BM328.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n0-boutique0",
