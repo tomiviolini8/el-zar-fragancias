@@ -703,8 +703,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGF280.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "noche-de-gala-agf285",
@@ -734,8 +734,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGF285.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-white-agf286",
@@ -765,8 +765,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGF286.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-mahir-femme-agf287",
@@ -796,8 +796,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGF287.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-naranja-agf288",
@@ -827,8 +827,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGF288.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-rosa-agf289",
@@ -858,8 +858,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGF289.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-black-agm291",
@@ -889,8 +889,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM291.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-gold-agm292",
@@ -920,8 +920,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM292.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-blu-agm293",
@@ -951,8 +951,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM293.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "cdnuite-silver-agm294",
@@ -982,8 +982,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM294.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-mahir-homme-agm295",
@@ -1013,8 +1013,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM295.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-negro-agm296",
@@ -1044,8 +1044,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM296.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "arabian-king-agm297",
@@ -1075,8 +1075,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM297.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mandarinsky-agm327",
@@ -1106,8 +1106,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGM327.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ltfa-kamra-agu284",
@@ -1137,8 +1137,8 @@ window.CATALOGO = {
    ],
    "pagina": 70,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/AGU284.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-rosa-bf100",
@@ -4422,8 +4422,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE0.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n00-boutique00",
@@ -4454,8 +4454,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE00.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n1-boutique1",
@@ -4486,8 +4486,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE1.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n2-boutique2",
@@ -4518,8 +4518,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE2.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n3-boutique3",
@@ -4550,8 +4550,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE3.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n4-boutique4",
@@ -4582,8 +4582,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE4.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n5-boutique5",
@@ -4614,8 +4614,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE5.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n6-boutique6",
@@ -4646,8 +4646,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE6.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "boutique-n7-boutique7",
@@ -4678,8 +4678,8 @@ window.CATALOGO = {
    ],
    "pagina": 67,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/BOUTIQUE7.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mon-enfant-col256",
@@ -4766,8 +4766,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF100.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-rosa-extra-gf101",
@@ -4796,8 +4796,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF101.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "escandalo-gf102",
@@ -4826,8 +4826,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF102.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "nani-gf103",
@@ -4856,8 +4856,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF103.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "la-vida-es-linda-gf108",
@@ -4886,8 +4886,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF108.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "lady-dollar-gf111",
@@ -4916,8 +4916,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF111.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "xx-black-femenino-gf112",
@@ -4946,8 +4946,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF112.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "gabotin-gf113",
@@ -4976,8 +4976,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF113.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "flores-gf115",
@@ -5006,8 +5006,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF115.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "nro-5-gf119",
@@ -5036,8 +5036,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF119.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "paula-gf205",
@@ -5066,8 +5066,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF205.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "olimpica-gf209",
@@ -5096,8 +5096,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF209.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-gf210",
@@ -5126,8 +5126,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF210.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-femenino-gf211",
@@ -5156,8 +5156,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF211.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-gold-gf213",
@@ -5186,8 +5186,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF213.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "love-girl-red-gf215",
@@ -5216,8 +5216,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF215.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "hellowen-gf224",
@@ -5246,8 +5246,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF224.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "oh-women-gf229",
@@ -5276,8 +5276,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF229.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "quinta-avenida-gf230",
@@ -5306,8 +5306,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF230.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "aqua-di-gioia-gf232",
@@ -5336,8 +5336,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF232.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "libre-gf234",
@@ -5366,8 +5366,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF234.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mishaki-leau-divey-gf241",
@@ -5396,8 +5396,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF241.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "blu-d-g-gf244",
@@ -5426,8 +5426,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF244.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-mujer-heroina-gf248",
@@ -5456,8 +5456,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF248.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "yo-te-amo-gf251",
@@ -5486,8 +5486,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF251.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "a-mi-manera-gf252",
@@ -5516,8 +5516,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF252.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "oso-ii-gf254",
@@ -5546,8 +5546,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF254.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "robot-femme-gf255",
@@ -5576,8 +5576,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF255.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "protegeme-de-patricia-sosa-gf258",
@@ -5606,8 +5606,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF258.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "lali-one-gf259",
@@ -5636,8 +5636,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF259.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "lady-dollar-fabuloso-gf260",
@@ -5666,8 +5666,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF260.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "bonshel-gf261",
@@ -5696,8 +5696,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF261.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "tini-bacaratt-gf264",
@@ -5726,8 +5726,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF264.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "electric-cherry-gf274",
@@ -5756,8 +5756,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF274.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "divina-gf275",
@@ -5786,8 +5786,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF275.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "moschi-fany-gf310",
@@ -5816,8 +5816,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF310.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "olimpica-parfum-gf317",
@@ -5846,8 +5846,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF317.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "goddess-gf319",
@@ -5876,8 +5876,8 @@ window.CATALOGO = {
    ],
    "pagina": 72,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GF319.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-vip-black-gm110",
@@ -5906,8 +5906,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM110.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "etiqueta-black-gm121",
@@ -5936,8 +5936,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM121.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "one-dollar-gm205",
@@ -5966,8 +5966,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM205.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-hombre-gm206",
@@ -5996,8 +5996,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM206.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ok-one-gm207",
@@ -6026,8 +6026,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM207.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "salvaje-gm216",
@@ -6056,8 +6056,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM216.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-gm218",
@@ -6086,8 +6086,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM218.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "fahrenheite-gm220",
@@ -6116,8 +6116,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM220.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "agua-de-gio-gm222",
@@ -6146,8 +6146,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM222.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "mad-boy-gm223",
@@ -6176,8 +6176,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM223.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "dolch-gaban-one-gm231",
@@ -6206,8 +6206,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM231.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-hombre-hero-gm233",
@@ -6236,8 +6236,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM233.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-victoria-gm234",
@@ -6266,8 +6266,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM234.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "212-vip-gm236",
@@ -6296,8 +6296,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM236.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "robot-pr-gm243",
@@ -6326,8 +6326,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM243.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "rey-d-g-gm247",
@@ -6356,8 +6356,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM247.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "escandalo-homme-gm248",
@@ -6386,8 +6386,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM248.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-victoria-elixir-gm250",
@@ -6416,8 +6416,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM250.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "i-homme-gm252",
@@ -6446,8 +6446,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM252.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "ton-for-tuscan-leather-gm272",
@@ -6476,8 +6476,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM272.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "men-in-black-edition-gm315",
@@ -6506,8 +6506,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM315.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "escandalo-parfum-gm316",
@@ -6536,8 +6536,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM316.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "stronger-intense-gm318",
@@ -6566,8 +6566,8 @@ window.CATALOGO = {
    ],
    "pagina": 71,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/GM318.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "the-bomb-pocket-pf325",
@@ -6595,8 +6595,8 @@ window.CATALOGO = {
    ],
    "pagina": 74,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/PF325.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "the-bomb-intense-pocket-pf334",
@@ -6626,8 +6626,8 @@ window.CATALOGO = {
    ],
    "pagina": 75,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/PF334.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "libre-berry-pocket-pf335",
@@ -6657,8 +6657,8 @@ window.CATALOGO = {
    ],
    "pagina": 75,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/PF335.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "invicto-parfum-pocket-pm299",
@@ -6686,8 +6686,8 @@ window.CATALOGO = {
    ],
    "pagina": 74,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/PM299.jpg",
+   "imagen_placeholder": false
   },
   {
    "id": "le-man-elixir-pocket-pm301",
@@ -6715,8 +6715,8 @@ window.CATALOGO = {
    ],
    "pagina": 74,
    "stock": "A pedido",
-   "imagen": "",
-   "imagen_placeholder": true
+   "imagen": "assets/productos/PM301.jpg",
+   "imagen_placeholder": false
   }
  ]
 };
