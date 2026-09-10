@@ -235,14 +235,28 @@ input,select{font-family:inherit}
 .rail-track::-webkit-scrollbar{height:6px}
 .rail-track::-webkit-scrollbar-thumb{background:var(--gold-2);border-radius:3px}
 .rail-track > *{scroll-snap-align:start;flex:0 0 clamp(230px,72vw,290px)}
-.rail-nav{display:flex;gap:8px;justify-content:flex-end;margin-bottom:10px}
+.rail-nav{display:flex;gap:12px;justify-content:flex-end;margin-bottom:14px}
 .rail-nav button{
-  width:40px;height:40px;border-radius:50%;border:1px solid var(--gold-line);
-  display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.03);
-  transition:background .15s,border-color .15s
+  width:48px;height:48px;border-radius:50%;position:relative;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 50% 30%,#2a1c0d,#160e06);
+  border:1px solid var(--gold);
+  box-shadow:0 8px 22px -10px rgba(0,0,0,.8), inset 0 0 0 3px rgba(212,175,55,.12);
+  transition:transform .18s ease, box-shadow .2s ease, background .2s
 }
-.rail-nav button:hover{border-color:var(--gold);background:rgba(212,175,55,.08)}
-.rail-nav svg{width:18px;height:18px;color:var(--gold)}
+.rail-nav button::before{               /* anillo ornamental */
+  content:"";position:absolute;inset:4px;border-radius:50%;
+  border:1px dashed rgba(212,175,55,.45);
+}
+.rail-nav button:hover{
+  transform:translateY(-2px) scale(1.05);
+  background:linear-gradient(180deg,var(--gold-soft),var(--gold-2));
+  box-shadow:0 14px 34px -10px rgba(212,175,55,.6)
+}
+.rail-nav button:hover::before{border-color:rgba(20,13,7,.5)}
+.rail-nav button:hover svg{color:#20160a}
+.rail-nav svg{width:20px;height:20px;color:var(--gold-soft);position:relative;stroke-width:2.4}
+.rail-nav button:active{transform:translateY(0) scale(.98)}
 
 /* =============================================================
    TARJETA DE PRODUCTO
@@ -303,10 +317,10 @@ input,select{font-family:inherit}
 .card-format{text-transform:uppercase;letter-spacing:.06em}
 .card-code{font-variant-numeric:tabular-nums;color:var(--gold-soft);font-weight:700;letter-spacing:.05em;
   background:rgba(212,175,55,.10);border:1px solid rgba(212,175,55,.25);padding:2px 7px;border-radius:6px}
-.card-price{display:flex;align-items:baseline;gap:8px;margin-top:auto;padding-top:6px}
-.card-price .now{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--gold-soft)}
-.card-price .was{font-size:.85rem;color:var(--muted);text-decoration:line-through}
-.card-price .pct{font-size:.66rem;background:var(--wine);color:#ffe9ec;padding:.15em .5em;border-radius:6px;font-weight:700}
+.card-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 9px;margin-top:auto;padding-top:8px;font-variant-numeric:tabular-nums}
+.card-price .now{font-family:var(--serif);font-size:1.55rem;font-weight:700;color:var(--gold-soft);letter-spacing:-.01em;line-height:1}
+.card-price .was{font-size:.82rem;color:var(--muted);text-decoration:line-through}
+.card-price .pct{align-self:center;font-size:.64rem;background:var(--wine);color:#ffe9ec;padding:.2em .55em;border-radius:20px;font-weight:700;letter-spacing:.02em}
 .card-actions{display:flex;gap:8px;margin-top:12px}
 .card-actions .btn{flex:1;padding:.62em .5em;font-size:.76rem}
 .icon-btn{flex:0 0 auto !important;width:40px;padding:0 !important;display:flex;align-items:center;justify-content:center}
@@ -322,8 +336,27 @@ input,select{font-family:inherit}
   padding:14px 0;margin-bottom:30px
 }
 .filters .wrap{display:flex;flex-direction:column;gap:12px}
+/* Tabs de categoría (segmentación principal) */
+.cat-tabs{
+  display:flex;gap:9px;overflow-x:auto;padding:2px 2px 6px;scrollbar-width:none;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+}
+.cat-tabs::-webkit-scrollbar{display:none}
+.cat-tab{
+  flex:0 0 auto;scroll-snap-align:start;display:inline-flex;align-items:center;gap:7px;
+  padding:.55em 1.05em;border-radius:999px;white-space:nowrap;font-size:.85rem;font-weight:600;
+  color:var(--cream-dim);background:rgba(255,255,255,.03);border:1px solid var(--gold-line);
+  transition:transform .15s,background .2s,color .2s,border-color .2s
+}
+.cat-tab i{
+  font-style:normal;font-size:.66rem;font-weight:700;line-height:1;padding:.28em .5em;border-radius:999px;
+  background:rgba(212,175,55,.14);color:var(--gold-soft);font-variant-numeric:tabular-nums
+}
+.cat-tab:hover{border-color:var(--gold);color:var(--cream)}
+.cat-tab.active{background:linear-gradient(180deg,var(--gold-soft),var(--gold-2));color:#20160a;border-color:transparent;box-shadow:0 8px 22px -12px rgba(212,175,55,.6)}
+.cat-tab.active i{background:rgba(20,13,7,.22);color:#20160a}
 .filter-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.search-big{position:relative;flex:1;min-width:210px;display:flex;align-items:center}
+.search-big{position:relative;flex:1;min-width:200px;display:flex;align-items:center}
 .search-big input{
   width:100%;background:rgba(255,255,255,.04);border:1px solid var(--gold-line);
   color:var(--cream);border-radius:10px;padding:.7em 1em .7em 2.4em;font-size:.9rem
@@ -337,15 +370,7 @@ input,select{font-family:inherit}
 }
 .select-wrap select:focus{outline:none;border-color:var(--gold)}
 .select-wrap::after{content:"▾";position:absolute;right:.9em;top:50%;transform:translateY(-50%);color:var(--gold);pointer-events:none;font-size:.8rem}
-.chips{display:flex;gap:8px;flex-wrap:wrap;overflow-x:auto;padding-bottom:2px}
-.chip{
-  font-size:.8rem;padding:.5em 1em;border-radius:999px;white-space:nowrap;
-  border:1px solid var(--gold-line);color:var(--cream-dim);background:rgba(255,255,255,.02);
-  transition:all .15s;font-weight:500
-}
-.chip:hover{border-color:var(--gold);color:var(--cream)}
-.chip.active{background:linear-gradient(180deg,var(--gold-soft),var(--gold-2));color:#20160a;border-color:transparent;font-weight:700}
-.result-count{font-size:.8rem;color:var(--muted);margin-left:auto}
+.result-count{font-size:.8rem;color:var(--muted);margin-left:auto;white-space:nowrap}
 
 .grid{
   display:grid;gap:clamp(14px,2vw,22px);
@@ -582,23 +607,23 @@ input,select{font-family:inherit}
 /* la foto se ve ENTERA y nítida (contain), sin zoom */
 .detail-media img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:contain;padding:16px}
 .detail-media .ph{position:relative;z-index:1;border:none;background:none}
-.detail-info{padding:34px}
-.detail-info .badges{position:static;margin-bottom:12px;display:flex;flex-direction:row;align-items:flex-start;gap:6px;flex-wrap:wrap;padding-right:44px}
+.detail-info{padding:clamp(22px,3vw,32px);display:flex;flex-direction:column}
+.detail-info .badges{position:static;margin-bottom:10px;display:flex;flex-direction:row;align-items:flex-start;gap:6px;flex-wrap:wrap;padding-right:46px}
 .detail-info .badge{flex:0 0 auto;width:auto}
-.dt-fam{color:var(--gold);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
-.dt-name{font-family:'Playfair Display',Georgia,serif;font-size:2rem;line-height:1.1;color:var(--cream);margin:.25em 0 .1em}
-.dt-insp{color:var(--cream-dim);font-size:.95rem;margin-bottom:.7em}
+.dt-fam{color:var(--gold);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.dt-name{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.5rem,3vw,1.85rem);line-height:1.12;color:var(--cream);margin:.18em 0 .12em}
+.dt-insp{color:var(--cream-dim);font-size:.9rem;line-height:1.4;margin-bottom:.9em}
 .dt-insp b{color:var(--gold-soft)}
-.dt-desc{color:var(--muted);line-height:1.55;font-size:.95rem;margin:0 0 1.1em}
-.dt-specs{list-style:none;padding:0;margin:0 0 1.1em;display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
-.dt-specs li{font-size:.82rem;color:var(--cream-dim);display:flex;justify-content:space-between;gap:8px;
-  border-bottom:1px dashed var(--gold-line);padding-bottom:5px}
-.dt-specs li b{color:var(--cream);font-weight:600}
-.dt-price{display:flex;align-items:baseline;gap:12px;margin-bottom:1.2em}
-.dt-price .now{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold-soft);font-weight:700}
-.dt-price .was{color:var(--muted);text-decoration:line-through;font-size:1.1rem}
-.dt-price .pct{background:var(--wine);color:#ffe9ec;font-size:.75rem;font-weight:700;padding:3px 9px;border-radius:20px}
-.dt-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.dt-desc{color:var(--cream-dim);line-height:1.5;font-size:.9rem;margin:0 0 1.15em}
+.dt-specs{list-style:none;padding:0;margin:0 0 1.15em;display:grid;grid-template-columns:1fr 1fr;gap:9px 22px}
+.dt-specs li{font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  border-bottom:1px dashed var(--gold-line);padding-bottom:6px;line-height:1.25}
+.dt-specs li b{color:var(--cream);font-weight:600;text-align:right}
+.dt-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:1.15em;font-variant-numeric:tabular-nums}
+.dt-price .now{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.3rem);color:var(--gold-soft);font-weight:700;letter-spacing:-.01em}
+.dt-price .was{color:var(--muted);text-decoration:line-through;font-size:1.05rem}
+.dt-price .pct{align-self:center;background:var(--wine);color:#ffe9ec;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px}
+.dt-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;margin-bottom:12px}
 .dt-actions .btn{flex:1;min-width:140px;justify-content:center}
 .dt-share{background:none;border:none;color:var(--gold-soft);font-size:.82rem;cursor:pointer;padding:4px 0;text-decoration:underline;opacity:.85}
 .dt-share:hover{opacity:1}
@@ -670,4 +695,60 @@ input,select{font-family:inherit}
   position:absolute;bottom:14px;right:14px;width:40px;height:40px;z-index:3;
   background:url(../assets/favicon.svg) center/contain no-repeat;
   filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));opacity:.96;pointer-events:none;
+}
+
+/* =============================================================
+   ESTELA DE PERFUME (fondo sutil, se mueve al scrollear)
+   ============================================================= */
+.mist{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.mist-b{
+  position:absolute;border-radius:50%;filter:blur(70px);opacity:.12;
+  transform:translate(var(--sx,0),var(--sy,0));will-change:transform;mix-blend-mode:screen
+}
+.m1{width:46vw;height:46vw;left:-8vw;top:7vh;background:radial-gradient(circle,rgba(212,175,55,.55),transparent 66%)}
+.m2{width:40vw;height:40vw;right:-6vw;top:44vh;background:radial-gradient(circle,rgba(123,30,43,.62),transparent 64%)}
+.m3{width:34vw;height:34vw;left:15vw;top:70vh;background:radial-gradient(circle,rgba(212,175,55,.42),transparent 66%)}
+.m4{width:42vw;height:42vw;right:5vw;top:24vh;background:radial-gradient(circle,rgba(201,150,58,.42),transparent 68%)}
+@media(prefers-reduced-motion:no-preference){
+  .mist-b{animation:mistBreathe 15s ease-in-out infinite}
+  .m2{animation-delay:-4s}.m3{animation-delay:-8s}.m4{animation-delay:-11s}
+}
+@keyframes mistBreathe{0%,100%{opacity:.08}50%{opacity:.16}}
+
+/* =============================================================
+   ARTE ÁRABE (bloque de contacto)
+   ============================================================= */
+.arabe-art{max-width:400px;width:100%;margin:0 auto}
+.arabe-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 26px 60px rgba(0,0,0,.55))}
+
+/* =============================================================
+   AJUSTES MOBILE (filtros compactos + catálogo 2 columnas)
+   ============================================================= */
+@media(max-width:640px){
+  .filters{padding:10px 0;margin-bottom:20px}
+  .cat-tabs{gap:7px}
+  .cat-tab{font-size:.8rem;padding:.48em .85em}
+  .filter-row{gap:8px}
+  .search-big{flex:1 1 100%;min-width:0;order:1}
+  .select-wrap{order:2;flex:1 1 auto}
+  .select-wrap select{width:100%;font-size:.82rem;padding:.62em 2.2em .62em .9em}
+  .btn-clear{order:3}
+  .result-count{order:4;flex:1 1 100%;margin-left:0;text-align:center}
+}
+@media(max-width:560px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+  .card-body{padding:11px 11px 13px;gap:6px}
+  .card-fam{font-size:.6rem}
+  .card-name{font-size:1.02rem;line-height:1.1}
+  .card-insp{font-size:.72rem}
+  .card-desc{display:none}
+  .card-meta{font-size:.62rem;margin-top:4px}
+  .card-price{padding-top:6px}
+  .card-price .now{font-size:1.28rem}
+  .card-price .was{font-size:.74rem}
+  .card-actions{margin-top:9px}
+  .card-actions .btn{font-size:.72rem;padding:.6em .4em}
+}
+@media(max-width:340px){
+  .grid{grid-template-columns:1fr}
 }

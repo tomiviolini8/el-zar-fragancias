@@ -64,14 +64,22 @@ function wireAnalytics(){
 let PRODUCTOS = [];
 let filtered = [];
 let shown = 0;
-const state = { q: '', genero: '', categoria: 'Todos', orden: 'rel', ocasion: '', marca: '', precio: '' };
+const ROWS_PER_PAGE = 4;                 // se muestran 4 filas y luego "Ver más"
+const state = { q: '', cat: 'todos', orden: 'rel' };
 const detailState = { code: null };
 
-const CATEGORIAS = [
-  'Todos', 'Fragancias Premium', 'Línea Árabe', 'Best Sellers',
-  'Masculinas', 'Femeninas', 'Unisex', 'Ofertas', 'Novedades',
-  'Body Splash', 'Cosmética', 'Complementarios',
+/* Categorías (segmentación única de la página). match = pertenencia. */
+const CATS = [
+  { key: 'todos',   label: 'Todos',           match: () => true },
+  { key: 'best',    label: 'Best Sellers',    match: p => p.etiquetas?.includes('BEST') || p.etiquetas?.includes('BEST SELLER') },
+  { key: 'masc',    label: 'Masculinos',      match: p => p.genero === 'Hombre' },
+  { key: 'fem',     label: 'Femeninos',       match: p => p.genero === 'Mujer' },
+  { key: 'arabe',   label: 'Árabes',          match: p => p.es_arabe },
+  { key: 'ofertas', label: 'Ofertas',         match: p => (p.descuento_pct || 0) > 0 },
+  { key: 'unisex',  label: 'Unisex',          match: p => p.genero === 'Unisex' },
+  { key: 'comp',    label: 'Complementarios', match: p => (p.categorias || []).includes('Complementarios') || (p.linea || '').includes('Gold') },
 ];
+const catByKey = k => CATS.find(c => c.key === k) || CATS[0];
 
 /* ------------------------------------------------------------------
    Init
@@ -86,11 +94,8 @@ async function init(){
     // ranking de relevancia (destacados primero)
     PRODUCTOS.forEach((p, i) => p._rank = relRank(p, i));
     readURL();                 // estado inicial desde la URL (filtros compartibles)
-    buildChips();
-    buildMarcas();
-    const mSel = $('#marca'); if (mSel) mSel.value = state.marca;
+    buildCatTabs();
     renderRails();
-    renderBestSeller();
     applyFilters();
     updateStats();
     cartRender();   // re-render con productos ya cargados
@@ -132,31 +137,22 @@ function updateStats(){
   // #statArabe queda fijo ("Árabe") en el HTML
 }
 
-/* Showcase "El más elegido": destaca un best seller del catálogo (dinámico). */
-function renderBestSeller(){
-  const el = $('#bestSeller'); if (!el) return;
-  const byRank = (a, b) => b._rank - a._rank;
-  const conFoto = PRODUCTOS.filter(p => !p.imagen_placeholder);
-  const bests = PRODUCTOS.filter(p => p.etiquetas?.includes('BEST'));
-  // preferir un best seller CON foto; si no hay, cualquiera con foto; luego best; luego top
-  const best =
-    bests.filter(p => !p.imagen_placeholder).sort(byRank)[0] ||
-    conFoto.slice().sort(byRank)[0] ||
-    bests.slice().sort(byRank)[0] ||
-    PRODUCTOS.slice().sort(byRank)[0];
-  if (!best){ el.hidden = true; return; }
-  const inspReal = best.inspirado_en && titleCase(best.inspirado_en).toLowerCase() !== (best.nombre || '').toLowerCase();
-  el.innerHTML = `
-    <div class="bs-tag">★ El más elegido</div>
-    <div class="bs-media">${mediaHTML(best)}</div>
-    <div class="bs-body">
-      ${best.familia_olfativa ? `<div class="bs-fam">${escapeHtml(best.familia_olfativa)}</div>` : ''}
-      <h3 class="bs-name">${escapeHtml(best.nombre)}</h3>
-      ${inspReal ? `<div class="bs-insp">Inspirado en <b>${escapeHtml(titleCase(best.inspirado_en))}</b></div>` : ''}
-      <div class="bs-price"><span class="now">${fmtPrice(best.precio)}</span>${best.descuento_pct ? `<span class="bs-off">-${best.descuento_pct}%</span>` : ''}</div>
-      <button class="btn btn-gold btn-sm" id="bsDetail">Ver este perfume</button>
-    </div>`;
-  $('#bsDetail')?.addEventListener('click', () => openDetail(best));
+/* Estela de perfume en el fondo: leve balanceo al scrollear (sutil, profesional). */
+function wireMist(){
+  const blobs = $$('.mist-b');
+  if (!blobs.length || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  let sy = window.scrollY, ticking = false;
+  const upd = () => {
+    blobs.forEach((b, i) => {
+      const sway = Math.sin(sy / (420 + i * 130)) * (16 + i * 7);
+      const rise = -(sy * (0.015 + i * 0.008)) % 60;
+      b.style.setProperty('--sy', (sway + rise).toFixed(1) + 'px');
+      b.style.setProperty('--sx', (Math.cos(sy / (560 + i * 90)) * (10 + i * 5)).toFixed(1) + 'px');
+    });
+    ticking = false;
+  };
+  addEventListener('scroll', () => { sy = window.scrollY; if (!ticking){ ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+  upd();
 }
 
 /* ------------------------------------------------------------------
@@ -190,13 +186,9 @@ function wireUI(){
   // enter en mini salta al catálogo
   $('#searchMini')?.addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('catalogo').scrollIntoView({behavior:'smooth'}); });
 
-  $('#genero')?.addEventListener('change', e => { state.genero = e.target.value; applyFilters(); });
   $('#orden')?.addEventListener('change', e => { state.orden = e.target.value; applyFilters(); });
-  $('#ocasion')?.addEventListener('change', e => { state.ocasion = e.target.value; applyFilters(); });
-  $('#marca')?.addEventListener('change', e => { state.marca = e.target.value; applyFilters(); });
-  $('#precio')?.addEventListener('change', e => { state.precio = e.target.value; applyFilters(); });
   $('#clearFilters')?.addEventListener('click', clearFilters);
-  $('#loadMore')?.addEventListener('click', () => { shown += CONFIG.PAGE_SIZE; renderGrid(true); });
+  $('#loadMore')?.addEventListener('click', () => { shown += gridCols() * ROWS_PER_PAGE; renderGrid(true); });
 
   // modal de detalle
   $('#detailClose')?.addEventListener('click', closeDetail);
@@ -215,7 +207,7 @@ function wireUI(){
   // saltar a árabe
   $('[data-jump-arabe]')?.addEventListener('click', e => {
     e.preventDefault();
-    setCategoria('Línea Árabe');
+    setCat('arabe');
     document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
   });
 
@@ -231,27 +223,39 @@ function wireUI(){
   }));
   $('#handleInput')?.addEventListener('input', () => renderPreview());
   $('#downloadBtn')?.addEventListener('click', downloadCard);
+
+  wireMist();
 }
 const capitalize = s => s.charAt(0).toUpperCase() + s.slice(1);
 
-function buildChips(){
-  const wrap = $('#chips');
+function buildCatTabs(){
+  const wrap = $('#catTabs'); if (!wrap) return;
   wrap.innerHTML = '';
-  CATEGORIAS.forEach(cat => {
-    // ocultar chips sin productos (excepto Todos)
-    if (cat !== 'Todos' && !PRODUCTOS.some(p => p.categorias.includes(cat))) return;
+  CATS.forEach(cat => {
+    // ocultar tabs sin productos (salvo Todos)
+    const n = cat.key === 'todos' ? PRODUCTOS.length : PRODUCTOS.filter(cat.match).length;
+    if (!n) return;
     const b = document.createElement('button');
-    b.className = 'chip' + (cat === state.categoria ? ' active' : '');
-    b.textContent = cat;
-    b.dataset.cat = cat;
-    b.addEventListener('click', () => setCategoria(cat));
+    b.className = 'cat-tab' + (cat.key === state.cat ? ' active' : '');
+    b.dataset.cat = cat.key;
+    b.innerHTML = `<span>${cat.label}</span><i>${n}</i>`;
+    b.addEventListener('click', () => { setCat(cat.key); $('#catalogo').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     wrap.appendChild(b);
   });
 }
-function setCategoria(cat){
-  state.categoria = cat;
-  $$('#chips .chip').forEach(c => c.classList.toggle('active', c.dataset.cat === cat));
+function setCat(key){
+  state.cat = key;
+  $$('#catTabs .cat-tab').forEach(c => c.classList.toggle('active', c.dataset.cat === key));
   applyFilters();
+}
+/* columnas actuales del grid (para paginar por filas) */
+function gridCols(){
+  const grid = $('#grid'); if (!grid) return 4;
+  if (!grid.clientWidth) return 4;              // layout aún no listo / pane oculto
+  const tpl = getComputedStyle(grid).gridTemplateColumns;
+  const n = (tpl && tpl !== 'none')
+    ? tpl.split(' ').filter(s => s && s !== '0px' && s.includes('px')).length : 0;
+  return n || 4;
 }
 
 /* ------------------------------------------------------------------
@@ -259,16 +263,9 @@ function setCategoria(cat){
    ------------------------------------------------------------------ */
 function applyFilters(){
   const q = state.q;
+  const cat = catByKey(state.cat);
   filtered = PRODUCTOS.filter(p => {
-    if (state.genero && p.genero !== state.genero) return false;
-    if (state.categoria !== 'Todos' && !p.categorias.includes(state.categoria)) return false;
-    if (state.ocasion && p.ocasion !== state.ocasion) return false;
-    if (state.marca && p.marca !== state.marca) return false;
-    if (state.precio){
-      const [mn, mx] = state.precio.split('-').map(Number);
-      const pr = p.precio || 0;
-      if (pr < mn || pr > mx) return false;
-    }
+    if (!cat.match(p)) return false;
     if (q){
       const hay = (p.nombre + ' ' + p.codigo + ' ' + p.inspirado_en + ' ' + p.marca + ' ' + p.familia_olfativa).toLowerCase();
       if (!hay.includes(q)) return false;
@@ -283,37 +280,30 @@ function applyFilters(){
     case 'desc':        filtered.sort((a,b) => (b.descuento_pct||0) - (a.descuento_pct||0)); break;
     default:            filtered.sort((a,b) => b._rank - a._rank);
   }
-  shown = CONFIG.PAGE_SIZE;
+  shown = gridCols() * ROWS_PER_PAGE;
   renderGrid();
+  // reajuste tras el layout (al arranque las columnas del grid pueden no estar listas)
+  requestAnimationFrame(() => {
+    const want = gridCols() * ROWS_PER_PAGE;
+    if (want > shown && shown < filtered.length){ shown = want; renderGrid(); }
+  });
   updateFilterUI();
   writeURL();
 }
 
-/* ---- Filtros: marca dinámica, limpiar, UI, URL compartible ---- */
-function buildMarcas(){
-  const sel = $('#marca'); if (!sel) return;
-  const marcas = [...new Set(PRODUCTOS.map(p => p.marca).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es'));
-  sel.insertAdjacentHTML('beforeend', marcas.map(m => `<option value="${escapeHtml(m)}">${escapeHtml(titleCase(m))}</option>`).join(''));
-}
-function anyFilter(){
-  return !!(state.q || state.genero || state.categoria !== 'Todos' || state.ocasion || state.marca || state.precio || state.orden !== 'rel');
-}
+function anyFilter(){ return !!(state.q || state.cat !== 'todos' || state.orden !== 'rel'); }
 function updateFilterUI(){ const b = $('#clearFilters'); if (b) b.hidden = !anyFilter(); }
 function clearFilters(){
-  Object.assign(state, { q:'', genero:'', categoria:'Todos', orden:'rel', ocasion:'', marca:'', precio:'' });
-  ['#searchMini','#searchBig','#genero','#ocasion','#marca','#precio'].forEach(s => { const el = $(s); if (el) el.value = ''; });
+  Object.assign(state, { q:'', cat:'todos', orden:'rel' });
+  ['#searchMini','#searchBig'].forEach(s => { const el = $(s); if (el) el.value = ''; });
   const o = $('#orden'); if (o) o.value = 'rel';
-  $$('#chips .chip').forEach(c => c.classList.toggle('active', c.dataset.cat === 'Todos'));
+  $$('#catTabs .cat-tab').forEach(c => c.classList.toggle('active', c.dataset.cat === 'todos'));
   applyFilters();
 }
 function writeURL(){
   const p = new URLSearchParams();
   if (state.q) p.set('q', state.q);
-  if (state.genero) p.set('g', state.genero);
-  if (state.categoria !== 'Todos') p.set('cat', state.categoria);
-  if (state.ocasion) p.set('oc', state.ocasion);
-  if (state.marca) p.set('m', state.marca);
-  if (state.precio) p.set('p', state.precio);
+  if (state.cat !== 'todos') p.set('cat', state.cat);
   if (state.orden !== 'rel') p.set('s', state.orden);
   const qs = p.toString();
   history.replaceState(null, '', (qs ? '?' + qs : location.pathname) + location.hash);
@@ -321,16 +311,11 @@ function writeURL(){
 function readURL(){
   const p = new URLSearchParams(location.search);
   state.q = (p.get('q') || '').toLowerCase();
-  state.genero = p.get('g') || '';
-  state.categoria = p.get('cat') || 'Todos';
-  state.ocasion = p.get('oc') || '';
-  state.marca = p.get('m') || '';
-  state.precio = p.get('p') || '';
+  state.cat = p.get('cat') || 'todos';
   state.orden = p.get('s') || 'rel';
   const set = (sel, val) => { const el = $(sel); if (el) el.value = val; };
-  set('#genero', state.genero); set('#orden', state.orden); set('#ocasion', state.ocasion); set('#precio', state.precio);
+  set('#orden', state.orden);
   set('#searchMini', p.get('q') || ''); set('#searchBig', p.get('q') || '');
-  // #marca se setea tras poblar el select (en init)
 }
 
 /* ==================================================================

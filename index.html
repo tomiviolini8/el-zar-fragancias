@@ -34,7 +34,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css?v=11">
+<link rel="stylesheet" href="css/styles.css?v=12">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1">
 <link rel="apple-touch-icon" href="assets/favicon.svg?v=1">
 <link rel="mask-icon" href="assets/favicon.svg" color="#d4af37">
@@ -58,6 +58,14 @@
 </script>
 </head>
 <body>
+
+<!-- Estela de perfume (fondo, sutil, se mueve al scrollear) -->
+<div class="mist" aria-hidden="true">
+  <span class="mist-b m1"></span>
+  <span class="mist-b m2"></span>
+  <span class="mist-b m3"></span>
+  <span class="mist-b m4"></span>
+</div>
 
 <!-- ============ HEADER ============ -->
 <header class="header">
@@ -196,53 +204,24 @@
 
     <div class="filters">
       <div class="wrap">
+        <div class="cat-tabs" id="catTabs"></div>
         <div class="filter-row">
           <div class="search-big">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
             <input type="search" id="searchBig" placeholder="Buscar por nombre o código (ej. Sauvage, BM216)…">
           </div>
           <div class="select-wrap">
-            <select id="genero">
-              <option value="">Todos los géneros</option>
-              <option value="Hombre">Hombre</option>
-              <option value="Mujer">Mujer</option>
-              <option value="Unisex">Unisex</option>
-            </select>
-          </div>
-          <div class="select-wrap">
-            <select id="ocasion">
-              <option value="">Toda ocasión</option>
-              <option value="Día">Día ☀️</option>
-              <option value="Noche">Noche 🌙</option>
-              <option value="Citas">Citas 🏹</option>
-              <option value="Ecléctica">Versátil</option>
-            </select>
-          </div>
-          <div class="select-wrap">
-            <select id="marca"><option value="">Toda inspiración</option></select>
-          </div>
-          <div class="select-wrap">
-            <select id="precio">
-              <option value="">Cualquier precio</option>
-              <option value="0-30000">Hasta $30.000</option>
-              <option value="30000-45000">$30.000 – $45.000</option>
-              <option value="45000-60000">$45.000 – $60.000</option>
-              <option value="60000-9999999999">Más de $60.000</option>
-            </select>
-          </div>
-          <div class="select-wrap">
-            <select id="orden">
-              <option value="rel">Ordenar: destacados</option>
-              <option value="precio-asc">Precio: menor a mayor</option>
-              <option value="precio-desc">Precio: mayor a menor</option>
+            <select id="orden" aria-label="Ordenar">
+              <option value="rel">Destacados</option>
+              <option value="precio-asc">Precio ↑</option>
+              <option value="precio-desc">Precio ↓</option>
               <option value="nombre">Nombre A-Z</option>
               <option value="desc">Mayor descuento</option>
             </select>
           </div>
-          <button class="btn-clear" id="clearFilters" hidden>✕ Limpiar filtros</button>
+          <button class="btn-clear" id="clearFilters" hidden>✕ Limpiar</button>
           <span class="result-count" id="resultCount"></span>
         </div>
-        <div class="chips" id="chips"></div>
       </div>
     </div>
 
@@ -325,7 +304,65 @@
             <a id="igContactBtn" href="#" class="btn btn-ghost" target="_blank" rel="noopener">Seguinos en Instagram</a>
           </div>
         </div>
-        <div class="best-seller" id="bestSeller"></div>
+        <aside class="arabe-art" aria-hidden="true">
+          <svg viewBox="0 0 420 520" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="aaGold" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f6e6a8"/><stop offset=".5" stop-color="#d4af37"/><stop offset="1" stop-color="#a3801f"/>
+              </linearGradient>
+              <linearGradient id="aaBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#241708"/><stop offset="1" stop-color="#130b05"/>
+              </linearGradient>
+              <radialGradient id="aaGlow" cx="50%" cy="32%" r="62%">
+                <stop offset="0" stop-color="#d4af37" stop-opacity=".30"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect x="1" y="1" width="418" height="518" rx="22" fill="url(#aaBg)"/>
+            <rect x="1" y="1" width="418" height="518" rx="22" fill="url(#aaGlow)"/>
+            <rect x="12" y="12" width="396" height="496" rx="15" fill="none" stroke="url(#aaGold)" stroke-opacity=".55" stroke-width="1.4"/>
+            <rect x="20" y="20" width="380" height="480" rx="11" fill="none" stroke="url(#aaGold)" stroke-opacity=".20"/>
+            <!-- rayos sutiles -->
+            <g stroke="url(#aaGold)" stroke-opacity=".14">
+              <path d="M210 214 L96 70 M210 214 L324 70 M210 214 L150 56 M210 214 L270 56 M210 214 L210 44"/>
+            </g>
+            <!-- arco morisco (ogee) -->
+            <path d="M210 66 C150 88 130 150 130 208 L130 300 Q130 314 144 314 L276 314 Q290 314 290 300 L290 208 C290 150 270 88 210 66 Z"
+                  fill="none" stroke="url(#aaGold)" stroke-width="2"/>
+            <path d="M210 84 C160 104 144 156 144 208 L144 296 Q144 302 150 302 L270 302 Q276 302 276 296 L276 208 C276 156 260 104 210 84 Z"
+                  fill="none" stroke="url(#aaGold)" stroke-opacity=".4"/>
+            <!-- estela / sillage -->
+            <g fill="none" stroke="url(#aaGold)" stroke-linecap="round">
+              <path d="M200 150 C186 128 212 120 200 98 C190 80 210 70 202 52" stroke-width="2" stroke-opacity=".55"/>
+              <path d="M224 152 C238 130 212 120 224 100 C234 84 216 74 222 58" stroke-width="1.5" stroke-opacity=".33"/>
+            </g>
+            <!-- frasco -->
+            <g fill="url(#aaGold)">
+              <rect x="193" y="108" width="34" height="15" rx="4"/>
+              <rect x="200" y="121" width="20" height="30" rx="3"/>
+              <rect x="184" y="150" width="52" height="14" rx="4"/>
+              <path d="M172 166 h76 a12 12 0 0 1 12 12 v92 a30 30 0 0 1 -30 30 h-52 a30 30 0 0 1 -30 -30 v-92 a12 12 0 0 1 12 -12 Z"/>
+            </g>
+            <!-- medallón arabesco -->
+            <g>
+              <circle cx="210" cy="228" r="26" fill="#1c1206"/>
+              <circle cx="210" cy="228" r="26" fill="none" stroke="url(#aaGold)" stroke-width="1.4"/>
+              <path d="M210 208 L216 228 L210 248 L204 228 Z M190 228 L210 222 L230 228 L210 234 Z" fill="url(#aaGold)"/>
+              <circle cx="210" cy="228" r="4.5" fill="#1c1206"/>
+            </g>
+            <!-- destellos -->
+            <g fill="url(#aaGold)">
+              <path d="M96 150 l2.4 6 6 2.4 -6 2.4 -2.4 6 -2.4 -6 -6 -2.4 6 -2.4 z" opacity=".8"/>
+              <path d="M326 176 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" opacity=".7"/>
+              <path d="M320 118 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6 z" opacity=".6"/>
+            </g>
+            <!-- corona + firma -->
+            <g transform="translate(193.5,372) scale(1.4)" fill="url(#aaGold)">
+              <path d="M3 8l3.5 3L12 4l5.5 7L21 8l-1.6 10.2a1 1 0 0 1-1 .8H5.6a1 1 0 0 1-1-.8L3 8z"/>
+            </g>
+            <text x="210" y="452" text-anchor="middle" fill="url(#aaGold)" font-family="Playfair Display, Georgia, serif" font-size="26" font-weight="700">El Zar</text>
+            <text x="210" y="476" text-anchor="middle" fill="#cdbfa8" font-family="Montserrat, sans-serif" font-size="9.5" letter-spacing="4.5">DE LAS FRAGANCIAS</text>
+          </svg>
+        </aside>
       </div>
     </div>
   </section>
@@ -466,7 +503,7 @@
 <!-- Catálogo embebido (funciona sin servidor). Si preferís editar el JSON, el sitio
      también intenta cargar data/productos.json cuando está hosteado. -->
 <script src="data/productos.js?v=22"></script>
-<script src="js/app.js?v=11"></script>
+<script src="js/app.js?v=12"></script>
 
 <!-- Vercel Web Analytics (visitas + eventos). Activar "Web Analytics" en el panel de Vercel. -->
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
