@@ -1,0 +1,11 @@
+{
+  "name": "el-zar-fragancias",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing + panel admin de El Zar de las Fragancias (Vercel serverless + Airtable)",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test:catalogo": "node api/_test_local.mjs"
+  }
+}

@@ -112,7 +112,20 @@ async function init(){
 /* Carga el catálogo: prioriza el embebido (window.CATALOGO — funciona sin servidor,
    incluso abriendo index.html localmente); si no está, intenta el JSON (hosting). */
 async function loadCatalogo(){
+  // 1) Airtable EN VIVO vía función serverless (timeout corto; si no está, cae al embebido)
+  try{
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 4000);
+    const res = await fetch('/api/catalogo', { signal: ctrl.signal, headers: { Accept: 'application/json' } });
+    clearTimeout(t);
+    if (res.ok){
+      const d = await res.json();
+      if (d && Array.isArray(d.productos) && d.productos.length) return d;
+    }
+  }catch(e){ /* sin backend / offline -> fallback */ }
+  // 2) Catálogo embebido (funciona sin servidor, incluso abriendo el HTML localmente)
   if (window.CATALOGO && Array.isArray(window.CATALOGO.productos)) return window.CATALOGO;
+  // 3) JSON estático
   const res = await fetch('data/productos.json');
   return res.json();
 }
