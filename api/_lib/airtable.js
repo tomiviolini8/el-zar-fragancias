@@ -114,6 +114,40 @@ export function mapRecord(rec) {
   };
 }
 
+// Mapeo clave-web -> campo Airtable (para escribir desde el panel).
+const WRITE_FIELDS = [
+  ['Codigo', 'codigo', 'text'], ['Nombre', 'nombre', 'text'],
+  ['Precio', 'precio', 'num'], ['Precio regular', 'precio_regular', 'num'],
+  ['Descuento %', 'descuento_pct', 'num'], ['Descripcion', 'descripcion', 'text'],
+  ['Inspirado en', 'inspirado_en', 'text'], ['Marca', 'marca', 'text'],
+  ['Formato', 'formato', 'text'], ['Familia olfativa', 'familia_olfativa', 'text'],
+  ['Genero', 'genero', 'text'], ['Linea', 'linea', 'text'],
+  ['Ocasion', 'ocasion', 'text'], ['Es arabe', 'es_arabe', 'bool'],
+  ['Categorias', 'categorias', 'list'], ['Etiquetas', 'etiquetas', 'list'],
+  ['Stock', 'stock', 'text'], ['Foto URL', 'foto_url', 'text'],
+];
+
+// Convierte los datos del formulario (claves web) a campos de Airtable.
+export function toFields(p) {
+  const f = {};
+  for (const [aname, pkey, kind] of WRITE_FIELDS) {
+    let v = p[pkey];
+    if (v === undefined) continue;
+    if (kind === 'num') {
+      if (v === '' || v === null) { f[aname] = null; continue; }
+      const n = Number(v); if (!Number.isNaN(n)) f[aname] = n;
+    } else if (kind === 'bool') {
+      f[aname] = !!v;
+    } else if (kind === 'list') {
+      f[aname] = Array.isArray(v) ? v : (v ? String(v).split(',').map((s) => s.trim()).filter(Boolean) : []);
+    } else {
+      f[aname] = (v == null) ? '' : String(v);
+    }
+  }
+  f.Publicar = true;
+  return f;
+}
+
 export function buildCatalogo(records) {
   const productos = records
     .filter((r) => {

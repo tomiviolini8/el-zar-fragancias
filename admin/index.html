@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel · El Zar de las Fragancias</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<style>
+  :root{
+    --bg:#140d07;--bg2:#1f1509;--card:#20160c;--card2:#271a0d;
+    --gold:#d4af37;--gold-soft:#e8cf7e;--gold-2:#c9a227;--gold-line:rgba(212,175,55,.28);
+    --cream:#f5ede1;--cream-dim:#cdbfa8;--muted:#8c7c63;--wine:#7b1e2b;--ok:#3f7d54;
+    --serif:'Playfair Display',Georgia,serif;--sans:'Montserrat','Segoe UI',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);color:var(--cream);background:
+    radial-gradient(900px 500px at 80% -10%,rgba(123,30,43,.16),transparent 60%),
+    radial-gradient(700px 400px at 0% 10%,rgba(212,175,55,.09),transparent 55%),
+    linear-gradient(180deg,#140d07,#1a1108 40%,#140c06);min-height:100vh;line-height:1.5}
+  a{color:var(--gold-soft)}
+  .wrap{max-width:940px;margin:0 auto;padding:22px clamp(14px,4vw,28px)}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .brand svg{width:30px;height:30px;color:var(--gold)}
+  .brand b{font-family:var(--serif);color:var(--gold-soft);font-size:1.25rem}
+  .brand small{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);display:block}
+  .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--gold-line);border-radius:16px;padding:clamp(18px,3vw,30px)}
+  /* login */
+  .login{max-width:390px;margin:9vh auto 0}
+  .login h1{font-family:var(--serif);font-size:1.5rem;color:var(--gold-soft);margin-bottom:4px}
+  .login p{color:var(--cream-dim);font-size:.86rem;margin-bottom:18px}
+  label{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);margin:12px 0 5px}
+  input,select,textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--gold-line);color:var(--cream);
+    border-radius:10px;padding:.62em .8em;font-size:.9rem;font-family:inherit}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+  textarea{resize:vertical;min-height:80px}
+  .btn{display:inline-flex;align-items:center;gap:.5em;justify-content:center;border:none;cursor:pointer;
+    padding:.7em 1.3em;border-radius:999px;font-weight:700;font-size:.9rem;font-family:inherit}
+  .btn-gold{background:linear-gradient(180deg,var(--gold-soft),var(--gold-2));color:#20160a}
+  .btn-gold:hover{filter:brightness(1.05)}
+  .btn-ghost{background:rgba(255,255,255,.03);border:1px solid var(--gold-line);color:var(--cream)}
+  .btn-block{width:100%}
+  .msg{margin-top:12px;font-size:.85rem;padding:.6em .8em;border-radius:9px;display:none}
+  .msg.err{display:block;background:rgba(123,30,43,.2);border:1px solid var(--wine);color:#ffd9dd}
+  .msg.ok{display:block;background:rgba(63,125,84,.18);border:1px solid var(--ok);color:#d7f5e2}
+  /* panel */
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+  .tabs{display:flex;gap:8px;margin-bottom:18px}
+  .tab{padding:.5em 1.1em;border-radius:999px;border:1px solid var(--gold-line);background:rgba(255,255,255,.03);
+    color:var(--cream-dim);font-weight:600;font-size:.85rem;cursor:pointer}
+  .tab.active{background:linear-gradient(180deg,var(--gold-soft),var(--gold-2));color:#20160a;border-color:transparent}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+  .grid2 .full{grid-column:1/-1}
+  @media(max-width:620px){.grid2{grid-template-columns:1fr}}
+  .row-check{display:flex;align-items:center;gap:9px;margin-top:20px}
+  .row-check input{width:auto}
+  .hint{font-size:.72rem;color:var(--muted);margin-top:4px}
+  .search-row{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+  .search-row input{flex:1;min-width:200px}
+  .plist{max-height:260px;overflow:auto;border:1px solid var(--gold-line);border-radius:10px;margin-bottom:16px}
+  .pitem{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.05)}
+  .pitem:hover{background:rgba(212,175,55,.08)}
+  .pitem img{width:34px;height:44px;object-fit:cover;border-radius:5px;background:#f3ece0;flex-shrink:0}
+  .pitem .nm{font-weight:600;font-size:.88rem}
+  .pitem .cd{font-size:.7rem;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+  .pitem .pr{margin-left:auto;color:var(--gold-soft);font-weight:700;font-variant-numeric:tabular-nums;font-size:.85rem}
+  .foto-box{display:flex;gap:14px;align-items:center;margin-top:6px}
+  .foto-box img{width:70px;height:88px;object-fit:cover;border-radius:8px;background:#f3ece0}
+  .actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+  .sect-title{font-family:var(--serif);color:var(--gold-soft);font-size:1.15rem;margin-bottom:12px}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="wrap" id="loginView">
+  <div class="login card">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 8l3.5 3L12 4l5.5 7L21 8l-1.6 10.2a1 1 0 0 1-1 .8H5.6a1 1 0 0 1-1-.8L3 8z"/></svg>
+      <span><b>El Zar</b><small>Panel de administración</small></span>
+    </div>
+    <h1>Ingresar</h1>
+    <p>Acceso privado para gestionar el catálogo.</p>
+    <form id="loginForm">
+      <label for="user">Usuario</label>
+      <input id="user" autocomplete="username" required>
+      <label for="pass">Contraseña</label>
+      <input id="pass" type="password" autocomplete="current-password" required>
+      <div style="margin-top:18px"><button class="btn btn-gold btn-block" type="submit">Entrar</button></div>
+      <div class="msg" id="loginMsg"></div>
+    </form>
+  </div>
+</div>
+
+<!-- PANEL -->
+<div class="wrap" id="panelView" hidden>
+  <div class="top">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 8l3.5 3L12 4l5.5 7L21 8l-1.6 10.2a1 1 0 0 1-1 .8H5.6a1 1 0 0 1-1-.8L3 8z"/></svg>
+      <span><b>El Zar</b><small>Panel · <span id="whoami"></span></small></span>
+    </div>
+    <div style="display:flex;gap:10px">
+      <a class="btn btn-ghost" href="../" target="_blank">Ver web ↗</a>
+      <button class="btn btn-ghost" id="logoutBtn">Salir</button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="editar">✏️ Editar perfume</button>
+    <button class="tab" data-tab="alta">➕ Alta nuevo</button>
+  </div>
+
+  <!-- EDITAR: buscador + lista -->
+  <div class="card" id="editarView">
+    <div class="sect-title">Buscar y editar</div>
+    <div class="search-row">
+      <input id="search" placeholder="Buscar por nombre o código…">
+      <button class="btn btn-ghost" id="reloadBtn">↻ Recargar</button>
+    </div>
+    <div class="plist" id="plist"></div>
+    <div id="editFormWrap" hidden></div>
+  </div>
+
+  <!-- ALTA -->
+  <div class="card" id="altaView" hidden>
+    <div class="sect-title">Cargar un perfume nuevo</div>
+    <div id="altaFormWrap"></div>
+  </div>
+</div>
+
+<script src="admin.js?v=1"></script>
+</body>
+</html>
