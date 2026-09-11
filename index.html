@@ -34,7 +34,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/styles.css?v=12">
+<link rel="stylesheet" href="css/styles.css?v=13">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1">
 <link rel="apple-touch-icon" href="assets/favicon.svg?v=1">
 <link rel="mask-icon" href="assets/favicon.svg" color="#d4af37">
@@ -59,12 +59,35 @@
 </head>
 <body>
 
-<!-- Estela de perfume (fondo, sutil, se mueve al scrollear) -->
-<div class="mist" aria-hidden="true">
-  <span class="mist-b m1"></span>
-  <span class="mist-b m2"></span>
-  <span class="mist-b m3"></span>
-  <span class="mist-b m4"></span>
+<!-- Frasco que rocía su estela al scrollear -->
+<div class="spray" id="spray" aria-hidden="true">
+  <svg viewBox="0 0 120 210" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="spGold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f6e6a8"/><stop offset="1" stop-color="#c9a227"/>
+      </linearGradient>
+    </defs>
+    <!-- estela / puffs desde la boquilla -->
+    <g class="puffs" fill="url(#spGold)">
+      <circle class="pf p1" cx="60" cy="14" r="5"/>
+      <circle class="pf p2" cx="60" cy="14" r="4"/>
+      <circle class="pf p3" cx="60" cy="14" r="6"/>
+      <circle class="pf p4" cx="60" cy="14" r="3.5"/>
+      <circle class="pf p5" cx="60" cy="14" r="5"/>
+      <circle class="pf p6" cx="60" cy="14" r="4.5"/>
+    </g>
+    <!-- frasco -->
+    <g class="bottle" fill="none" stroke="url(#spGold)" stroke-width="2.2" stroke-linejoin="round">
+      <path d="M28 66 h64 a8 8 0 0 1 8 8 v98 a16 16 0 0 1 -16 16 h-56 a16 16 0 0 1 -16 -16 v-98 a8 8 0 0 1 8 -8 Z"/>
+      <rect x="34" y="52" width="52" height="16" rx="4"/>
+      <rect x="47" y="36" width="26" height="18" rx="3"/>
+      <path d="M42 150 h36" stroke-opacity=".4" stroke-width="1.4"/>
+      <path d="M42 162 h36" stroke-opacity=".4" stroke-width="1.4"/>
+    </g>
+    <g class="cap">
+      <rect x="44" y="18" width="32" height="20" rx="4" fill="url(#spGold)"/>
+    </g>
+  </svg>
 </div>
 
 <!-- ============ HEADER ============ -->
@@ -125,7 +148,7 @@
         </div>
         <div class="hero-stats">
           <div class="st"><b id="statTotal">+200</b><span>Fragancias</span></div>
-          <div class="st"><b id="statArabe">Árabe</b><span>Línea exclusiva</span></div>
+          <div class="st"><b id="statLineas">7</b><span>Líneas & estilos</span></div>
           <div class="st"><b id="statOff">30%</b><span>de descuento</span></div>
         </div>
       </div>
@@ -503,7 +526,7 @@
 <!-- Catálogo embebido (funciona sin servidor). Si preferís editar el JSON, el sitio
      también intenta cargar data/productos.json cuando está hosteado. -->
 <script src="data/productos.js?v=22"></script>
-<script src="js/app.js?v=12"></script>
+<script src="js/app.js?v=13"></script>
 
 <!-- Vercel Web Analytics (visitas + eventos). Activar "Web Analytics" en el panel de Vercel. -->
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>

@@ -134,25 +134,26 @@ function updateStats(){
   $('#statTotal') && ($('#statTotal').textContent = '+' + (Math.floor(total / 10) * 10));
   const maxOff = PRODUCTOS.reduce((m, p) => Math.max(m, p.descuento_pct || 0), 0);
   $('#statOff') && ($('#statOff').textContent = (Math.floor(maxOff / 5) * 5 || 30) + '%');
-  // #statArabe queda fijo ("Árabe") en el HTML
+  // cantidad de líneas/estilos distintos (árabe es solo una de varias)
+  const lineas = new Set(PRODUCTOS.map(p => p.linea).filter(Boolean));
+  $('#statLineas') && ($('#statLineas').textContent = (lineas.size || 7));
 }
 
-/* Estela de perfume en el fondo: leve balanceo al scrollear (sutil, profesional). */
-function wireMist(){
-  const blobs = $$('.mist-b');
-  if (!blobs.length || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  let sy = window.scrollY, ticking = false;
-  const upd = () => {
-    blobs.forEach((b, i) => {
-      const sway = Math.sin(sy / (420 + i * 130)) * (16 + i * 7);
-      const rise = -(sy * (0.015 + i * 0.008)) % 60;
-      b.style.setProperty('--sy', (sway + rise).toFixed(1) + 'px');
-      b.style.setProperty('--sx', (Math.cos(sy / (560 + i * 90)) * (10 + i * 5)).toFixed(1) + 'px');
-    });
-    ticking = false;
+/* Frasco de perfume: al scrollear "se aprieta" y rocía más su estela.
+   Loop de rAF con velocidad suavizada -> reacción fluida y confiable. */
+function wireSpray(){
+  const spray = $('#spray');
+  if (!spray || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  let last = window.scrollY, vel = 0, raf = null, idle = 0;
+  const tick = () => {
+    const now = window.scrollY;
+    vel = vel * 0.8 + Math.abs(now - last) * 0.2; last = now;
+    spray.style.setProperty('--press', Math.min(6, vel * 0.55).toFixed(1) + 'px');
+    if (vel > 0.6){ spray.classList.add('spraying'); idle = 0; }
+    else if (++idle > 18){ spray.classList.remove('spraying'); }
+    raf = (vel > 0.1 || spray.classList.contains('spraying')) ? requestAnimationFrame(tick) : null;
   };
-  addEventListener('scroll', () => { sy = window.scrollY; if (!ticking){ ticking = true; requestAnimationFrame(upd); } }, { passive: true });
-  upd();
+  addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
 }
 
 /* ------------------------------------------------------------------
@@ -224,7 +225,7 @@ function wireUI(){
   $('#handleInput')?.addEventListener('input', () => renderPreview());
   $('#downloadBtn')?.addEventListener('click', downloadCard);
 
-  wireMist();
+  wireSpray();
 }
 const capitalize = s => s.charAt(0).toUpperCase() + s.slice(1);
 
