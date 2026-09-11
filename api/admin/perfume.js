@@ -1,11 +1,12 @@
 // POST/PATCH /api/admin/perfume -> crea o actualiza un perfume en Airtable
 // (upsert por Codigo). Protegido por sesión de admin.
 import { env, toFields, upsertByCodigo } from '../_lib/airtable.js';
-import { requireAuth } from './_auth.js';
+import { requireAdmin } from './_guard.js';
 import { readJson } from './_http.js';
 
 export default async function handler(req, res) {
-  if (!requireAuth(req)) return res.status(401).json({ error: 'No autorizado' });
+  const gate = requireAdmin(req);           // sesión Google + allowlist (re-chequeada)
+  if (!gate.ok) return res.status(gate.status).json({ error: gate.error });
   if (!['POST', 'PATCH'].includes(req.method)) {
     res.setHeader('Allow', 'POST, PATCH');
     return res.status(405).json({ error: 'Método no permitido' });

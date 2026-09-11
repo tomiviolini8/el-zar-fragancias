@@ -156,30 +156,46 @@ async function loadCatalogo() {
   } catch { CATALOGO = []; }
 }
 
-/* ---------- sesión ---------- */
+/* ---------- sesión (Google OAuth) ---------- */
+const AUTH_MSGS = {
+  forbidden: 'Esa cuenta de Google no está autorizada como administrador.',
+  email: 'Tu email de Google no está verificado.',
+  state: 'La sesión de login expiró. Probá de nuevo.',
+  nonce: 'No se pudo validar el login. Probá de nuevo.',
+  token: 'Google no devolvió un token válido. Probá de nuevo.',
+  error: 'Hubo un problema al iniciar sesión. Probá de nuevo.',
+};
 async function boot() {
-  const me = await api('/api/admin/me').then((r) => r.json()).catch(() => ({ auth: false }));
-  if (me.auth) showPanel(me.user); else showLogin();
+  // mensaje de error que viene del callback (?auth=...)
+  const params = new URLSearchParams(location.search);
+  const authErr = params.get('auth');
+  if (authErr) history.replaceState(null, '', location.pathname);
+
+  const me = await api('/api/admin/me').then((r) => r.json()).catch(() => ({ auth: false, isAdmin: false }));
+  if (me.auth && me.isAdmin) return showPanel(me.name || me.email);
+  if (me.auth && !me.isAdmin) return showDenied(me.email);
+  showLogin(authErr ? (AUTH_MSGS[authErr] || AUTH_MSGS.error) : '');
 }
-function showLogin() { $('#loginView').hidden = false; $('#panelView').hidden = true; }
-function showPanel(user) {
+function showLogin(errText) {
+  $('#loginView').hidden = false; $('#panelView').hidden = true;
+  $('#loginBox').hidden = false; $('#deniedBox').hidden = true;
+  const msg = $('#loginMsg');
+  if (errText) showMsg(msg, 'err', errText); else msg.className = 'msg';
+}
+function showDenied(email) {
+  $('#loginView').hidden = false; $('#panelView').hidden = true;
+  $('#loginBox').hidden = true; $('#deniedBox').hidden = false;
+  $('#deniedEmail').textContent = email || '';
+}
+function showPanel(who) {
   $('#loginView').hidden = true; $('#panelView').hidden = false;
-  $('#whoami').textContent = user || '';
+  $('#whoami').textContent = who || '';
   initAlta();
   loadCatalogo();
 }
-
-$('#loginForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const msg = $('#loginMsg'); msg.className = 'msg';
-  try {
-    const res = await api('/api/admin/login', { method: 'POST', body: JSON.stringify({ user: $('#user').value, pass: $('#pass').value }) });
-    const j = await res.json();
-    if (!res.ok) throw new Error(j.error || 'No se pudo ingresar');
-    showPanel(j.user);
-  } catch (err) { showMsg(msg, 'err', err.message); }
-});
-$('#logoutBtn').addEventListener('click', async () => { await api('/api/admin/logout', { method: 'POST' }); showLogin(); });
+async function doLogout() { await api('/api/admin/logout', { method: 'POST' }); location.href = 'index.html'; }
+$('#logoutBtn').addEventListener('click', doLogout);
+$('#deniedLogout').addEventListener('click', doLogout);
 $('#reloadBtn').addEventListener('click', loadCatalogo);
 $('#search').addEventListener('input', (e) => renderList(e.target.value));
 $$('.tab').forEach((t) => t.addEventListener('click', () => {
